@@ -1,5 +1,9 @@
-# Vue 3 + Vite
+# This project contains the personal portfolio of Robert Ardeleanu (TRIBΞHOLZ)
+In terms of the Hypermedia class at the university of applied sciences Hagenberg, I set myself the challenge to build my portfolio as an dynamic and interactive SPA.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### Tech Stack
+- HTML, CSS, JS
+- Vue.js
+- THREE.js
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+- Vite.js
