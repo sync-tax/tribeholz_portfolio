@@ -4,13 +4,7 @@
 </script>
 
 <template>
-    <div class="canvasContainer">
-        <canvas>
-            
-        </canvas>
-    </div>
+  <canvas id="starHeader"> </canvas>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -29,4 +29,9 @@ import FooterSection from "./components/Footer.vue";
   <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
-<style scoped></style>
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
+</style>
