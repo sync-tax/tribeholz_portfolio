@@ -91,6 +91,10 @@ img:hover {
   opacity: 50%;
 }
 
+.navLink:hover{
+  opacity: 100%;
+}
+
 .router-link-active {
   opacity: 100%;
 }

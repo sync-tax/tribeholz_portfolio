@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Projects from './views/Projects.vue'
 import About from './views/About.vue' 
-import LinkTree from './views/LinkTree.vue'  
+import LinkTree from './views/LinkTree.vue'
+import Tetris from './views/Tetris.vue'  
 
 
 const routes = [
@@ -19,6 +20,11 @@ const routes = [
     path: '/LinkTree',
     name: 'LinkTree',
     component: LinkTree
+  },
+  {
+    path: '/Tetris',
+    name: 'Tetris',
+    component: Tetris
   }
 ]
 
