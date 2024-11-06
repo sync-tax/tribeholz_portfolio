@@ -1,10 +1,12 @@
 <script setup>
 import MainNavigation from "./components/Navbar.vue";
 import FooterSection from "./components/Footer.vue";
+import StarBG from "./components/StarBG.vue"
 </script>
 
 <template>
   <body>
+    <StarBG/>
     <MainNavigation />
 
     <main>
