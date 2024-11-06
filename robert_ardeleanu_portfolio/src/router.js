@@ -6,6 +6,7 @@ import Tetris from './views/Tetris.vue'
 
 
 const routes = [
+  //Main Routes
   {
     path: '/',
     name: 'Projects',
@@ -25,7 +26,9 @@ const routes = [
     path: '/Tetris',
     name: 'Tetris',
     component: Tetris
-  }
+  },
+
+  //Project Routes
 ]
 
 const router = createRouter({

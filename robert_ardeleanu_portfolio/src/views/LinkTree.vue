@@ -3,9 +3,47 @@
 </script>
 
 <template>
-    <h1>LinkTree</h1>
+    <div class="linkContainer">
+        <a href="">YouTube Channel</a>
+        <a href="">Instagram Page</a>
+        <a href="">Github Repos</a>
+        <a href="">TouchDesigner Files</a>
+        <a href="">DURCH Screenprints</a>
+    </div>
 </template>
 
 <style scoped>
+    .linkContainer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
 
+        height: 80vh;
+        width: fit-content;
+        margin: 20px auto;
+    }
+
+    a{
+        font-family: "Anek Devanagari", sans-serif;
+        font-style: expanded;
+        font-weight: 600;
+        font-size: x-large;
+        font-variation-settings:
+        "wdth" 125;
+
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+
+        padding: 15px 100px 10px 100px;
+        margin: 5px;
+
+        text-align:  center;
+        text-decoration: none;
+        color:  white;
+    }
+
+    a:hover{
+        background-color: white;
+        color:#181818;
+    }
 </style>

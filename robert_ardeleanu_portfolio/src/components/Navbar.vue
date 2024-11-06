@@ -88,7 +88,7 @@ img:hover {
 .navLink{
   text-decoration: none;
   color: white;
-  opacity: 50%;
+  opacity: 40%;
 }
 
 .navLink:hover{

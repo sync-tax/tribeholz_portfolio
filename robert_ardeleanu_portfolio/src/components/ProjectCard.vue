@@ -1,6 +1,10 @@
 <script setup>
-//Implement Icon Logic (switch between dark & lightmode css on click)
-//Implemet Vue Routing
+defineProps({
+    subTitle: String,
+    projectTitle: String,
+    currentProjectView: String,
+    imagePath: String
+})
 </script>
 
 <template>
@@ -8,13 +12,18 @@
         <div class="projectLeftSection">
             <h4>{{ subTitle }}</h4>
             <h2>{{ projectTitle }}</h2>
-            <div class="projectTagsContainer">
-                
+            <div class="projectInfoContainer">
+                <div class="projectTags">
+
+                </div>
+                <div class="projectInfo">
+                    
+                </div>
             </div>
-            <a href="{{ currentProjectView }}"><button>View Project</button></a>
+            <a href="{{ currentProjectView }}">View Project</a>
         </div>
         <div class="projectRightSection">
-            <img src="#" alt="Image of the current project card.">
+            <img src="{{ imagePath }}" alt="Image of the current project card.">
         </div>
     </div>
 </template>
