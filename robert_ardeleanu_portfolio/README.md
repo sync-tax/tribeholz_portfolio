@@ -1,9 +1,24 @@
-# This project contains the personal portfolio of Robert Ardeleanu (TRIBΞHOLZ)
-In terms of the Hypermedia class at the university of applied sciences Hagenberg, I set myself the challenge to build my portfolio as an dynamic and interactive SPA.
-
-### Tech Stack
-- HTML, CSS, JS
+### Personal portfolio of Robert Ardeleanu (TRIBΞHOLZ)
+In terms of the Hypermedia class at the university of applied sciences Hagenberg, I set myself the challenge to build my portfolio as a dynamic and interactive SPA. To archive that I'll utilize:
 - Vue.js
 - THREE.js
+- SASS
 
-- Vite.js
+- Vite.js (Build)
+- Netlify (Deployment)
+
+### Functional Todo's
+- [ ] HTML CleanUp (uniform classes etc)
+- [ ] Scoped CSS -> SASS (cuz its getting messy)
+- [ ] Filter Logic
+- [ ] Collapsable sections
+- [ ] Light & Dark coloring (CSS variables -> toggle)
+- [ ] Tetris Game (atm only desktop)
+- [ ] Njan Cat Easteregg
+
+### Content Todo's
+- [ ] Vectorize Icons
+- [ ] Decide on Projects
+- [ ] Thumbnails
+- [ ] Single Project View
+- [ ] Project Overview

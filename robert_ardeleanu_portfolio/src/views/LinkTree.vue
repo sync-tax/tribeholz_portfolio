@@ -4,11 +4,12 @@
 
 <template>
     <div class="linkContainer">
-        <a href="">YouTube Channel</a>
-        <a href="">Instagram Page</a>
-        <a href="">Github Repos</a>
-        <a href="">TouchDesigner Files</a>
-        <a href="">DURCH Screenprints</a>
+        <a href="">YouTube</a>
+        <a href="">Instagram</a>
+        <a href="">Github</a>
+        <a href="">Soundcloud</a>
+        <a href="">TD Files</a>
+        <a href="">DURCH</a>
     </div>
 </template>
 
@@ -18,23 +19,25 @@
         justify-content: space-around;
         flex-direction: column;
 
-        height: 80vh;
+        height: 92vh;
         width: fit-content;
         margin: 20px auto;
+        padding-top: 20px;
+        padding-bottom: 50px;
     }
 
     a{
         font-family: "Anek Devanagari", sans-serif;
         font-style: expanded;
         font-weight: 600;
-        font-size: x-large;
+        font-size: xx-large;
         font-variation-settings:
         "wdth" 125;
 
         border: 1px solid lightgrey;
-        border-radius: 10px;
+        border-radius: 15px;
 
-        padding: 15px 100px 10px 100px;
+        padding: 15px 180px 10px 180px;
         margin: 5px;
 
         text-align:  center;

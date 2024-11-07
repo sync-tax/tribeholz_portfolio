@@ -5,13 +5,13 @@
 
 <template>
     <nav class="projectNav">
-        <li id="listTitle">FILTER:</li>
-        <li id="activeFilter">#NewMediaArt</li>
-        <li>#WebDevelopment</li>
-        <li>#PrintDesign</li>
-        <li>#Screenprints</li>
-        <li>#Sound</li>
-        <li>#Tutorials</li>
+        <li id="listTitle">Project Filter:</li>
+        <li id="activeFilter">procedural_art</li>
+        <li>coded_sound</li>
+        <li>tech_tutorials</li>
+        <li>web_development</li>
+        <li>different_designs</li>
+        <li>random_stuff</li>
     </nav>
     <div class="projectListContainer">
         
@@ -20,6 +20,7 @@
 
 <style scoped>
     .projectNav{
+
         border: 1px solid white;
 
         display: flex;
@@ -35,7 +36,7 @@
         padding: 5px 20px;
 
         border-radius: 25px;
-        background-color: #313131;
+        background-color: #1c1c1c;
 
         list-style: none;
         text-align:  center;
@@ -50,7 +51,9 @@
 
     #listTitle {
         border-radius: 0px;
-        background-color: #181818;
+        background-color: rgba(0, 0, 0, 0);
+
+        font-size: large;
     }
 
     #activeFilter{

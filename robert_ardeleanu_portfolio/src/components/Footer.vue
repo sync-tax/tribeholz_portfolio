@@ -18,18 +18,17 @@
       <div class="footerExtra">
         <div class="modeSwitchContainer">
           <img
-            src="../assets/images/darkmode_icon_dark.png"
+            src="../assets/images/darkmode_icon.svg"
             alt="A moon icon; used to switch to darkmode."
             id="activeMode"
           />
           <img
-            src="../assets/images/lightmode_icon_dark.png"
+            src="../assets/images/lightmode_icon.svg"
             alt="A sun icon; used to switch to lightmode. "
-            id="!activeMode"
+            id="notactiveMode"
           />
         </div>
         <p>made with ♡ and a whole lot of coffee^^</p>
-        <a href="">NYAN!</a>
       </div>
     </div>
     <div id="copyrightWrapper">
@@ -79,6 +78,17 @@ img:hover {
 
 #activeMode {
   opacity: 100%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
+}
+
+#notactiveMode {
+  opacity: 30%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
+}
+
+#notactiveMode:hover {
+  opacity: 100%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
 
 .footerSocials, .footerContact {

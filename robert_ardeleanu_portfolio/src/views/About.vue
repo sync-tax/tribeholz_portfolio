@@ -4,6 +4,7 @@
   <section class="aboutGeneral">
     <img
       src="../assets/images/me_about.png"
+      width="420px"
       alt="A picture of me (Robert Ardeleanu)"
       class="aboutPic"
     />
@@ -12,10 +13,10 @@
       <h2>ROBERT ARDELEANU</h2>
       <p>
         I currently study Mediatechnology & Design (BA) at the unviersity of
-        applied sciences, Campus Hagenberg <br />
+        applied sciences @ Campus Hagenberg. <br />
         <span>Linz, Upper Austria</span>
       </p>
-      <a href="#CV"><button>Download CV</button></a>
+      <a href="#CV">Download CV</a>
     </div>
   </section>
 
@@ -35,19 +36,17 @@
         <img src="#" alt="Icon to Open a collapse section" />
       </div>
       <p>
-        I find joy and inspiration all around me—in nature, my relationships, and especially my cats (who are like children to me!). While I'm a sociable person, I also cherish solitude, which allows me to delve into various subjects that fascinate me. 
-        
-        I express myself through art, design, and code. Some of my favorite ways to spend my time include:
+        I find joy and inspiration all around me — in nature, mathematics, relationships, and especially in my cats (who are essentially my children lol). While I'm a sociable person, I also enjoy having time for myself, which allows me to delve into various subjects that facinate me. My hobbies are:  <br> <br>
 
-        - Exploring creative coding: Generating visual art with TouchDesigner and algorithmic sounds with Sonic Pi.
-        - Sharing my tech knowledge: Creating YouTube videos about tech topics.
-        - Expressing myself visually: Drawing, screenprinting, and designing.
-        - Gaming and grooving: Immersing myself in the world of Pokémon and dancing to good techno music.
+        - Exploring creative algorithms: Generating visual art with TouchDesigner and algorithmic sounds with Sonic Pi. <br>
+        - Sharing tech knowledge: Creating YouTube videos about tech topics. <br>
+        - Creating graphics: Drawing, screenprinting, and designing. <br>
+        - Gaming and grooving: Immersing myself into fantasy worlds and dancing to bouncy techno music. <br>
       </p>
     </div>
     <div class="collapsibleWrapper">
       <div class="collapspreview">
-        <h4>Life Philosophy</h4>
+        <h4>Nyan Nyan Nyan...</h4>
         <img src="#" alt="Icon to Open a collapse section" />
       </div>
       <p>
@@ -57,4 +56,78 @@
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+.aboutGeneral{
+  display: flex;
+  justify-content: space-around;
+
+  width: 90%;
+  margin: 0 auto;
+
+  padding-top: 5vh;
+}
+
+.aboutTextWrapper{
+  margin: auto 0;
+  padding-right: 30px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+h2{
+  font-family: "Anek Devanagari", sans-serif;
+        font-weight: 800;
+        font-size: 3rem;
+        font-variation-settings:
+        "wdth" 125;
+}
+
+h5{
+  font-family: "Anek Devanagari", sans-serif;
+        font-weight: 600;
+        font-size: 1.1rem;
+        font-variation-settings:
+        "wdth" 100;
+
+  opacity: 40%;
+}
+
+span{
+  opacity: 40%;
+}
+
+p{
+  font-family: "Anek Devanagari", sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        font-variation-settings:
+        "wdth" 87.5;
+}
+
+a{
+        font-family: "Anek Devanagari", sans-serif;
+        font-style: expanded;
+        font-weight: 600;
+        font-size: larger;
+        font-variation-settings:
+        "wdth" 125;
+
+        border: 1px solid white;
+        border-radius: 15px;
+
+        padding: 10px 25px 8px 25px;
+        width: 200px;
+
+        margin-top:  40px;
+        text-align:  center;
+        text-decoration: none;
+        color:  white;
+    }
+
+a:hover{
+  background-color: white;
+  color: black;
+}    
+</style>

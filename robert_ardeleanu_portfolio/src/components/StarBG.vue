@@ -13,7 +13,7 @@ const { scene, renderer, camera, ambientLight } = createScene();
 const target = new THREE.Vector3(0, 0, 0);
 const radius = 75;
 
-const controls = new OrbitControls(camera, renderer.domElement);
+//const controls = new OrbitControls(camera, renderer.domElement);
 
 function addStars() {
   const { star } = createGeometry();
@@ -28,7 +28,7 @@ function addStars() {
 }
 Array(200).fill().forEach(addStars);
 
-scene.add(ambientLight); //Light
+scene.add(ambientLight); 
 
 
 function animate() {
@@ -40,7 +40,7 @@ function animate() {
     camera.position.z = target.z + Math.cos(angle) * radius;
   
     camera.lookAt(target);
-    controls.update();
+    //scontrols.update();
   
     renderer.render(scene, camera);
   }

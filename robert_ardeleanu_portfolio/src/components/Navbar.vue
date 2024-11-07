@@ -15,19 +15,20 @@
         <li>ABOUT</li>
       </RouterLink>
       <RouterLink to="/LinkTree" class="navLink">
-        <li id="lastNavLink">LINKTREE</li>
+        <li id="lastNavLink">LINK.TREE</li>
       </RouterLink>
       <img
-        src="../assets/images/darkmode_icon_dark.png"
+        src="../assets/images/darkmode_icon.svg"
         alt="A moon icon; used to switch to darkmode."
+        style= "fill: white;"
         class="modeSwitch"
         id="activeMode"
       />
       <img
-        src="../assets/images/lightmode_icon_dark.png"
+        src="../assets/images/lightmode_icon.svg"
         alt="A sun icon; used to switch to lightmode."
         class="modeSwitch"
-        id="!activeMode"
+        id="notactiveMode"
       />
     </ul>
   </nav>
@@ -38,7 +39,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8vh;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   border-bottom: 1px solid white;
 }
@@ -61,13 +64,12 @@ li {
 img {
   cursor: pointer;
 
-  color: white;
-  opacity: 30%;
-
   margin-right: 20px;
   width: 25px;
   height: 25px;
 }
+
+
 
 img:hover {
   opacity: 100%;
@@ -75,6 +77,17 @@ img:hover {
 
 #activeMode {
   opacity: 100%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
+}
+
+#notactiveMode {
+  opacity: 30%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
+}
+
+#notactiveMode:hover {
+  opacity: 100%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
 
 #logoImage {
