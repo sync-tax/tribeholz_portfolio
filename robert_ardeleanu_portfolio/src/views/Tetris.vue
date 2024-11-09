@@ -8,6 +8,4 @@
   <p>You stumbled upon an easteregg! :P</p>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

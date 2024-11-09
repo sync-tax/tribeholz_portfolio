@@ -20,7 +20,7 @@
       <img
         src="../assets/images/darkmode_icon.svg"
         alt="A moon icon; used to switch to darkmode."
-        style= "fill: white;"
+        style="fill: white"
         class="modeSwitch"
         id="activeMode"
       />

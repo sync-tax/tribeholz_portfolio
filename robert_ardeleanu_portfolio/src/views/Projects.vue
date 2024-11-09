@@ -1,6 +1,6 @@
 <script setup>
-import ProjectFilter from "../components/ProjectFilter.vue";
 import Hero from "../components/Header.vue";
+import ProjectFilter from "../components/ProjectFilter.vue";
 </script>
 
 <template>

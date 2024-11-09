@@ -1,17 +1,17 @@
 <script setup>
 import MainNavigation from "./components/Navbar.vue";
 import FooterSection from "./components/Footer.vue";
-import StarBG from "./components/StarBG.vue"
+import StarBG from "./components/StarBG.vue";
 </script>
 
 <template>
   <body>
-    <StarBG/>
+    <StarBG />
     <MainNavigation />
 
     <main>
       <router-view v-slot="{ Component }">
-        <transition name="route" mode="default">
+        <transition name="route">
           <component :is="Component"></component>
         </transition>
       </router-view>
@@ -32,4 +32,13 @@ import StarBG from "./components/StarBG.vue"
 </template>
 
 <style scoped>
+.route-enter-active,
+.route-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.route-enter-from,
+.route-leave-to {
+  opacity: 0;
+}
 </style>
