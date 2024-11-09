@@ -163,6 +163,38 @@ footer #copyrightWrapper p {
   color: black;
 }
 
+.projectNav {
+  border: 1px solid white;
+  display: flex;
+  justify-content: left;
+  padding: 10px 0;
+}
+.projectNav li {
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  background-color: #1c1c1c;
+  list-style: none;
+  text-align: center;
+  color: white;
+}
+.projectNav li:hover {
+  color: #181818;
+  background-color: white;
+  opacity: 80%;
+}
+.projectNav #listTitle {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: large;
+}
+.projectNav #activeFilter {
+  color: #181818;
+  background-color: white;
+  opacity: 80%;
+}
+
 .aboutGeneral {
   display: flex;
   justify-content: space-between;
@@ -188,7 +220,8 @@ footer #copyrightWrapper p {
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
   font-size: 1.2rem;
-  opacity: 40%;
+  opacity: 50%;
+  line-height: 0.5rem;
 }
 .aboutGeneral .aboutTextWrapper p {
   font-family: "Montserrat", sans-serif;
@@ -199,26 +232,61 @@ footer #copyrightWrapper p {
 .aboutGeneral .aboutTextWrapper span {
   opacity: 40%;
 }
+.aboutGeneral .aboutTextWrapper a {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  padding: 15px 10px 10px 10px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.aboutGeneral .aboutTextWrapper a:hover {
+  background-color: white;
+  color: black;
+}
 
 .aboutDetails {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .aboutDetails span {
   color: white;
 }
 .aboutDetails .collapsibleWrapper {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .aboutDetails .collapsibleWrapper p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 1.2rem;
+  padding-bottom: 20px;
 }
 .aboutDetails .collapsibleWrapper .collapspreview {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.aboutDetails .collapsibleWrapper .collapspreview img {
+  opacity: 100%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
+  width: 25px;
+  opacity: 70%;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.aboutDetails .collapsibleWrapper .collapspreview img:hover {
+  opacity: 100%;
 }
 .aboutDetails .collapsibleWrapper .collapspreview h4 {
   font-family: "Anek Devanagari", sans-serif;

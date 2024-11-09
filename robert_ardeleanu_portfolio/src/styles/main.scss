@@ -225,7 +225,47 @@ img {
 }
 
 //Projects
+.projectNav{
 
+  border: 1px solid white;
+
+  display: flex;
+  justify-content: left;
+
+  padding: 10px 0;
+
+  li{
+    cursor: pointer;
+
+    margin-right: 20px;
+    padding: 5px 20px;
+
+    border-radius: 25px;
+    background-color: #1c1c1c;
+
+    list-style: none;
+    text-align:  center;
+    color:  white;
+
+    &:hover{
+      color: #181818;
+      background-color: white;
+      opacity: 80%;
+    }
+}
+#listTitle {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0);
+
+  font-size: large;
+}
+
+#activeFilter{
+  color: #181818;
+  background-color: white;
+  opacity: 80%;
+}
+}
 
 //About
 .aboutGeneral{
@@ -251,7 +291,8 @@ img {
     h5{
       @include subtitles-font();
       font-size: 1.2rem;
-      opacity: 40%;
+      opacity: 50%;
+      line-height: 0.5rem;
     }
 
     p{
@@ -261,11 +302,32 @@ img {
     span{
       opacity: 40%;
     }
+    
+    a{
+      @include subtitles-font();
+      font-size: 1.2rem;
+      width: fit-content;
+    
+      border: 1px solid lightgrey;
+      border-radius: 15px;
+    
+      padding: 15px 10px 10px 10px;
+      margin-top: 20px;
+    
+      text-align:  center;
+      text-decoration: none;
+      color:  white;
+
+      &:hover{
+        background-color: white;
+        color: black;
+      }
+    }
   }
   
 }
 .aboutDetails{
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 
   span{
@@ -273,16 +335,36 @@ img {
   }
 
   .collapsibleWrapper{
-    margin-top: 40px;
+    margin-top: 60px;
 
     p{
       @include text-font();
-
+      padding-bottom: 20px;
     }
 
     .collapspreview{
       display: flex;
       justify-content: space-between;
+
+      border-bottom: 1px solid white;
+
+      margin-bottom: 15px;
+      cursor: pointer;
+
+      img{
+        opacity: 100%;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
+        width: 25px;
+        opacity: 70%;
+        padding-bottom: 10px;
+
+        transition: transform 0.3s ease; 
+
+        &:hover{
+          opacity: 100%;
+        }
+      }
+
       h4{
         @include subtitles-font();
 
