@@ -32,8 +32,4 @@ import StarBG from "./components/StarBG.vue"
 </template>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
 </style>

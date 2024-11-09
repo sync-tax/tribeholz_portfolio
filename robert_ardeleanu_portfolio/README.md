@@ -8,8 +8,7 @@ In terms of the Hypermedia class at the university of applied sciences Hagenberg
 - Netlify (Deployment)
 
 ### Functional Todo's
-- [ ] HTML CleanUp (uniform classes etc)
-- [ ] Scoped CSS -> SASS (cuz its getting messy)
+- [x] Scoped CSS -> SASS (cuz its getting messy)
 - [ ] Filter Logic
 - [ ] Collapsable sections
 - [ ] Light & Dark coloring (CSS variables -> toggle)

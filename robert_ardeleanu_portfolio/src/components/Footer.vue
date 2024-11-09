@@ -28,7 +28,7 @@
             id="notactiveMode"
           />
         </div>
-        <p>made with ♡ and a whole lot of coffee^^</p>
+        <p>made with ♡ and a whole lot of coffee : ]</p>
       </div>
     </div>
     <div id="copyrightWrapper">
@@ -42,88 +42,3 @@
     </div>
   </footer>
 </template>
-
-<style scoped>
-#footerWrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-
-  border-top: 1px solid white;
-}
-
-#logoImage{
-    margin-left: 15px;
-
-    width: 35px;
-    height: 35px;
-
-    opacity: 100%;
-}
-
-img {
-  cursor: pointer;
-
-  color: white;
-  opacity: 30%;
-
-  width: 25px;
-  height: 25px;
-  margin-right: 15px;
-}
-
-img:hover {
-  opacity: 100%;
-}
-
-#activeMode {
-  opacity: 100%;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
-}
-
-#notactiveMode {
-  opacity: 30%;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
-}
-
-#notactiveMode:hover {
-  opacity: 100%;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
-}
-
-.footerSocials, .footerContact {
-  display: flex;
-  flex-direction: column;
-}
-
-.footerExtra {
-  margin-right: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-    opacity: 50%;
-  }
-
-  a:hover{
-    opacity: 100%;
-  }
-
-#copyrightWrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: white;
-    color: black;
-    font-size: 16px;
-
-    margin-top: 20px;
-    padding-left: 10px;
-}
-
-#tetrisEasteregg{
-    opacity: 100%;
-}
-</style>
