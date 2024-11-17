@@ -32,6 +32,9 @@ import StarBG from "./components/StarBG.vue";
 </template>
 
 <style scoped>
+/*
+NOTE: Übergänge funktionieren aus irgendeinem Grund nicht bei jedem Seitensprung (??) 
+
 .route-enter-active,
 .route-leave-active {
   transition: opacity 0.3s ease;
@@ -41,4 +44,5 @@ import StarBG from "./components/StarBG.vue";
 .route-leave-to {
   opacity: 0;
 }
+*/
 </style>

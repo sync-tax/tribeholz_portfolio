@@ -15,6 +15,15 @@
   color: white;
 }
 
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+}
+
 body {
   max-width: 1280px;
   margin: 0 auto;
@@ -122,24 +131,28 @@ footer #footerWrapper .footerExtra #notactiveMode:hover {
   opacity: 100%;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
-footer #footerWrapper .footerSocials, footer #footerWrapper .footerContact {
+footer #footerWrapper .footerSocials,
+footer #footerWrapper .footerContact {
   display: flex;
   flex-direction: column;
 }
-footer #footerWrapper .footerSocials h4, footer #footerWrapper .footerContact h4 {
+footer #footerWrapper .footerSocials h4,
+footer #footerWrapper .footerContact h4 {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
   font-size: 1.2rem;
 }
-footer #footerWrapper .footerSocials a, footer #footerWrapper .footerContact a {
+footer #footerWrapper .footerSocials a,
+footer #footerWrapper .footerContact a {
   text-decoration: none;
   color: white;
   opacity: 50%;
   font-size: 1.1rem;
 }
-footer #footerWrapper .footerSocials a:hover, footer #footerWrapper .footerContact a:hover {
+footer #footerWrapper .footerSocials a:hover,
+footer #footerWrapper .footerContact a:hover {
   opacity: 100%;
 }
 footer #footerWrapper #tetrisEasteregg {

@@ -1,8 +1,36 @@
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
 
-const activeFilter = ref("procedural_art");
+const activeFilter = ref("Code");
+
+const projects = ref([
+  {
+    categories: ["Design", "Code"],
+    subTitle: "Design, Development",
+    title: "Project1",
+    currentProjectView: "/TestProject",
+    imagePath: "/src/assets/images/chicken.png",
+    tag: "procedural_art",
+    info: "This is a test Project",
+  },
+  {
+    categories: "Design",
+    subTitle: "Design",
+    title: "Project2",
+    currentProjectView: "/TestProject",
+    imagePath: "/src/assets/images/chicken.png",
+    tag: "coded_sound",
+    info: "This is another test Project",
+  },
+]);
+
+const filteredProjects = computed(() => {
+  if (!activeFilter.value) return projects.value;
+  return projects.value.filter((project) =>
+    project.categories.includes(activeFilter.value)
+  );
+});
 
 function updateActiveFilter(filter) {
   if (activeFilter.value === filter) {
@@ -15,16 +43,9 @@ function updateActiveFilter(filter) {
 
 <template>
   <nav class="projectNav">
-    <li id="listTitle">Project Filter:</li>
+    <li id="listTitle">Filter:</li>
     <li
-      v-for="filter in [
-        'procedural_art',
-        'coded_sound',
-        'tech_tutorials',
-        'web_development',
-        'different_designs',
-        'random_stuff',
-      ]"
+      v-for="filter in ['Code', 'Design', 'Tutorials']"
       :key="filter"
       :id="activeFilter === filter ? 'activeFilter' : ''"
       @click="updateActiveFilter(filter)"
@@ -45,38 +66,3 @@ function updateActiveFilter(filter) {
     />
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      projects: [
-        {
-          subTitle: "procedural_art",
-          title: "Project1",
-          currentProjectView: "/TestProject",
-          imagePath: "/src/assets/images/chicken.png",
-          tag: "procedural_art",
-          info: "This is a test Project",
-        },
-        {
-          subTitle: "project1 sub",
-          title: "Project2",
-          currentProjectView: "/TestProject",
-          imagePath: "/src/assets/images/chicken.png",
-          tag: "coded_sound",
-          info: "This is another test Project",
-        },
-      ],
-    };
-  },
-  computed: {
-    filteredProjects() {
-      if (!this.activeFilter) return this.projects;
-      return this.projects.filter(
-        (project) => project.tag === this.activeFilter
-      );
-    },
-  },
-};
-</script>
