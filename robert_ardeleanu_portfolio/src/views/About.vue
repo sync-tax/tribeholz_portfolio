@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 const isBackgroundVisible = ref(false);
 const isThingsVisible = ref(false);
-const isNyanVisible = ref(false);
+const isTechVisible = ref(false);
 </script>
 
 <template>
@@ -15,7 +15,7 @@ const isNyanVisible = ref(false);
       class="aboutPic"
     />
     <div class="aboutTextWrapper">
-      <h5>actually my name is...</h5>
+      <h5>hi, my name is...</h5>
       <h2>ROBERT ARDELEANU</h2>
       <p>
         I currently study Mediatechnology & Design (BA) at the unviersity of
@@ -81,19 +81,20 @@ const isNyanVisible = ref(false);
       </transition>
     </div>
     <div class="collapsibleWrapper">
-      <div class="collapspreview" @click="isNyanVisible = !isNyanVisible">
-        <h4>Nyan Nyan Nyan...</h4>
+      <div class="collapspreview" @click="isTechVisible = !isTechVisible">
+        <h4>Technologies</h4>
         <img
           src="../assets/images/plus-icon.svg"
           alt="Icon to Open a collapse section"
-          :class="{ rotated: isNyanVisible }"
+          :class="{ rotated: isTechVisible }"
         />
       </div>
       <transition name="ease-in">
-        <img src="#" alt="NYAN Cat GIF" v-if="isNyanVisible" />
-      </transition>
-      <transition name="ease-in">
-        <p v-if="isNyanVisible">Activate NYAN!</p>
+        <p v-if="isTechVisible">
+          - Audio: SonicPi, Ableton, Audacity <br />
+          - Visual: TouchDesigner, Blender, Affinity Suite, Figma<br />
+          - Coding: JS, Python, Ruby, Java<br />
+        </p>
       </transition>
     </div>
   </section>

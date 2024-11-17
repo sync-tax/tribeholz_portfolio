@@ -18,11 +18,23 @@ export function createScene() {
   });
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setClearColor(0x0f0f0f);
 
   renderer.render(scene, camera);
 
   pointLight.position.set(0, 4, 6);
-  
 
   return { scene, renderer, camera, pointLight, ambientLight }; // Export scene, camera, and light
+}
+
+export function createGeometry() {
+  const star = new THREE.Mesh(
+    new THREE.SphereGeometry(0.025),
+    new THREE.MeshStandardMaterial({
+      color: 0xffffff,
+      wireframe: true,
+    })
+  );
+
+  return { star };
 }

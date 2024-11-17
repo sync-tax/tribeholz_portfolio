@@ -19,14 +19,14 @@
       </RouterLink>
       <img
         src="../assets/images/darkmode_icon.svg"
-        alt="A moon icon; used to switch to darkmode."
+        alt="A moon icon - used to switch to darkmode."
         style="fill: white"
         class="modeSwitch"
         id="activeMode"
       />
       <img
         src="../assets/images/lightmode_icon.svg"
-        alt="A sun icon; used to switch to lightmode."
+        alt="A sun icon - used to switch to lightmode."
         class="modeSwitch"
         id="notactiveMode"
       />

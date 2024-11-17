@@ -27,8 +27,8 @@ canvas {
 body {
   max-width: 1280px;
   margin: 0 auto;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px solid #b3b3b3;
+  border-right: 1px solid #b3b3b3;
 }
 
 nav {
@@ -37,7 +37,7 @@ nav {
   align-items: center;
   padding-top: 8px;
   padding-bottom: 8px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #b3b3b3;
 }
 nav #logoImage {
   width: 35px;
@@ -62,7 +62,7 @@ nav ul .navLink:hover {
   opacity: 100%;
 }
 nav ul #lastNavLink {
-  border-right: 2px solid white;
+  border-right: 1px solid #b3b3b3;
   padding-right: 20px;
 }
 nav ul img {
@@ -94,7 +94,7 @@ footer #footerWrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  border-top: 1px solid white;
+  border-top: 1px solid #b3b3b3;
 }
 footer #footerWrapper #logoImage {
   margin-left: 15px;
@@ -177,35 +177,111 @@ footer #copyrightWrapper p {
 }
 
 .projectNav {
-  border: 1px solid white;
+  border: 1px solid #b3b3b3;
   display: flex;
-  justify-content: left;
-  padding: 10px 0;
+  justify-content: space-around;
+  height: 40px;
 }
 .projectNav li {
   cursor: pointer;
-  margin-right: 20px;
-  padding: 5px 20px;
-  border-radius: 25px;
-  background-color: #1c1c1c;
   list-style: none;
   text-align: center;
   color: white;
+  flex: 1;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b3b3b3;
+  font-size: 1.1rem;
 }
 .projectNav li:hover {
-  color: #181818;
-  background-color: white;
-  opacity: 80%;
-}
-.projectNav #listTitle {
-  border-radius: 0px;
-  background-color: rgba(0, 0, 0, 0);
-  font-size: large;
+  background-color: #181818;
 }
 .projectNav #activeFilter {
   color: #181818;
   background-color: white;
-  opacity: 80%;
+  opacity: 100%;
+  border: 1px solid white;
+}
+
+.projectListContainer .projectContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  width: 100%;
+}
+.projectListContainer .projectContainer .projectRightSection img {
+  border-radius: 25px;
+}
+.projectListContainer .projectContainer .projectLeftSection {
+  width: 30%;
+}
+.projectListContainer .projectContainer .projectLeftSection h4 {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.1rem;
+  opacity: 50%;
+  line-height: 0.5rem;
+  padding-left: 5px;
+}
+.projectListContainer .projectContainer .projectLeftSection h2 {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  font-variation-settings: "wdth" 125;
+  line-height: 98%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.projectListContainer .projectContainer .projectLeftSection .projectTags {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+.projectListContainer .projectContainer .projectLeftSection .projectTags p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #272727;
+  border-radius: 15px;
+}
+.projectListContainer .projectContainer .projectLeftSection .projectInfo {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  background-color: #272727;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.projectListContainer .projectContainer .projectLeftSection .projectRoute {
+  text-decoration: none;
+}
+.projectListContainer .projectContainer .projectLeftSection .projectRoute .projectLink {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 10px 20px 5px 20px;
+  margin-top: 20px;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  color: #121212;
+  opacity: 60%;
+}
+.projectListContainer .projectContainer .projectLeftSection .projectRoute .projectLink:hover {
+  opacity: 100%;
 }
 
 .aboutGeneral {
@@ -250,15 +326,14 @@ footer #copyrightWrapper p {
   font-weight: 600;
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: -moz-fit-content;
   width: fit-content;
   border: 1px solid lightgrey;
   border-radius: 15px;
-  padding: 15px 10px 10px 10px;
+  padding: 10px 20px 5px 20px;
   margin-top: 20px;
   text-align: center;
-  text-decoration: none;
   color: white;
 }
 .aboutGeneral .aboutTextWrapper a:hover {

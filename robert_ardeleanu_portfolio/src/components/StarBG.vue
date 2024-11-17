@@ -1,8 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import * as THREE from "three";
-import { createScene } from "../js/scene.js";
-import { createGeometry } from "../js/geometry.js";
+import { createScene, createGeometry } from "../js/scene.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 onMounted(() => {
