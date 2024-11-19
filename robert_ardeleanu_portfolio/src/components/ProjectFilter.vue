@@ -71,7 +71,7 @@ const projects = ref([
   {
     categories: ["FUNSTUFF", "CODE"],
     subTitle: "Coded Sound",
-    title: "ChaoticAlgorithms",
+    title: "Chaotic Algorithms",
     currentProjectView: "/TestProject",
     imagePath: "/src/assets/images/chicken.png",
     tag: ["#SonicPi", "#Ableton"],

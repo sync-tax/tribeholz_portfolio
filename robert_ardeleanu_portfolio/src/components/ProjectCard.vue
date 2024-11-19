@@ -27,11 +27,13 @@ defineProps({
       </RouterLink>
     </div>
     <div class="projectRightSection">
-      <img
-        :src="imagePath"
-        alt="Image of the current project card."
-        width="500px"
-      />
+      <RouterLink :to="currentProjectView" class="projectRouteIMG">
+        <img
+          :src="imagePath"
+          alt="Image of the current project card."
+          width="500px"
+        />
+      </RouterLink>
     </div>
   </div>
 </template>

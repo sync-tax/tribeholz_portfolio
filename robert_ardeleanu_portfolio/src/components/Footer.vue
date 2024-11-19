@@ -10,7 +10,6 @@ function showNyanButton() {
 <template>
   <div class="footer">
     <div class="footerWrapper">
-      <img src="../assets/images/logo_dark.png" alt="Logo" id="logoImage" />
       <div class="footerSocials">
         <h4>Socials</h4>
         <a href="https://www.youtube.com/@tribeholz23" target="_blank"
@@ -23,13 +22,13 @@ function showNyanButton() {
       </div>
       <div class="footerContact">
         <h4>Contact</h4>
-        <a href="mailto:robert.ardeleanu.0607@gmail.com" target="_blank"
-          >E-Mail</a
-        >
         <a
           href="https://www.linkedin.com/in/robert-arbeitsloser-7271a71b2/"
           target="_blank"
           >LinkedIn</a
+        >
+        <a href="mailto:robert.ardeleanu.0607@gmail.com" target="_blank"
+          >E-Mail</a
         >
       </div>
       <div class="footerExtra">
@@ -50,21 +49,21 @@ function showNyanButton() {
       </div>
     </div>
     <div id="copyrightWrapper">
-      <RouterLink to="/Tetris" class="navLink" id="tetrisEasteregg">
+      <!-- <RouterLink to="/Tetris" class="navLink" id="tetrisEasteregg">
         <img
           src="../assets/images/tetris_icon_dark.png"
           alt="Entry to an easteregg"
           style="opacity: 100%"
         />
-      </RouterLink>
+      </RouterLink> -->
       <p>&copy; 2024 Robert Ardeleanu - All Rights Reserved</p>
-      <RouterLink to="/Tetris" class="navLink" id="tetrisEasteregg">
+      <!-- <RouterLink to="/Tetris" class="navLink" id="tetrisEasteregg">
         <img
           src="../assets/images/tetris_icon_dark.png"
           alt="Entry to an easteregg"
           style="opacity: 100%"
         />
-      </RouterLink>
+      </RouterLink> -->
     </div>
   </div>
 </template>
