@@ -15,16 +15,11 @@ In terms of the Hypermedia class at the university of applied sciences Hagenberg
 - [x] Filter Logic
 - [x] Collapsable sections
 - [x] Project Overview
-- [ ] Single Project View
+- [x] Single Project View
 - [ ] Light & Dark coloring (CSS variables -> toggle)
-- [ ] Njan Cat Easteregg
-
-### Content Todo's
-
-- [x] Vectorize Icons
-- [x] Decide on Projects
-- [ ] Thumbnails
+- [x] Njan Cat Easteregg
 
 ### Canceled (for now)
 
 - Multilayered Filtering (maybe relevant as the amount of projects)
+- Project Content (will be added continiously step by step)

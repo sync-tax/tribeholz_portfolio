@@ -53,5 +53,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <canvas id="starHeader"> </canvas>
+  <div class="canvaswrapper">
+    <canvas id="starHeader"> </canvas>
+  </div>
 </template>

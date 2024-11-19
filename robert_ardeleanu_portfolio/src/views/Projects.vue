@@ -4,8 +4,10 @@ import ProjectFilter from "../components/ProjectFilter.vue";
 </script>
 
 <template>
-  <Hero/>
-  <ProjectFilter/>
+  <div class="projectsWrapper">
+    <Hero />
+    <ProjectFilter />
+  </div>
 </template>
 
 <style scoped></style>

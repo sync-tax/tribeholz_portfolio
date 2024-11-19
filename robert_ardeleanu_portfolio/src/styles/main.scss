@@ -158,9 +158,9 @@ nav {
 }
 
 //Footer
-footer {
+.footer {
   margin-top: 80px;
-  #footerWrapper {
+  .footerWrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
@@ -325,22 +325,28 @@ footer {
 
 //Projects Overview
 .projectListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .projectContainer {
     display: flex;
     justify-content: space-around;
 
-    margin-top: 80px;
+    padding-top: 60px;
 
-    width: 100%;
+    width: 90%;
 
     .projectRightSection {
+      display: flex;
+      justify-content: right;
       img {
         border-radius: 25px;
-        width: 400px;
+        max-width: 75%;
+        height: auto;
       }
     }
     .projectLeftSection {
-      width: 30%;
+      width: 35%;
       h4 {
         @include subtitles-font();
         font-size: 1.1rem;
@@ -366,7 +372,7 @@ footer {
 
         p {
           @include text-font();
-          font-size: 1rem;
+          font-size: 0.9rem;
 
           margin-right: 10px;
           padding: 5px 10px;
@@ -537,7 +543,7 @@ footer {
 
   a {
     @include subtitles-font();
-    font-size: 2rem;
+    font-size: 1.4rem;
 
     border: 1px solid lightgrey;
     border-radius: 15px;
@@ -556,13 +562,93 @@ footer {
   }
 }
 
+//ChickenFarm
+.chickenFarm {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 0 auto;
+
+  flex-direction: column;
+  width: 80%;
+
+  .chickenHeader {
+    margin-top: 50px;
+    h1 {
+      @include titles-font();
+      line-height: 98%;
+
+      margin-top: 15px;
+      font-size: 1.9rem;
+    }
+
+    h5 {
+      @include subtitles-font();
+      font-size: 1rem;
+      opacity: 50%;
+      line-height: 0.5rem;
+    }
+
+    p {
+      @include text-font();
+      font-size: 1.1rem;
+    }
+  }
+
+  .chickenBtnContainer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+
+    margin: 0 auto;
+    button {
+      background: none;
+      cursor: pointer;
+
+      @include subtitles-font();
+      font-size: 1.1rem;
+      width: fit-content;
+
+      border-radius: 15px;
+
+      padding: 10px 20px 5px 20px;
+      margin-top: 20px;
+
+      background-color: white;
+      text-align: center;
+      text-decoration: none;
+      color: #121212;
+
+      opacity: 60%;
+
+      &:hover {
+        opacity: 100%;
+      }
+    }
+  }
+
+  .chickenImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    margin-top: 25px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// Nyan Cat
 .flyingCat {
   overflow: hidden;
   position: fixed;
   top: 40%;
   left: -300px;
 }
-
 .flyAnim {
   animation: fly 3s linear; /* 5 seconds duration, linear timing, infinite repeats */
 }

@@ -114,26 +114,28 @@ function updateActiveFilter(filter) {
 </script>
 
 <template>
-  <div class="projectNav">
-    <li
-      v-for="filter in ['CODE', 'DESIGN', 'TUTORIALS', 'FUNSTUFF']"
-      :key="filter"
-      :id="activeFilter === filter ? 'activeFilter' : ''"
-      @click="updateActiveFilter(filter)"
-    >
-      {{ filter }}
-    </li>
-  </div>
-  <div class="projectListContainer">
-    <ProjectCard
-      v-for="project in filteredProjects"
-      :key="project.title"
-      :subTitle="project.subTitle"
-      :projectTitle="project.title"
-      :currentProjectView="project.currentProjectView"
-      :imagePath="project.imagePath"
-      :projectTags="project.tag"
-      :projectInfo="project.info"
-    />
+  <div class="projectsWrapper">
+    <div class="projectNav">
+      <li
+        v-for="filter in ['CODE', 'DESIGN', 'TUTORIALS', 'FUNSTUFF']"
+        :key="filter"
+        :id="activeFilter === filter ? 'activeFilter' : ''"
+        @click="updateActiveFilter(filter)"
+      >
+        {{ filter }}
+      </li>
+    </div>
+    <div class="projectListContainer">
+      <ProjectCard
+        v-for="project in filteredProjects"
+        :key="project.title"
+        :subTitle="project.subTitle"
+        :projectTitle="project.title"
+        :currentProjectView="project.currentProjectView"
+        :imagePath="project.imagePath"
+        :projectTags="project.tag"
+        :projectInfo="project.info"
+      />
+    </div>
   </div>
 </template>

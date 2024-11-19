@@ -8,8 +8,8 @@ function showNyanButton() {
 </script>
 
 <template>
-  <footer>
-    <div id="footerWrapper">
+  <div class="footer">
+    <div class="footerWrapper">
       <img src="../assets/images/logo_dark.png" alt="Logo" id="logoImage" />
       <div class="footerSocials">
         <h4>Socials</h4>
@@ -66,5 +66,5 @@ function showNyanButton() {
         />
       </RouterLink>
     </div>
-  </footer>
+  </div>
 </template>

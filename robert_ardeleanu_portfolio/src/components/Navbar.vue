@@ -24,15 +24,15 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flyingCat" style="z-index: 5000" ref="nyanCat">
-    <img
-      src="../assets/images/flying_nyan.gif"
-      alt="Nyan Cat flying over screen"
-      width="270px"
-    />
-  </div>
-
   <nav class="mainNavigation">
+    <div class="flyingCat" style="z-index: 5000" ref="nyanCat">
+      <img
+        src="../assets/images/flying_nyan.gif"
+        alt="Nyan Cat flying over screen"
+        width="270px"
+      />
+    </div>
+
     <img
       src="../assets/images/logo_dark.png"
       alt="A monochrome logo resembling tree rings."

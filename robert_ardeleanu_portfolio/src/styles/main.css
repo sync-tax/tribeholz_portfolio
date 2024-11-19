@@ -106,22 +106,22 @@ nav ul #notactiveMode:hover {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
 
-footer {
+.footer {
   margin-top: 80px;
 }
-footer #footerWrapper {
+.footer .footerWrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
   border-top: 1px solid #b3b3b3;
 }
-footer #footerWrapper #logoImage {
+.footer .footerWrapper #logoImage {
   margin-left: 15px;
   width: 35px;
   height: 35px;
   opacity: 100%;
 }
-footer #footerWrapper img {
+.footer .footerWrapper img {
   cursor: pointer;
   color: white;
   opacity: 30%;
@@ -129,67 +129,67 @@ footer #footerWrapper img {
   height: 25px;
   margin-right: 15px;
 }
-footer #footerWrapper img:hover {
+.footer .footerWrapper img:hover {
   opacity: 100%;
 }
-footer #footerWrapper .footerExtra {
+.footer .footerWrapper .footerExtra {
   margin-right: 20px;
 }
-footer #footerWrapper .footerExtra p {
+.footer .footerWrapper .footerExtra p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 1.2rem;
   font-size: 1rem;
 }
-footer #footerWrapper .footerExtra .nyanUnlock {
+.footer .footerWrapper .footerExtra .nyanUnlock {
   font-size: 0.9rem;
   cursor: pointer;
   opacity: 60%;
 }
-footer #footerWrapper .footerExtra .nyanUnlock:hover {
+.footer .footerWrapper .footerExtra .nyanUnlock:hover {
   opacity: 100%;
 }
-footer #footerWrapper .footerExtra #activeMode {
+.footer .footerWrapper .footerExtra #activeMode {
   opacity: 100%;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
-footer #footerWrapper .footerExtra #notactiveMode {
+.footer .footerWrapper .footerExtra #notactiveMode {
   opacity: 30%;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
-footer #footerWrapper .footerExtra #notactiveMode:hover {
+.footer .footerWrapper .footerExtra #notactiveMode:hover {
   opacity: 100%;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
-footer #footerWrapper .footerSocials,
-footer #footerWrapper .footerContact {
+.footer .footerWrapper .footerSocials,
+.footer .footerWrapper .footerContact {
   display: flex;
   flex-direction: column;
 }
-footer #footerWrapper .footerSocials h4,
-footer #footerWrapper .footerContact h4 {
+.footer .footerWrapper .footerSocials h4,
+.footer .footerWrapper .footerContact h4 {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
   font-size: 1.2rem;
 }
-footer #footerWrapper .footerSocials a,
-footer #footerWrapper .footerContact a {
+.footer .footerWrapper .footerSocials a,
+.footer .footerWrapper .footerContact a {
   text-decoration: none;
   color: white;
   opacity: 50%;
   font-size: 1.1rem;
 }
-footer #footerWrapper .footerSocials a:hover,
-footer #footerWrapper .footerContact a:hover {
+.footer .footerWrapper .footerSocials a:hover,
+.footer .footerWrapper .footerContact a:hover {
   opacity: 100%;
 }
-footer #footerWrapper #tetrisEasteregg {
+.footer .footerWrapper #tetrisEasteregg {
   opacity: 100%;
 }
-footer #copyrightWrapper {
+.footer #copyrightWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -198,12 +198,12 @@ footer #copyrightWrapper {
   margin-top: 20px;
   padding-left: 10px;
 }
-footer #copyrightWrapper img {
+.footer #copyrightWrapper img {
   width: 25px;
   height: 25px;
   margin-right: 15px;
 }
-footer #copyrightWrapper p {
+.footer #copyrightWrapper p {
   color: black;
 }
 
@@ -239,18 +239,28 @@ footer #copyrightWrapper p {
   border: 1px solid white;
 }
 
+.projectListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .projectListContainer .projectContainer {
   display: flex;
   justify-content: space-around;
-  margin-top: 80px;
-  width: 100%;
+  padding-top: 60px;
+  width: 90%;
+}
+.projectListContainer .projectContainer .projectRightSection {
+  display: flex;
+  justify-content: right;
 }
 .projectListContainer .projectContainer .projectRightSection img {
   border-radius: 25px;
-  width: 400px;
+  max-width: 75%;
+  height: auto;
 }
 .projectListContainer .projectContainer .projectLeftSection {
-  width: 30%;
+  width: 35%;
 }
 .projectListContainer .projectContainer .projectLeftSection h4 {
   font-family: "Anek Devanagari", sans-serif;
@@ -282,7 +292,7 @@ footer #copyrightWrapper p {
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 1.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-right: 10px;
   padding: 5px 10px;
   background-color: #272727;
@@ -442,7 +452,7 @@ footer #copyrightWrapper p {
   font-weight: 600;
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
-  font-size: 2rem;
+  font-size: 1.4rem;
   border: 1px solid lightgrey;
   border-radius: 15px;
   padding: 15px 180px 10px 180px;
@@ -454,6 +464,81 @@ footer #copyrightWrapper p {
 .linkContainer a:hover {
   background-color: white;
   color: #181818;
+}
+
+.chickenFarm {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 80%;
+}
+.chickenFarm .chickenHeader {
+  margin-top: 50px;
+}
+.chickenFarm .chickenHeader h1 {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  font-variation-settings: "wdth" 125;
+  line-height: 98%;
+  margin-top: 15px;
+  font-size: 1.9rem;
+}
+.chickenFarm .chickenHeader h5 {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+  font-size: 1rem;
+  opacity: 50%;
+  line-height: 0.5rem;
+}
+.chickenFarm .chickenHeader p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+.chickenFarm .chickenBtnContainer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+}
+.chickenFarm .chickenBtnContainer button {
+  background: none;
+  cursor: pointer;
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 10px 20px 5px 20px;
+  margin-top: 20px;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  color: #121212;
+  opacity: 60%;
+}
+.chickenFarm .chickenBtnContainer button:hover {
+  opacity: 100%;
+}
+.chickenFarm .chickenImages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 25px;
+}
+.chickenFarm .chickenImages img {
+  max-width: 100%;
+  height: auto;
 }
 
 .flyingCat {
