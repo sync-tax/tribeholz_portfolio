@@ -15,29 +15,46 @@
   color: white;
 }
 
-canvas {
-  position: fixed;
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-left: 1px solid #b3b3b3;
+  border-right: 1px solid #b3b3b3;
+  background-color: #0f0f0f;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.headerContainer canvas {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1000;
+  z-index: 1;
 }
-
-body {
-  max-width: 1280px;
-  margin: 0 auto;
-  border-left: 1px solid #b3b3b3;
-  border-right: 1px solid #b3b3b3;
+.headerContainer img {
+  max-width: 100%;
+  z-index: 2;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  height: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   border-bottom: 1px solid #b3b3b3;
+  background: #0f0f0f;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 nav #logoImage {
   width: 35px;
@@ -57,6 +74,7 @@ nav ul .navLink {
   text-decoration: none;
   color: white;
   opacity: 40%;
+  margin-top: 5px;
 }
 nav ul .navLink:hover {
   opacity: 100%;
@@ -65,13 +83,14 @@ nav ul #lastNavLink {
   border-right: 1px solid #b3b3b3;
   padding-right: 20px;
 }
-nav ul img {
+nav ul .modeSwitch {
   cursor: pointer;
   margin-right: 20px;
+  margin-top: 3px;
   width: 25px;
   height: 25px;
 }
-nav ul img:hover {
+nav ul .modeSwitch:hover {
   opacity: 100%;
 }
 nav ul #activeMode {
@@ -117,7 +136,19 @@ footer #footerWrapper .footerExtra {
   margin-right: 20px;
 }
 footer #footerWrapper .footerExtra p {
-  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-size: 1rem;
+}
+footer #footerWrapper .footerExtra .nyanUnlock {
+  font-size: 0.9rem;
+  cursor: pointer;
+  opacity: 60%;
+}
+footer #footerWrapper .footerExtra .nyanUnlock:hover {
+  opacity: 100%;
 }
 footer #footerWrapper .footerExtra #activeMode {
   opacity: 100%;
@@ -180,7 +211,10 @@ footer #copyrightWrapper p {
   border: 1px solid #b3b3b3;
   display: flex;
   justify-content: space-around;
-  height: 40px;
+  position: sticky;
+  bottom: 0px;
+  z-index: 9;
+  background-color: #0f0f0f;
 }
 .projectNav li {
   cursor: pointer;
@@ -188,7 +222,7 @@ footer #copyrightWrapper p {
   text-align: center;
   color: white;
   flex: 1;
-  height: 40px;
+  padding: 1px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,6 +247,7 @@ footer #copyrightWrapper p {
 }
 .projectListContainer .projectContainer .projectRightSection img {
   border-radius: 25px;
+  width: 400px;
 }
 .projectListContainer .projectContainer .projectLeftSection {
   width: 30%;
@@ -232,6 +267,7 @@ footer #copyrightWrapper p {
   font-weight: 800;
   font-size: 3rem;
   font-variation-settings: "wdth" 125;
+  font-size: 2.5rem;
   line-height: 98%;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -246,6 +282,7 @@ footer #copyrightWrapper p {
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 1.2rem;
+  font-size: 1rem;
   margin-right: 10px;
   padding: 5px 10px;
   background-color: #272727;
@@ -256,6 +293,7 @@ footer #copyrightWrapper p {
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 1.2rem;
+  font-size: 1rem;
   background-color: #272727;
   padding: 5px 10px;
   border-radius: 15px;
@@ -302,13 +340,16 @@ footer #copyrightWrapper p {
   font-weight: 800;
   font-size: 3rem;
   font-variation-settings: "wdth" 125;
+  line-height: 98%;
+  margin-top: 15px;
+  font-size: 1.9rem;
 }
 .aboutGeneral .aboutTextWrapper h5 {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: 50%;
   line-height: 0.5rem;
 }
@@ -317,6 +358,7 @@ footer #copyrightWrapper p {
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .aboutGeneral .aboutTextWrapper span {
   opacity: 40%;
@@ -329,16 +371,17 @@ footer #copyrightWrapper p {
   font-size: 1.1rem;
   width: -moz-fit-content;
   width: fit-content;
-  border: 1px solid lightgrey;
   border-radius: 15px;
   padding: 10px 20px 5px 20px;
   margin-top: 20px;
+  background-color: white;
   text-align: center;
-  color: white;
+  text-decoration: none;
+  color: #121212;
+  opacity: 60%;
 }
 .aboutGeneral .aboutTextWrapper a:hover {
-  background-color: white;
-  color: black;
+  opacity: 100%;
 }
 
 .aboutDetails {
@@ -356,6 +399,7 @@ footer #copyrightWrapper p {
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-bottom: 20px;
 }
 .aboutDetails .collapsibleWrapper .collapspreview {
@@ -381,6 +425,7 @@ footer #copyrightWrapper p {
   font-weight: 600;
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
+  font-size: 1.4rem;
 }
 
 .linkContainer {
@@ -409,4 +454,36 @@ footer #copyrightWrapper p {
 .linkContainer a:hover {
   background-color: white;
   color: #181818;
+}
+
+.flyingCat {
+  overflow: hidden;
+  position: fixed;
+  top: 40%;
+  left: -300px;
+}
+
+.flyAnim {
+  animation: fly 3s linear; /* 5 seconds duration, linear timing, infinite repeats */
+}
+
+#nyan {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  margin-right: 20px;
+  opacity: 0%;
+  pointer-events: none;
+}
+#nyan:hover {
+  opacity: 90%;
+}
+
+@keyframes fly {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 105vw;
+  }
 }/*# sourceMappingURL=main.css.map */

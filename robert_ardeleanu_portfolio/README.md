@@ -21,7 +21,7 @@ In terms of the Hypermedia class at the university of applied sciences Hagenberg
 
 ### Content Todo's
 
-- [ ] Vectorize Icons
+- [x] Vectorize Icons
 - [x] Decide on Projects
 - [ ] Thumbnails
 

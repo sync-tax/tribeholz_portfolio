@@ -42,12 +42,14 @@ const isTechVisible = ref(false);
       <transition name="ease-in">
         <p v-if="isBackgroundVisible">
           I was born in Romania, in a small city - also known as Hackerville. So
-          you could say I was destined to become a tech nerd... lol
+          you could say I was destined to become a tech nerd*lol* ... well,
+          nope.
           <br />
-          ...Actually it took me quite a while to figure out my path. I've
-          always had diverse interests and hobbies, and I'm glad I took my time
-          exploring them. Looking back, I can see how those passions led me to
-          the perfect place - where creativity and technology intersect.
+          <br />
+          Actually it took me quite a while to figure out my path but I'm glad I
+          took my time to explore different hobbies. Looking back, I can see how
+          those passions led me to the perfect place - where creativity and
+          technology intersect.
         </p>
       </transition>
     </div>
@@ -66,17 +68,14 @@ const isTechVisible = ref(false);
           relationships, and especially in my cats (who are essentially my
           children lol).
           <br />
-          While I'm a sociable person, I also enjoy having time for myself,
-          which allows me to delve into various subjects that facinate me. My
-          hobbies are: <br />
           <br />
 
-          - Generating visual art with TouchDesigner and algorithmic sounds with
-          Sonic Pi. <br />
-          - Creating YouTube videos about tech topics. <br />
+          - Making visual art with TouchDesigner and other Tech. <br />
+          - Composing algorithmic sound with SonicPi. <br />
+          - Creating YouTube videos about nerdy stuff. <br />
           - Drawing, screenprinting, and designing. <br />
-          - Immersing myself into fantasy worlds and dancing to bouncy tekno
-          music. <br />
+          - Dancing to bouncy tekno music. <br />
+          - Playing good games.
         </p>
       </transition>
     </div>

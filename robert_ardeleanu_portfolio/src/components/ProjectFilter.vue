@@ -53,7 +53,7 @@ const projects = ref([
   {
     categories: ["DESIGN", "CODE"],
     subTitle: "Web-Portfolio",
-    title: "ARRO",
+    title: "TRIBΞHOLZ",
     currentProjectView: "/TestProject",
     imagePath: "/src/assets/images/chicken.png",
     tag: ["#Vue", "#THREE", "#SASS", "#Figma"],
@@ -114,7 +114,7 @@ function updateActiveFilter(filter) {
 </script>
 
 <template>
-  <nav class="projectNav">
+  <div class="projectNav">
     <li
       v-for="filter in ['CODE', 'DESIGN', 'TUTORIALS', 'FUNSTUFF']"
       :key="filter"
@@ -123,7 +123,7 @@ function updateActiveFilter(filter) {
     >
       {{ filter }}
     </li>
-  </nav>
+  </div>
   <div class="projectListContainer">
     <ProjectCard
       v-for="project in filteredProjects"

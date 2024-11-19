@@ -1,13 +1,49 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted } from "vue";
+
+const nyanCat = ref(null);
+
+onMounted(() => {
+  const nyanButton = document.getElementById("nyan");
+  if (nyanButton) {
+    nyanButton.addEventListener("click", () => {
+      if (nyanCat.value) {
+        nyanCat.value.classList.add("flyAnim");
+        // Optionally remove the class after the animation completes
+        nyanCat.value.addEventListener(
+          "animationend",
+          () => {
+            nyanCat.value.classList.remove("flyAnim");
+          },
+          { once: true }
+        ); // Use { once: true } to remove the listener after one execution
+      }
+    });
+  }
+});
+</script>
 
 <template>
-  <nav>
+  <div class="flyingCat" style="z-index: 5000" ref="nyanCat">
+    <img
+      src="../assets/images/flying_nyan.gif"
+      alt="Nyan Cat flying over screen"
+      width="270px"
+    />
+  </div>
+
+  <nav class="mainNavigation">
     <img
       src="../assets/images/logo_dark.png"
       alt="A monochrome logo resembling tree rings."
       id="logoImage"
     />
     <ul>
+      <img
+        src="../assets/images/nyan_button.png"
+        alt="A moon icon - used to switch to darkmode."
+        id="nyan"
+      />
       <RouterLink to="/" class="navLink">
         <li>PROJECTS</li>
       </RouterLink>

@@ -16,8 +16,9 @@ export function createScene() {
   const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector("#starHeader"),
   });
+
   renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(1000, window.innerHeight);
   renderer.setClearColor(0x0f0f0f);
 
   renderer.render(scene, camera);

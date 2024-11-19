@@ -1,4 +1,11 @@
-<script setup></script>
+<script setup>
+function showNyanButton() {
+  const nyanButton = document.getElementById("nyan");
+
+  nyanButton.style.opacity = "60%";
+  nyanButton.style.pointerEvents = "all";
+}
+</script>
 
 <template>
   <footer>
@@ -38,7 +45,8 @@
             id="notactiveMode"
           />
         </div>
-        <p>made with ♡ and a whole lot of coffee : ]</p>
+        <p>made with ♡ and a whole lot of coffee^^</p>
+        <p class="nyanUnlock" @click="showNyanButton">CLICK2UNLOCK NYAN!</p>
       </div>
     </div>
     <div id="copyrightWrapper">
