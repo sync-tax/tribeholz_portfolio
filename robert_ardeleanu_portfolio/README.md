@@ -1,25 +1,20 @@
-### Personal portfolio of Robert Ardeleanu (TRIBΞHOLZ)
+### Instructions
 
-In terms of the Hypermedia class at the university of applied sciences Hagenberg, I set myself the challenge to build my portfolio as a SPA using Vue.js.
+Um die Seite zu öffnen müssen zuerst die dependencies installiert werden. (Node & NPM muss installiert sein)
 
-- Vue.js
-- THREE.js
-- SASS
+```
+// In den root folder navigieren
+cd robert_ardeleanu_portfolio
+// Dependencies installieren
+npm install
+//LocalHost Setup
+npm run dev
+```
 
-- Vite.js (Build)
-- Netlify (Deployment)
-
-### Functional Todo's
-
-- [x] Scoped CSS -> SASS (cuz its getting messy)
-- [x] Filter Logic
-- [x] Collapsable sections
-- [x] Project Overview
-- [x] Single Project View
-- [ ] Light & Dark coloring (CSS variables -> toggle)
-- [x] Njan Cat Easteregg
+Nun ist die Seite im localhost einsehbar.
 
 ### Canceled (for now)
 
-- Multilayered Filtering (maybe relevant as the amount of projects)
-- Project Content (will be added continiously step by step)
+- Multilayered Filtering (Wahrscheinlich erst bei mehreren Projekten sinnvoll)
+- Light-Mode (Geht sich vor der Abgabe nicht aus weil ich darauf vergessen habe bei der Farbgebung gleich mit CSS variablen zu arbeiten)
+- Project Content (Wird Step bei Step noch eingearbeitet)

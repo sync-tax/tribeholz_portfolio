@@ -61,6 +61,7 @@ onMounted(() => {
         id="activeMode"
       />
       <img
+        title="Wait. This is illegal."
         src="../assets/images/lightmode_icon.svg"
         alt="A sun icon - used to switch to lightmode."
         class="modeSwitch"

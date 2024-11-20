@@ -39,13 +39,14 @@ function showNyanButton() {
             id="activeMode"
           />
           <img
+            title="Wait. This is illegal."
             src="../assets/images/lightmode_icon.svg"
             alt="A sun icon; used to switch to lightmode. "
             id="notactiveMode"
           />
         </div>
         <p>made with ♡ and a whole lot of coffee^^</p>
-        <p class="nyanUnlock" @click="showNyanButton">CLICK2UNLOCK NYAN!</p>
+        <p class="nyanUnlock" @click="showNyanButton">UNLOCK NYAN!</p>
       </div>
     </div>
     <div id="copyrightWrapper">

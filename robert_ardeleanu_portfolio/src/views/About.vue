@@ -4,6 +4,7 @@ import { ref } from "vue";
 const isBackgroundVisible = ref(false);
 const isThingsVisible = ref(false);
 const isTechVisible = ref(false);
+const portfolioIsVisible = ref(false);
 </script>
 
 <template>
@@ -23,7 +24,14 @@ const isTechVisible = ref(false);
           applied sciences @ Campus Hagenberg. <br />
           <span>Linz, Upper Austria</span>
         </p>
-        <a href="#CV">Portfolio (PDF)</a>
+        <a href="#Portfoliooo" @click="portfolioIsVisible = !portfolioIsVisible"
+          >Portfolio (PDF)</a
+        >
+        <transition name="ease-in">
+          <p v-if="portfolioIsVisible" id="homeworkMsg">
+            Haven't done the homework yet ^^
+          </p>
+        </transition>
       </div>
     </section>
 

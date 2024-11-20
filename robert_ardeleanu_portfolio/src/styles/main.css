@@ -126,10 +126,6 @@ nav ul #notactiveMode {
   opacity: 30%;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
-nav ul #notactiveMode:hover {
-  opacity: 100%;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
-}
 
 .footer {
   margin-top: 80px;
@@ -227,10 +223,6 @@ nav ul #notactiveMode:hover {
 }
 .footer .footerWrapper .footerExtra #notactiveMode {
   opacity: 30%;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
-}
-.footer .footerWrapper .footerExtra #notactiveMode:hover {
-  opacity: 100%;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
 .footer .footerWrapper .footerSocials,
@@ -548,6 +540,19 @@ nav ul #notactiveMode:hover {
   font-size: 1.2rem;
   font-size: 1.1rem;
 }
+.aboutGeneral .aboutTextWrapper #homeworkMsg {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  background-color: rgb(182, 0, 0);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5px;
+}
 .aboutGeneral .aboutTextWrapper span {
   opacity: 40%;
 }
@@ -765,6 +770,99 @@ nav ul #notactiveMode:hover {
   .chickenFarm .chickenImages img {
     margin: 0 auto;
   }
+}
+
+.chickenHeaderTwo {
+  margin: 40px auto;
+  width: 80%;
+}
+.chickenHeaderTwo h1 {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  font-variation-settings: "wdth" 125;
+  line-height: 98%;
+  margin-top: 15px;
+  font-size: 1.9rem;
+}
+.chickenHeaderTwo h5 {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+  font-size: 1rem;
+  opacity: 50%;
+  line-height: 0.5rem;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.formContainer #voidMsg {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  background-color: rgb(182, 0, 0);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5px;
+}
+.formContainer label {
+  display: block;
+  margin-bottom: 5px;
+}
+.formContainer input[type=text],
+.formContainer input[type=email],
+.formContainer textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #0c0c0c;
+}
+.formContainer textarea {
+  height: 100px;
+}
+.formContainer button {
+  background: none;
+  cursor: pointer;
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 10px 20px 5px 20px;
+  margin-top: 20px;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  color: #121212;
+  opacity: 60%;
+}
+@media (max-width: 720px) {
+  .formContainer button {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 450px) {
+  .formContainer button {
+    font-size: 0.85rem;
+  }
+}
+.formContainer button:hover {
+  opacity: 100%;
 }
 
 .flyingCat {
