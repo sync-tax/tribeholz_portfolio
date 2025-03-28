@@ -2,7 +2,6 @@
 import { ref, onMounted } from "vue";
 import * as THREE from "three";
 import { createScene, createGeometry } from "../js/scene.js";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 onMounted(() => {
   const { scene, renderer, camera, ambientLight } = createScene();
@@ -10,7 +9,12 @@ onMounted(() => {
   const target = new THREE.Vector3(0, 0, 0);
   const radius = 80;
 
-  //const controls = new OrbitControls(camera, renderer.domElement);
+  function addCenterpiece() {
+    const { centerPiece } = createGeometry();
+
+    centerPiece.position.set(0.5, 0.5);
+    scene.add(centerPiece);
+  }
 
   function addStars() {
     const { star } = createGeometry();
@@ -23,7 +27,9 @@ onMounted(() => {
     star.rotation.z = z * -0.1;
     scene.add(star);
   }
+
   Array(400).fill().forEach(addStars);
+  //addCenterpiece();
 
   scene.add(ambientLight);
 
@@ -43,7 +49,6 @@ onMounted(() => {
     camera.position.z = target.z + Math.cos(angle) * radius;
 
     camera.lookAt(target);
-    //controls.update();
 
     renderer.render(scene, camera);
   }

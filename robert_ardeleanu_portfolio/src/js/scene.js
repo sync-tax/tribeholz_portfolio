@@ -18,7 +18,7 @@ export function createScene() {
   });
 
   renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(1000, window.innerHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setClearColor(0x0f0f0f);
 
   renderer.render(scene, camera);
@@ -30,12 +30,29 @@ export function createScene() {
 
 export function createGeometry() {
   const star = new THREE.Mesh(
-    new THREE.SphereGeometry(0.025),
+    new THREE.SphereGeometry(0.03),
     new THREE.MeshStandardMaterial({
       color: 0xffffff,
-      wireframe: true,
+      wireframe: false,
     })
   );
 
-  return { star };
+  /*   const video = document.createElement("video");
+  video.src = "/public/test.mp4";
+  video.loop = true;
+  video.muted = true;
+  video.play(); 
+
+  const videoTexture = new THREE.VideoTexture(video);*/
+
+  const centerPiece = new THREE.Mesh(
+    new THREE.SphereGeometry(5),
+    new THREE.MeshStandardMaterial({
+      //map: videoTexture,
+      wireframe: true,
+      color: 0xffffff,
+    })
+  );
+
+  return { star, centerPiece };
 }

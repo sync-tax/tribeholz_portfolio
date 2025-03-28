@@ -38,12 +38,8 @@ onMounted(() => {
       alt="A monochrome logo resembling tree rings."
       id="logoImage"
     />
+
     <ul>
-      <img
-        src="../assets/images/nyan_button.png"
-        alt="A moon icon - used to switch to darkmode."
-        id="nyan"
-      />
       <RouterLink to="/" class="navLink">
         <li>PROJECTS</li>
       </RouterLink>
@@ -54,6 +50,11 @@ onMounted(() => {
         <li id="lastNavLink">LINK.TREE</li>
       </RouterLink>
       <img
+        src="../assets/images/nyan_button.png"
+        alt="A moon icon - used to switch to darkmode."
+        id="nyan"
+      />
+      <!-- <img
         src="../assets/images/darkmode_icon.svg"
         alt="A moon icon - used to switch to darkmode."
         style="fill: white"
@@ -66,7 +67,7 @@ onMounted(() => {
         alt="A sun icon - used to switch to lightmode."
         class="modeSwitch"
         id="notactiveMode"
-      />
+      /> -->
     </ul>
   </nav>
 </template>

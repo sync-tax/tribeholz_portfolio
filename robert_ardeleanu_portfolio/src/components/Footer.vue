@@ -3,6 +3,8 @@ function showNyanButton() {
   const nyanButton = document.getElementById("nyan");
 
   nyanButton.style.opacity = "60%";
+  nyanButton.style.width = "35px";
+  nyanButton.style.height = "35px";
   nyanButton.style.pointerEvents = "all";
 }
 </script>
@@ -32,7 +34,7 @@ function showNyanButton() {
         >
       </div>
       <div class="footerExtra">
-        <div class="modeSwitchContainer">
+        <!--       <div class="modeSwitchContainer">
           <img
             src="../assets/images/darkmode_icon.svg"
             alt="A moon icon; used to switch to darkmode."
@@ -44,7 +46,7 @@ function showNyanButton() {
             alt="A sun icon; used to switch to lightmode. "
             id="notactiveMode"
           />
-        </div>
+        </div> -->
         <p>made with ♡ and a whole lot of coffee^^</p>
         <p class="nyanUnlock" @click="showNyanButton">UNLOCK NYAN!</p>
       </div>
