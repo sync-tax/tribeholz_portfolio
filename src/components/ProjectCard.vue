@@ -13,7 +13,9 @@ defineProps({
   <div class="projectContainer">
     <div class="projectLeftSection">
       <h4>{{ subTitle }}</h4>
-      <h2>{{ projectTitle }}</h2>
+      <h2>
+        {{ projectTitle }}
+      </h2>
       <div class="projectInfoContainer">
         <div class="projectTags">
           <p v-for="tag in projectTags" :key="tag">{{ tag }}</p>
