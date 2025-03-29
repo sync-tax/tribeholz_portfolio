@@ -2,159 +2,96 @@
 import { ref, computed } from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
 
-const activeFilter = ref("TRIBΞHOLZ");
+const activeFilter = ref("AUDIO");
 
 const projects = ref([
-  //TRIBΞHOLZ
+  //AUDIO
   {
-    categories: ["TRIBΞHOLZ"],
-    subTitle: "tutorials",
-    title: "Touchdesigner",
+    categories: ["AUDIO"],
+    title: "Live Jams",
     currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#TD", "#DaVinci"],
-    info: "A collection of TD tutorials I uploaded on YouTube.",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#SonicPi", "#Supercollider", "#Ruby"],
   },
   {
-    categories: ["TRIBΞHOLZ"],
-    subTitle: "designs",
-    title: "Procedural Printdesigns",
+    categories: ["AUDIO"],
+    title: "Next Stop",
     currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#TD", "#Illustrator"],
-    info: "Printdesigns I made using procedural methods with TD.",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#SonicPi", "#Ruby", "#Ableton", "#Touchdesigner"],
   },
   {
-    categories: ["TRIBΞHOLZ"],
-    subTitle: "coded sound",
-    title: "Chaotic Algorhithms",
+    categories: ["AUDIO"],
+    title: "Forest Trip",
     currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#SonicPi", "#Ruby", "#Ableton"],
-    info: "Mostly Techno jams I did using SonicPi. Not exactly clean sound, but getting better.",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#SonicPi", "#Ruby", "#Touchdesigner"],
+  },
+  //VISUAL
+  {
+    categories: ["VISUAL"],
+    title: "Tutorials",
+    currentProjectView: "/TestProject",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#YouTube", "#Touchdesigner", "#Davinci_Resolve"],
   },
   {
-    categories: ["TRIBΞHOLZ"],
-    subTitle: "tool",
-    title: "VJ Setup v1.0",
+    categories: ["VISUAL"],
+    title: "VJ-Setup v1.0",
     currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#TD", "#Python", "#MIDI"],
-    info: "I started building my TD VJ-Setup for a gig in the Ars Electronica Deep Space.",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#Touchdesigner", "#Python", "#MIDI"],
+  },
+  //DESIGN
+  {
+    categories: ["DESIGN"],
+    title: "TRIBΞHOLZ",
+    currentProjectView: "/TestProject",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#Touchdesigner", "#AdobeCC", "#Affinity"],
   },
   {
-    categories: ["TRIBΞHOLZ"],
-    subTitle: "emulation station",
-    title: "RetroPi Build",
-    currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#RasPi", "#Linux", "#Filezilla"],
-    info: "I built my own - somewhat - portable Pokémon themed retro gaming console. ",
-  },
-  //--------------------------------------------------------------------------------
-  //DURCH
-  {
-    categories: ["DURCH"],
-    subTitle: "branding",
+    categories: ["DESIGN"],
     title: "DURCH",
     currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#AdobeCC"],
-    info: "The DURCH Designs where made by a friend and myself. I mostly focused on digitalizing and refining stuff.",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#AdobeCC", "#Affinity", "#Procreate"],
   },
   {
-    categories: ["DURCH"],
-    subTitle: "analog",
-    title: "Printdesigns",
+    categories: ["DESIGN"],
+    title: "808CLUB",
     currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#Procreate", "#AdobeCC", "#Screenprint"],
-    info: "Various print designs I drew by hand. While I made most sketches using pen and paper, I had to digitalize them using software.",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#AdobeCC", "#Affinity", "#Procreate"],
   },
+  //OTHER
   {
-    categories: ["DURCH"],
-    subTitle: "procedural",
-    title: "Printdesigns",
-    currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#TD", "#AdobeCC"],
-    info: "Various print designs I made using Touchdesigner. I picked specific frames of moving visuals.",
-  },
-  //--------------------------------------------------------------------------------
-  //808Club
-  {
-    categories: ["808CLUB"],
-    subTitle: "branding",
-    title: "808Club",
-    currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#AdobeCC"],
-    info: "The designs where made together with a friend. I refined and digitalized it to use for stickers, beachflags and more.",
-  },
-  {
-    categories: ["808CLUB"],
-    subTitle: "website",
-    title: "808club.at",
-    currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#Wordpress", "#Elementor"],
-    info: "Designed and developed the 808Club website using the Wordpress CMS.",
-  },
-  {
-    categories: ["808CLUB"],
-    subTitle: "event",
-    title: "House of Arts",
-    currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#Organisation"],
-    info: "As a part of the organisation team I was responsible for design, marketing and media technology.",
-  },
-  {
-    categories: ["808CLUB"],
-    subTitle: "event",
-    title: "Game of Skate",
-    currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#AdobeCC"],
-    info: "I am not a skater but I help with flyer designs and such where I can.",
-  },
-  {
-    categories: ["808CLUB"],
-    subTitle: "event",
-    title: "808Spotlight",
-    currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#TD", "#AdobeCC", "#DaVinci"],
-    info: "I was responsible for the visuals and also helped with marketing.",
-  },
-  //--------------------------------------------------------------------------------
-  //FHHGB
-  {
-    categories: ["FH HAGENBERG"],
-    subTitle: "portfolio website",
+    categories: ["OTHER"],
     title: "arro.at",
     currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#Vue", "#THREE", "#Figma"],
-    info: "During the Hypermedia class I had the oportunity to develop this portfolio website.",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#Vue", "#THREE", "#Vite", "#SASS", "#Figma"],
   },
   {
-    categories: ["FH HAGENBERG"],
-    subTitle: "data visualisation",
+    categories: ["OTHER"],
+    title: "808club.at",
+    currentProjectView: "/TestProject",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#Wordpress", "#Elementor"],
+  },
+  {
+    categories: ["OTHER"],
+    title: "RetroPi Build",
+    currentProjectView: "/TestProject",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#RaspberryPi", "#EmulationStation", "#Linux"],
+  },
+  {
+    categories: ["OTHER"],
     title: "Dead Internet Report",
     currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#Excel", "#AdobeCC"],
-    info: "During the Media Studies class we were prompted to do research on a specific topic and visualize the results in an info sheet.",
-  },
-  {
-    categories: ["FH HAGENBERG"],
-    subTitle: "things",
-    title: "Other Stuff",
-    currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/chicken.png",
-    tag: ["#Photography", "#Blender", "&More"],
-    info: "This is just a collection of smaller yet still interesting assignments. It contains, 2D&3D Design, Photography and more.",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#AdobeCC", "#Excel"],
   },
 ]);
 
@@ -178,7 +115,7 @@ function updateActiveFilter(filter) {
   <div class="projectsWrapper">
     <div class="projectNav">
       <li
-        v-for="filter in ['TRIBΞHOLZ', 'DURCH', '808CLUB', 'FH HAGENBERG']"
+        v-for="filter in ['AUDIO', 'VISUAL', 'DESIGN', 'OTHER']"
         :key="filter"
         :id="activeFilter === filter ? 'activeFilter' : ''"
         @click="updateActiveFilter(filter)"

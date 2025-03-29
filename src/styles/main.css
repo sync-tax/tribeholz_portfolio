@@ -90,6 +90,11 @@ body {
   padding-top: 20px;
 }
 
+#lastNavLink {
+  border-right: 2px solid rgba(255, 255, 255, 0.35);
+  padding-right: 20px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -414,42 +419,24 @@ nav ul #notactiveMode {
   justify-content: space-around;
   border-radius: 20px;
   padding: 20px;
-  background-color: #151515;
+  border: 1px solid rgba(255, 255, 255, 0.35);
   margin-top: 80px;
   width: 90%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media (max-width: 778px) {
   .projectListContainer .projectContainer {
     flex-direction: column;
   }
 }
-.projectListContainer .projectContainer .projectRightSection .projectRouteIMG {
-  display: flex;
-  justify-content: right;
-}
-@media (max-width: 778px) {
-  .projectListContainer .projectContainer .projectRightSection .projectRouteIMG {
-    justify-content: center;
-  }
-}
-.projectListContainer .projectContainer .projectRightSection .projectRouteIMG img {
-  border-radius: 25px;
-  max-width: 75%;
-  opacity: 85%;
-}
-@media (max-width: 450px) {
-  .projectListContainer .projectContainer .projectRightSection .projectRouteIMG img {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-}
 .projectListContainer .projectContainer .projectLeftSection {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 100%;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 @media (max-width: 778px) {
   .projectListContainer .projectContainer .projectLeftSection {
@@ -483,10 +470,10 @@ nav ul #notactiveMode {
   font-weight: 800;
   font-size: 3rem;
   font-variation-settings: "wdth" 125;
-  font-size: 2.5rem;
+  font-size: 5.2rem;
   line-height: 98%;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 35px;
 }
 @media (max-width: 778px) {
   .projectListContainer .projectContainer .projectLeftSection h2 {
@@ -496,8 +483,7 @@ nav ul #notactiveMode {
 }
 .projectListContainer .projectContainer .projectLeftSection .projectTags {
   display: flex;
-  justify-content: left;
-  margin-bottom: 10px;
+  justify-content: center;
 }
 @media (max-width: 778px) {
   .projectListContainer .projectContainer .projectLeftSection .projectTags {
@@ -509,29 +495,17 @@ nav ul #notactiveMode {
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 1.2rem;
-  font-size: 0.9rem;
-  margin-right: 10px;
-  padding: 5px 10px;
-  background-color: #232323;
-  border-radius: 15px;
-}
-.projectListContainer .projectContainer .projectLeftSection .projectInfo {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
   font-size: 1.2rem;
-  font-size: 1rem;
-  background-color: #232323;
+  opacity: 75%;
   padding: 5px 10px;
   border-radius: 15px;
-}
-@media (max-width: 778px) {
-  .projectListContainer .projectContainer .projectLeftSection .projectInfo {
-    display: none;
-  }
+  position: relative;
+  top: -18px;
 }
 .projectListContainer .projectContainer .projectLeftSection .projectRoute {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 @media (max-width: 778px) {
   .projectListContainer .projectContainer .projectLeftSection .projectRoute {
