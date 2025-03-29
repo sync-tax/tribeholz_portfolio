@@ -34,20 +34,20 @@ onMounted(() => {
     </div>
 
     <img
-      src="../assets/images/logo_dark.png"
-      alt="A monochrome logo resembling tree rings."
+      src="../assets/images/logo2.svg"
+      alt="A monochrome logo resembling the initials AR."
       id="logoImage"
     />
 
     <ul>
       <RouterLink to="/" class="navLink">
-        <li>PROJECTS</li>
+        <li>PROJΞCTS</li>
       </RouterLink>
       <RouterLink to="/About" class="navLink">
-        <li>ABOUT</li>
+        <li>ΛBOUT</li>
       </RouterLink>
       <RouterLink to="/LinkTree" class="navLink">
-        <li id="lastNavLink">LINK.TREE</li>
+        <li id="lastNavLink">LIΠKS</li>
       </RouterLink>
       <img
         src="../assets/images/nyan_button.png"

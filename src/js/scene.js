@@ -30,29 +30,11 @@ export function createScene() {
 
 export function createGeometry() {
   const star = new THREE.Mesh(
-    new THREE.SphereGeometry(0.03),
+    new THREE.SphereGeometry(0.025),
     new THREE.MeshStandardMaterial({
-      color: 0xffffff,
-      wireframe: false,
-    })
-  );
-
-  /*   const video = document.createElement("video");
-  video.src = "/public/test.mp4";
-  video.loop = true;
-  video.muted = true;
-  video.play(); 
-
-  const videoTexture = new THREE.VideoTexture(video);*/
-
-  const centerPiece = new THREE.Mesh(
-    new THREE.SphereGeometry(5),
-    new THREE.MeshStandardMaterial({
-      //map: videoTexture,
-      wireframe: true,
       color: 0xffffff,
     })
   );
 
-  return { star, centerPiece };
+  return { star };
 }

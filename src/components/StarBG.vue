@@ -9,13 +9,6 @@ onMounted(() => {
   const target = new THREE.Vector3(0, 0, 0);
   const radius = 80;
 
-  function addCenterpiece() {
-    const { centerPiece } = createGeometry();
-
-    centerPiece.position.set(0.5, 0.5);
-    scene.add(centerPiece);
-  }
-
   function addStars() {
     const { star } = createGeometry();
 
@@ -28,8 +21,7 @@ onMounted(() => {
     scene.add(star);
   }
 
-  Array(400).fill().forEach(addStars);
-  //addCenterpiece();
+  Array(500).fill().forEach(addStars);
 
   scene.add(ambientLight);
 
