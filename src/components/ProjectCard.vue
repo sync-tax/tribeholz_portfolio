@@ -12,16 +12,18 @@ defineProps({
 <template>
   <div class="projectContainer">
     <div class="projectLeftSection">
-      <h4>{{ subTitle }}</h4>
-      <h2>
-        {{ projectTitle }}
-      </h2>
-      <div class="projectInfoContainer">
-        <div class="projectTags">
-          <p v-for="tag in projectTags" :key="tag">{{ tag }}</p>
-        </div>
-        <div class="projectInfo">
-          <p>{{ projectInfo }}</p>
+      <div class="projectLeftSectionSeparator">
+        <h4>{{ subTitle }}</h4>
+        <h2>
+          {{ projectTitle }}
+        </h2>
+        <div class="projectInfoContainer">
+          <div class="projectTags">
+            <p v-for="tag in projectTags" :key="tag">{{ tag }}</p>
+          </div>
+          <div class="projectInfo">
+            <p>{{ projectInfo }}</p>
+          </div>
         </div>
       </div>
       <RouterLink :to="currentProjectView" class="projectRoute">
@@ -29,13 +31,13 @@ defineProps({
       </RouterLink>
     </div>
     <div class="projectRightSection">
-      <RouterLink :to="currentProjectView" class="projectRouteIMG">
+      <div class="projectRouteIMG">
         <img
           :src="imagePath"
           alt="Image of the current project card."
           width="500px"
         />
-      </RouterLink>
+      </div>
     </div>
   </div>
 </template>

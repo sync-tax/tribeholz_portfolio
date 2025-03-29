@@ -419,7 +419,7 @@ nav {
 
 //Project Navigations
 .projectNav {
-  border: 0.5px solid #383838;
+  border-top: 0.5px solid #383838;
 
   display: flex;
   justify-content: space-around;
@@ -464,8 +464,24 @@ nav {
   #activeFilter {
     color: #181818;
     background-color: white;
-    opacity: 100%;
+    opacity: 90%;
     border: 1px solid white;
+  }
+}
+
+.shortDescriptionContainer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  opacity: 90%;
+
+  p {
+    @include text-font();
+    color: #121212;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 2px;
+    text-align: center;
   }
 }
 
@@ -474,11 +490,15 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .projectContainer {
     display: flex;
     justify-content: space-around;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #151515;
 
-    padding-top: 60px;
+    margin-top: 80px;
 
     width: 90%;
 
@@ -496,6 +516,7 @@ nav {
         img {
           border-radius: 25px;
           max-width: 75%;
+          opacity: 85%;
 
           @media (max-width: 450px) {
             max-width: 100%;
@@ -508,6 +529,9 @@ nav {
       display: flex;
       flex-direction: column;
       width: 35%;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
 
       @media (max-width: 778px) {
         width: 60%;
@@ -536,7 +560,7 @@ nav {
         line-height: 98%;
 
         margin-top: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
         @media (max-width: 778px) {
           text-align: center;
@@ -559,7 +583,7 @@ nav {
 
           margin-right: 10px;
           padding: 5px 10px;
-          background-color: #0c0c0c;
+          background-color: #232323;
           border-radius: 15px;
         }
       }
@@ -568,7 +592,7 @@ nav {
         @include text-font();
         font-size: 1rem;
 
-        background-color: #0c0c0c;
+        background-color: #232323;
         padding: 5px 10px;
         border-radius: 15px;
 
@@ -590,9 +614,10 @@ nav {
           border-radius: 15px;
 
           padding: 10px 20px 5px 20px;
-          margin-top: 20px;
+          margin-top: 30px;
 
           background-color: white;
+          border: 2px solid white;
           text-align: center;
           text-decoration: none;
           color: #121212;

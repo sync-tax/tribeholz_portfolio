@@ -59,7 +59,7 @@ function showNyanButton() {
           style="opacity: 100%"
         />
       </RouterLink> -->
-      <p>&copy; 2024 Robert Ardeleanu - All Rights Reserved</p>
+      <p>&copy; 2025 Ardeleanu Robert - All Rights Reserved</p>
       <!-- <RouterLink to="/Tetris" class="navLink" id="tetrisEasteregg">
         <img
           src="../assets/images/tetris_icon_dark.png"
