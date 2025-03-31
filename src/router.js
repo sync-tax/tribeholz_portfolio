@@ -5,6 +5,7 @@ import LinkTree from "./views/LinkTree.vue";
 import Tetris from "./views/Tetris.vue";
 
 import TestProject from "./views/Projects/TestProject.vue";
+import AudioProject1 from "./views/Projects/AudioProject1.vue";
 
 const routes = [
   //Main Routes
@@ -23,17 +24,12 @@ const routes = [
     name: "LinkTree",
     component: LinkTree,
   },
-  {
-    path: "/Tetris",
-    name: "Tetris",
-    component: Tetris,
-  },
 
   //Project Routes
   {
-    path: "/TestProject",
-    name: "TestProject",
-    component: TestProject,
+    path: "/AudioProject1",
+    name: "AudioProject1",
+    component: AudioProject1,
   },
 ];
 

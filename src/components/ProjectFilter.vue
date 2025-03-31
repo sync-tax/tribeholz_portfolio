@@ -9,7 +9,7 @@ const projects = ref([
   {
     categories: ["AUDIO"],
     title: "Live Jams",
-    currentProjectView: "/TestProject",
+    currentProjectView: "/AudioProject1",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#SonicPi", "#Supercollider", "#Ruby"],
   },
@@ -30,7 +30,7 @@ const projects = ref([
   //VISUAL
   {
     categories: ["VISUAL"],
-    title: "Tutorials",
+    title: "TD Tutorials",
     currentProjectView: "/TestProject",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#YouTube", "#Touchdesigner", "#Davinci_Resolve"],
@@ -88,7 +88,7 @@ const projects = ref([
   },
   {
     categories: ["OTHER"],
-    title: "Dead Internet Report",
+    title: "Dead Internet",
     currentProjectView: "/TestProject",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#AdobeCC", "#Excel"],

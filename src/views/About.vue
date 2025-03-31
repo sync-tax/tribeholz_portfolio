@@ -20,18 +20,16 @@ const portfolioIsVisible = ref(false);
         <h5>hi, my name is...</h5>
         <h2>ROBERT ARDELEANU</h2>
         <p>
-          I currently study Mediatechnology & Design (BA) at the unviersity of
-          applied sciences @ Campus Hagenberg. <br />
+          I am a creative coding enthusiast and currently study Mediatechnology
+          & Design (BA) at the unviersity of applied sciences @ Campus
+          Hagenberg. <br />
           <span>Linz, Upper Austria</span>
         </p>
-        <a href="#Portfoliooo" @click="portfolioIsVisible = !portfolioIsVisible"
+        <a
+          href="https://drive.google.com/file/d/18GAOEvxXWaD3Pvr4apUIzXjAwTwsZfBV/view?usp=sharing"
+          target="_blank"
           >Portfolio (PDF)</a
         >
-        <transition name="ease-in">
-          <p v-if="portfolioIsVisible" id="homeworkMsg">
-            Haven't done the homework yet ^^
-          </p>
-        </transition>
       </div>
     </section>
 

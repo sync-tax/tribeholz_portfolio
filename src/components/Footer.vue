@@ -34,7 +34,7 @@ function showNyanButton() {
         >
       </div>
       <div class="footerExtra">
-        <!--       <div class="modeSwitchContainer">
+        <div class="modeSwitchContainer">
           <img
             src="../assets/images/darkmode_icon.svg"
             alt="A moon icon; used to switch to darkmode."
@@ -46,27 +46,13 @@ function showNyanButton() {
             alt="A sun icon; used to switch to lightmode. "
             id="notactiveMode"
           />
-        </div> -->
+        </div>
         <p>made with ♡ and a whole lot of coffee^^</p>
         <p class="nyanUnlock" @click="showNyanButton">UNLOCK NYAN!</p>
       </div>
     </div>
     <div id="copyrightWrapper">
-      <!-- <RouterLink to="/Tetris" class="navLink" id="tetrisEasteregg">
-        <img
-          src="../assets/images/tetris_icon_dark.png"
-          alt="Entry to an easteregg"
-          style="opacity: 100%"
-        />
-      </RouterLink> -->
       <p>&copy; 2025 Ardeleanu Robert - All Rights Reserved</p>
-      <!-- <RouterLink to="/Tetris" class="navLink" id="tetrisEasteregg">
-        <img
-          src="../assets/images/tetris_icon_dark.png"
-          alt="Entry to an easteregg"
-          style="opacity: 100%"
-        />
-      </RouterLink> -->
     </div>
   </div>
 </template>

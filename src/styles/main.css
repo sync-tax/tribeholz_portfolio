@@ -628,17 +628,21 @@ nav ul #notactiveMode {
   opacity: 100%;
 }
 
-.aboutDetails {
+.aboutDetails,
+.projectDetails {
   width: 70%;
   margin: 0 auto;
 }
-.aboutDetails span {
+.aboutDetails span,
+.projectDetails span {
   color: white;
 }
-.aboutDetails .collapsibleWrapper {
+.aboutDetails .collapsibleWrapper,
+.projectDetails .collapsibleWrapper {
   margin-top: 60px;
 }
-.aboutDetails .collapsibleWrapper p {
+.aboutDetails .collapsibleWrapper p,
+.projectDetails .collapsibleWrapper p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -646,14 +650,16 @@ nav ul #notactiveMode {
   font-size: 1.1rem;
   padding-bottom: 20px;
 }
-.aboutDetails .collapsibleWrapper .collapspreview {
+.aboutDetails .collapsibleWrapper .collapspreview,
+.projectDetails .collapsibleWrapper .collapspreview {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid white;
   margin-bottom: 15px;
   cursor: pointer;
 }
-.aboutDetails .collapsibleWrapper .collapspreview img {
+.aboutDetails .collapsibleWrapper .collapspreview img,
+.projectDetails .collapsibleWrapper .collapspreview img {
   opacity: 100%;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
   width: 25px;
@@ -661,10 +667,12 @@ nav ul #notactiveMode {
   padding-bottom: 10px;
   transition: transform 0.3s ease;
 }
-.aboutDetails .collapsibleWrapper .collapspreview img:hover {
+.aboutDetails .collapsibleWrapper .collapspreview img:hover,
+.projectDetails .collapsibleWrapper .collapspreview img:hover {
   opacity: 100%;
 }
-.aboutDetails .collapsibleWrapper .collapspreview h4 {
+.aboutDetails .collapsibleWrapper .collapspreview h4,
+.projectDetails .collapsibleWrapper .collapspreview h4 {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
@@ -706,209 +714,61 @@ nav ul #notactiveMode {
   color: #181818;
 }
 
-.chickenFarm {
+.project .backOverview {
+  padding: 5px;
+}
+.project .backOverview .backLink {
   display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  opacity: 40%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.project .backOverview .backLink:hover {
+  opacity: 1;
+}
+.project .backOverview img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(100%) contrast(100%);
+}
+.project .backOverview p {
+  color: white;
+}
+.project .projectOverview {
+  display: flex;
   flex-direction: column;
-  width: 80%;
 }
-.chickenFarm .chickenHeader {
-  margin-top: 50px;
+.project .projectOverview .textProjectContent {
+  padding: 15px;
 }
-.chickenFarm .chickenHeader h1 {
+.project .projectOverview .textProjectContent h2 {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 800;
   font-size: 3rem;
   font-variation-settings: "wdth" 125;
+  font-size: 4rem;
   line-height: 98%;
-  margin-top: 15px;
-  font-size: 1.9rem;
+  margin-top: 35px;
+  text-align: center;
 }
-.chickenFarm .chickenHeader h5 {
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-variation-settings: "wdth" 100;
-  font-size: 1rem;
-  opacity: 50%;
-  line-height: 0.5rem;
+@media (max-width: 778px) {
+  .project .projectOverview .textProjectContent h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
 }
-.chickenFarm .chickenHeader p {
+.project .projectOverview .textProjectContent p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 1.2rem;
   font-size: 1.1rem;
+  padding-bottom: 20px;
+  text-align: center;
 }
-.chickenFarm .chickenBtnContainer {
-  padding-top: 20px;
+.project .projectOverview .mainProjectContent {
   display: flex;
-  justify-content: space-around;
-  width: 60%;
-  margin: 0 auto;
-}
-@media (max-width: 720px) {
-  .chickenFarm .chickenBtnContainer {
-    width: 90%;
-  }
-}
-@media (max-width: 450px) {
-  .chickenFarm .chickenBtnContainer {
-    width: 100%;
-  }
-}
-.chickenFarm .chickenBtnContainer button {
-  background: none;
-  cursor: pointer;
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-variation-settings: "wdth" 100;
-  font-size: 1.1rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 15px;
-  padding: 10px 20px 5px 20px;
-  margin-top: 20px;
-  background-color: white;
-  text-align: center;
-  text-decoration: none;
-  color: #121212;
-  opacity: 60%;
-}
-@media (max-width: 720px) {
-  .chickenFarm .chickenBtnContainer button {
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 450px) {
-  .chickenFarm .chickenBtnContainer button {
-    font-size: 0.85rem;
-  }
-}
-.chickenFarm .chickenBtnContainer button:hover {
-  opacity: 100%;
-}
-.chickenFarm .chickenImages {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-top: 25px;
-}
-@media (max-width: 800px) {
-  .chickenFarm .chickenImages {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 550px) {
-  .chickenFarm .chickenImages {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-.chickenFarm .chickenImages img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  transition: opacity 0.2s ease-in;
-}
-@media (max-width: 550px) {
-  .chickenFarm .chickenImages img {
-    margin: 0 auto;
-  }
-}
-
-.chickenHeaderTwo {
-  margin: 40px auto;
-  width: 80%;
-}
-.chickenHeaderTwo h1 {
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 800;
-  font-size: 3rem;
-  font-variation-settings: "wdth" 125;
-  line-height: 98%;
-  margin-top: 15px;
-  font-size: 1.9rem;
-}
-.chickenHeaderTwo h5 {
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-variation-settings: "wdth" 100;
-  font-size: 1rem;
-  opacity: 50%;
-  line-height: 0.5rem;
-}
-
-.formContainer {
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
-}
-.formContainer #voidMsg {
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-variation-settings: "wdth" 100;
-  font-size: 1.1rem;
-  margin-top: 20px;
-  background-color: rgb(182, 0, 0);
-  color: white;
-  border-radius: 5px;
-  text-align: center;
-  padding-top: 5px;
-}
-.formContainer label {
-  display: block;
-  margin-bottom: 5px;
-}
-.formContainer input[type=text],
-.formContainer input[type=email],
-.formContainer textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 5px;
-  background-color: #0c0c0c;
-}
-.formContainer textarea {
-  height: 100px;
-}
-.formContainer button {
-  background: none;
-  cursor: pointer;
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-variation-settings: "wdth" 100;
-  font-size: 1.1rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 15px;
-  padding: 10px 20px 5px 20px;
-  margin-top: 20px;
-  background-color: white;
-  text-align: center;
-  text-decoration: none;
-  color: #121212;
-  opacity: 60%;
-}
-@media (max-width: 720px) {
-  .formContainer button {
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 450px) {
-  .formContainer button {
-    font-size: 0.85rem;
-  }
-}
-.formContainer button:hover {
-  opacity: 100%;
+  justify-content: center;
 }
 
 .flyingCat {
