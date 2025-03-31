@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 const isTechnologyVisible = ref(false);
-const isAboutVisible = ref(false);
+const isDetailsVisible = ref(false);
 </script>
 
 <template>
@@ -20,17 +20,14 @@ const isAboutVisible = ref(false);
 
     <section class="projectOverview">
       <div class="textProjectContent">
-        <h2>Coding Techno</h2>
-        <p>
-          This was the first series I created on coding with SonicPi. It focused
-          on experimentation and developing a workflow.
-        </p>
+        <h2>TD Tutorials</h2>
+        <p>A collection of tutorials I did on Touchdesigner.</p>
       </div>
       <div class="mainProjectContent">
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/videoseries?si=cQ-cdKx3yKNn4xmz&amp;list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA"
+          src="https://www.youtube.com/embed/videoseries?si=j6YFQKJqrHeB2jE3&amp;list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -42,26 +39,30 @@ const isAboutVisible = ref(false);
 
     <section class="projectDetails">
       <div class="collapsibleWrapper">
-        <div class="collapspreview" @click="isAboutVisible = !isAboutVisible">
-          <h4>About</h4>
+        <div
+          class="collapspreview"
+          @click="isDetailsVisible = !isDetailsVisible"
+        >
+          <h4>Details</h4>
           <img
             src="../../assets/images/plus-icon.svg"
             alt="Icon to Open a collapse section"
-            :class="{ rotated: isAboutVisible }"
+            :class="{ rotated: isDetailsVisible }"
           />
         </div>
         <transition name="ease-in">
-          <p v-if="isAboutVisible">
-            I never intended to explore electronic music production, but that
-            changed when I discovered SonicPi. Since then, I've developed a deep
-            passion for creative coding. <br />
+          <p v-if="isDetailsVisible">
+            After discovering SonicPi, I was eager to find a similar environment
+            for visuals—something that would take me to the next level and allow
+            me to create true audio-visual art.
             <br />
-            Today, SonicPi is one of my favorite hobbies — something I truly
-            wouldn't want to miss out on.
+            <br />
+            That search led me to TouchDesigner, which not only introduced me to
+            procedural visuals but also to node-based programming — a workflow I
+            quickly grew to love.
           </p>
         </transition>
       </div>
-
       <div class="collapsibleWrapper">
         <div
           class="collapspreview"
@@ -76,15 +77,16 @@ const isAboutVisible = ref(false);
         </div>
         <transition name="ease-in">
           <p v-if="isTechnologyVisible">
-            <a class="refLinks" target="_blank" href="https://sonic-pi.net/"
-              >SonicPi</a
+            <a class="refLinks" target="_blank" href="https://derivative.ca/"
+              >Touchdesigner</a
             >
             <br />
-            <a
-              class="refLinks"
-              target="_blank"
-              href="https://www.ruby-lang.org/en/"
-              >Ruby</a
+            <a class="refLinks" target="_blank" href="https://www.python.org/"
+              >Python</a
+            >
+            <br />
+            <a class="refLinks" target="_blank" href="https://docs.gl/sl4/all"
+              >GLSL</a
             >
           </p>
         </transition>

@@ -545,7 +545,7 @@ nav {
 
       h2 {
         @include titles-font();
-        font-size: 5.2rem;
+        font-size: 4rem;
         line-height: 98%;
         text-align: center;
 
@@ -553,7 +553,8 @@ nav {
 
         @media (max-width: 778px) {
           text-align: center;
-          font-size: 2rem;
+          font-size: 2.2rem;
+          margin-top: 0px;
         }
       }
 
@@ -567,13 +568,13 @@ nav {
 
         p {
           @include text-font();
-          font-size: 1.2rem;
+          font-size: 1rem;
           opacity: 75%;
           padding: 5px 10px;
           border-radius: 15px;
 
           position: relative;
-          top: -18px;
+          top: -10px;
         }
       }
 
@@ -795,6 +796,9 @@ nav {
 }
 
 .project {
+  a {
+    color: #3366cc;
+  }
   .backOverview {
     padding: 5px;
     .backLink {
@@ -841,6 +845,8 @@ nav {
         @include text-font();
         font-size: 1.1rem;
         padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
 
         text-align: center;
       }

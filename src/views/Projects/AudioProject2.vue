@@ -20,18 +20,17 @@ const isAboutVisible = ref(false);
 
     <section class="projectOverview">
       <div class="textProjectContent">
-        <h2>Coding Techno</h2>
+        <h2>Chaotic Algorithms</h2>
         <p>
-          This was the first series I created on coding with SonicPi. It focused
-          on experimentation and developing a workflow.
+          This is my second - ongoing - series on coded sound. The goal is to
+          integrate the SonicPi workflow with Ableton and Touchdesigner.
         </p>
       </div>
       <div class="mainProjectContent">
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/videoseries?si=cQ-cdKx3yKNn4xmz&amp;list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA"
-          title="YouTube video player"
+          src="https://www.youtube.com/embed/videoseries?si=TgvwDJsjbmOgdroc&amp;list=PLFLuAZh6tS3LOBqjGSkGZ7ALP3DXZvhIU"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
@@ -52,12 +51,26 @@ const isAboutVisible = ref(false);
         </div>
         <transition name="ease-in">
           <p v-if="isAboutVisible">
-            I never intended to explore electronic music production, but that
-            changed when I discovered SonicPi. Since then, I've developed a deep
-            passion for creative coding. <br />
+            The series started with the track "Next Stop". <br />
+            All files available on
+            <a
+              target="_blank"
+              href="https://github.com/sync-tax/next_stop/blob/main/next_stop/next_stop.rb"
+              >GitHub</a
+            >.
             <br />
-            Today, SonicPi is one of my favorite hobbies — something I truly
-            wouldn't want to miss out on.
+            <br />
+            I actually stopped uploading after the second video because I felt
+            stuck in the mindset of forcing myself to post on YouTube. So, I
+            decided to step back and focus on simply creating.
+            <br />
+            <br />
+            In the meantime, I’ve incorporated MIDI and multitrack recording
+            into my workflow. I also experimented with Touchdesigner quite a
+            bit.
+            <br />
+            <br />
+            The "Chaotic Algorithms" project will be back on track soon.
           </p>
         </transition>
       </div>
@@ -80,11 +93,12 @@ const isAboutVisible = ref(false);
               >SonicPi</a
             >
             <br />
-            <a
-              class="refLinks"
-              target="_blank"
-              href="https://www.ruby-lang.org/en/"
-              >Ruby</a
+            <a class="refLinks" target="_blank" href="https://www.ableton.com/"
+              >Ableton</a
+            >
+            <br />
+            <a class="refLinks" target="_blank" href="https://derivative.ca/"
+              >Touchdesigner</a
             >
           </p>
         </transition>

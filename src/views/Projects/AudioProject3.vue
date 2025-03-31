@@ -1,0 +1,182 @@
+<script setup>
+import { ref } from "vue";
+import { onMounted, nextTick } from "vue";
+import Prism from "prismjs";
+
+const isTechnologyVisible = ref(false);
+const isAboutVisible = ref(false);
+const isFeatureVisible = ref(false);
+
+onMounted(() => {
+  nextTick(() => {
+    Prism.highlightAll();
+  });
+});
+</script>
+
+<template>
+  <div class="project">
+    <section class="backOverview">
+      <RouterLink to="/" class="backLink">
+        <img
+          src="../../assets/images/arrowicon.svg"
+          alt="back_arrow"
+          width="20px"
+        />
+        <p>Back to project overview</p>
+      </RouterLink>
+    </section>
+
+    <section class="projectOverview">
+      <div class="textProjectContent">
+        <h2>MIDI Boilerplate</h2>
+        <p>
+          I created a project starter boilerplate that I always use to kick off
+          MIDI-driven live coding sessions in SonicPi.
+        </p>
+      </div>
+      <div class="mainProjectContent">
+        <pre><code class="language-ruby">
+_- {TrackTitle_v.X} ~ [chaotic_algorithms] by TRIBΞHOLZ -_
+use_bpm 140
+use_debug false
+use_real_time
+
+live_loop :metro do
+  sleep 1
+end
+
+define :pattern do |p|
+  return p.ring.tick == "x"
+end
+
+p = ("xxx-xxx-")
+
+define :scale_midi do |val, min, max|
+  return min + (val.to_f / 127) * (max - min)
+end
+
+$midi_values ||= Hash.new(0.0)
+
+live_loop :midi_controls do
+  key, value = sync "/midi:midi_mix_1:1/control_change"
+  case key
+  when 19
+    $midi_values[19] = scale_midi(value, 0, 0.5)
+  when 62
+    $MASTER = scale_midi(value, 0, 1)
+  end
+end
+
+live_loop :example, sync: :metro do
+  if pattern(p)
+    sample :bd_haus, amp: $midi_values[19] * $MASTER
+  end
+  sleep 1
+end
+</code></pre>
+      </div>
+    </section>
+
+    <section class="projectDetails">
+      <div class="collapsibleWrapper">
+        <div
+          class="collapspreview"
+          @click="isFeatureVisible = !isFeatureVisible"
+        >
+          <h4>Features</h4>
+          <img
+            src="../../assets/images/plus-icon.svg"
+            alt="Icon to Open a collapse section"
+            :class="{ rotated: isFeatureVisible }"
+          />
+        </div>
+        <transition name="ease-in">
+          <p v-if="isFeatureVisible">
+            - Metronome: Syncing to it enables playing around with sleep values
+            without getting out of sync.
+            <br />
+            <br />
+            - Pattern Function: Easily define rhythmic patterns of instruments
+            with simple Strings.
+            <br />
+            <br />
+            - MIDI Scale Function: Remap the default MIDI control range to your
+            desired range.
+            <br />
+            <br />
+            - MIDI Mapper: Place the controls you want to map within the
+            Switch-Case and call scale_midi(val, min, max) on them.
+          </p>
+        </transition>
+      </div>
+
+      <div class="collapsibleWrapper">
+        <div class="collapspreview" @click="isAboutVisible = !isAboutVisible">
+          <h4>About</h4>
+          <img
+            src="../../assets/images/plus-icon.svg"
+            alt="Icon to Open a collapse section"
+            :class="{ rotated: isAboutVisible }"
+          />
+        </div>
+        <transition name="ease-in">
+          <p v-if="isAboutVisible">
+            While SonicPi enables scripting generative soundscapes, I personally
+            prefer using the live loop feature. Controlling different parameters
+            with a MIDI controller makes playing around even more fun.
+            <br />
+            <br />
+            This boilerplate helps me jump straight into jamming.
+          </p>
+        </transition>
+      </div>
+      <div class="collapsibleWrapper">
+        <div
+          class="collapspreview"
+          @click="isTechnologyVisible = !isTechnologyVisible"
+        >
+          <h4>Technology</h4>
+          <img
+            src="../../assets/images/plus-icon.svg"
+            alt="Icon to Open a collapse section"
+            :class="{ rotated: isTechnologyVisible }"
+          />
+        </div>
+        <transition name="ease-in">
+          <p v-if="isTechnologyVisible">
+            <a class="refLinks" target="_blank" href="https://sonic-pi.net/"
+              >SonicPi</a
+            >
+            <br />
+            <a
+              class="refLinks"
+              target="_blank"
+              href="https://www.ruby-lang.org/en/"
+              >Ruby</a
+            >
+          </p>
+        </transition>
+      </div>
+    </section>
+  </div>
+</template>
+
+<style scoped>
+.rotated {
+  transform: rotate(45deg);
+  transition: transform 0.5s ease;
+}
+
+.ease-in-enter-active,
+.ease-in-leave-active {
+  transition: opacity 0.2s ease-in;
+  overflow: hidden;
+}
+
+.ease-in-enter-from,
+.ease-in-leave-to {
+  opacity: 0;
+  max-height: fit-content;
+}
+</style>

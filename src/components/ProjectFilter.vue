@@ -8,90 +8,92 @@ const projects = ref([
   //AUDIO
   {
     categories: ["AUDIO"],
-    title: "Live Jams",
+    title: "Coding Techno",
     currentProjectView: "/AudioProject1",
     imagePath: "/src/assets/images/placeholderimg.jpg",
-    tag: ["#SonicPi", "#Supercollider", "#Ruby"],
+    tag: ["#CodingTechno", "#SonicPi", "#Ruby"],
   },
   {
     categories: ["AUDIO"],
-    title: "Next Stop",
-    currentProjectView: "/TestProject",
+    title: "Chaotic Algorithms",
+    currentProjectView: "/AudioProject2",
     imagePath: "/src/assets/images/placeholderimg.jpg",
-    tag: ["#SonicPi", "#Ruby", "#Ableton", "#Touchdesigner"],
+    tag: ["#MusicVideo", "#SonicPi", "#Ableton", "#Touchdesigner"],
   },
   {
     categories: ["AUDIO"],
-    title: "Forest Trip",
-    currentProjectView: "/TestProject",
+    title: "MIDI Boilerplate",
+    currentProjectView: "/AudioProject3",
     imagePath: "/src/assets/images/placeholderimg.jpg",
-    tag: ["#SonicPi", "#Ruby", "#Touchdesigner"],
+    tag: ["#Tool", "#SonicPi", "#Ruby"],
   },
   //VISUAL
+
+  {
+    categories: ["VISUAL"],
+    title: "Spotlight",
+    currentProjectView: "/VisualProject1",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#Performance", "#DeepSpace", "#Touchdesigner", "#MIDI"],
+  },
   {
     categories: ["VISUAL"],
     title: "TD Tutorials",
-    currentProjectView: "/TestProject",
+    currentProjectView: "/VisualProject2",
     imagePath: "/src/assets/images/placeholderimg.jpg",
-    tag: ["#YouTube", "#Touchdesigner", "#Davinci_Resolve"],
+    tag: ["#Education", "#YouTube", "#Touchdesigner"],
   },
   {
     categories: ["VISUAL"],
-    title: "VJ-Setup v1.0",
-    currentProjectView: "/TestProject",
+    title: "PokéMorph",
+    currentProjectView: "/VisualProject3",
     imagePath: "/src/assets/images/placeholderimg.jpg",
-    tag: ["#Touchdesigner", "#Python", "#MIDI"],
+    tag: ["#Education", "#YouTube", "#Touchdesigner"],
   },
   //DESIGN
   {
     categories: ["DESIGN"],
-    title: "TRIBΞHOLZ",
-    currentProjectView: "/TestProject",
+    title: "Branding",
+    currentProjectView: "/DesignProject1",
+    imagePath: "/src/assets/images/placeholderimg.jpg",
+    tag: ["#AdobeCC", "#Affinity", "#Procreate"],
+  },
+  {
+    categories: ["DESIGN"],
+    title: "Screenprints",
+    currentProjectView: "/DesignProject2",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#Touchdesigner", "#AdobeCC", "#Affinity"],
   },
   {
     categories: ["DESIGN"],
-    title: "DURCH",
-    currentProjectView: "/TestProject",
+    title: "Flyer & Poster",
+    currentProjectView: "/DesignProject3",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#AdobeCC", "#Affinity", "#Procreate"],
   },
-  {
-    categories: ["DESIGN"],
-    title: "808CLUB",
-    currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/placeholderimg.jpg",
-    tag: ["#AdobeCC", "#Affinity", "#Procreate"],
-  },
+
   //OTHER
   {
     categories: ["OTHER"],
-    title: "arro.at",
-    currentProjectView: "/TestProject",
-    imagePath: "/src/assets/images/placeholderimg.jpg",
-    tag: ["#Vue", "#THREE", "#Vite", "#SASS", "#Figma"],
-  },
-  {
-    categories: ["OTHER"],
     title: "808club.at",
-    currentProjectView: "/TestProject",
+    currentProjectView: "/OtherProject1",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#Wordpress", "#Elementor"],
   },
   {
     categories: ["OTHER"],
     title: "RetroPi Build",
-    currentProjectView: "/TestProject",
+    currentProjectView: "/OtherProject2",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#RaspberryPi", "#EmulationStation", "#Linux"],
   },
   {
     categories: ["OTHER"],
     title: "Dead Internet",
-    currentProjectView: "/TestProject",
+    currentProjectView: "/OtherProject3",
     imagePath: "/src/assets/images/placeholderimg.jpg",
-    tag: ["#AdobeCC", "#Excel"],
+    tag: ["#Vue", "#THREE", "#Vite", "#SASS", "#Figma"],
   },
 ]);
 
@@ -122,21 +124,6 @@ function updateActiveFilter(filter) {
       >
         {{ filter }}
       </li>
-    </div>
-
-    <div class="shortDescriptionContainer">
-      <p v-if="activeFilter === 'TRIBΞHOLZ'">
-        ... various audio-visual and creative coding projects ツ
-      </p>
-      <p v-if="activeFilter === 'DURCH'">
-        ... all sorts of projects from my printing workshop ツ
-      </p>
-      <p v-if="activeFilter === '808CLUB'">
-        ... different events I helped organizing & more ツ
-      </p>
-      <p v-if="activeFilter === 'FH HAGENBERG'">
-        ... what I did during my studies at FH Hagenberg ツ
-      </p>
     </div>
 
     <div class="projectListContainer">

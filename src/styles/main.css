@@ -470,7 +470,7 @@ nav ul #notactiveMode {
   font-weight: 800;
   font-size: 3rem;
   font-variation-settings: "wdth" 125;
-  font-size: 5.2rem;
+  font-size: 4rem;
   line-height: 98%;
   text-align: center;
   margin-top: 35px;
@@ -478,7 +478,8 @@ nav ul #notactiveMode {
 @media (max-width: 778px) {
   .projectListContainer .projectContainer .projectLeftSection h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-top: 0px;
   }
 }
 .projectListContainer .projectContainer .projectLeftSection .projectTags {
@@ -495,12 +496,12 @@ nav ul #notactiveMode {
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: 75%;
   padding: 5px 10px;
   border-radius: 15px;
   position: relative;
-  top: -18px;
+  top: -10px;
 }
 .projectListContainer .projectContainer .projectLeftSection .projectRoute {
   text-decoration: none;
@@ -714,6 +715,9 @@ nav ul #notactiveMode {
   color: #181818;
 }
 
+.project a {
+  color: #3366cc;
+}
 .project .backOverview {
   padding: 5px;
 }
@@ -764,6 +768,8 @@ nav ul #notactiveMode {
   font-size: 1.2rem;
   font-size: 1.1rem;
   padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 }
 .project .projectOverview .mainProjectContent {
