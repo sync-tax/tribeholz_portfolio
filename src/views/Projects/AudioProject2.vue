@@ -14,7 +14,7 @@ const isAboutVisible = ref(false);
           alt="back_arrow"
           width="20px"
         />
-        <p>Back to project overview</p>
+        <p>Back</p>
       </RouterLink>
     </section>
 
@@ -60,7 +60,7 @@ const isAboutVisible = ref(false);
             >.
             <br />
             <br />
-            I actually stopped uploading after the second video because I felt
+            However I stopped uploading after the second video because I felt
             stuck in the mindset of forcing myself to post on YouTube. So, I
             decided to step back and focus on simply creating.
             <br />

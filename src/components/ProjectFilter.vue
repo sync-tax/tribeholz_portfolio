@@ -2,7 +2,7 @@
 import { ref, computed } from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
 
-const activeFilter = ref("AUDIO");
+const activeFilter = ref(localStorage.getItem("activeFilter") || "AUDIO");
 
 const projects = ref([
   //AUDIO
@@ -109,6 +109,7 @@ function updateActiveFilter(filter) {
     activeFilter.value = null;
   } else {
     activeFilter.value = filter;
+    localStorage.setItem("activeFilter", filter);
   }
 }
 </script>

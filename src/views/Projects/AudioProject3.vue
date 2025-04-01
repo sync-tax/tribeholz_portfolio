@@ -23,7 +23,7 @@ onMounted(() => {
           alt="back_arrow"
           width="20px"
         />
-        <p>Back to project overview</p>
+        <p>Back</p>
       </RouterLink>
     </section>
 

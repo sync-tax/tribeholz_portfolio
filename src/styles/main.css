@@ -720,6 +720,7 @@ nav ul #notactiveMode {
 }
 .project .backOverview {
   padding: 5px;
+  position: fixed;
 }
 .project .backOverview .backLink {
   display: flex;
