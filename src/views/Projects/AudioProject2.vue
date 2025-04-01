@@ -1,31 +1,20 @@
 <script setup>
-import { ref } from "vue";
-
-const isTechnologyVisible = ref(false);
-const isAboutVisible = ref(false);
+import Collapsible from "../../components/Collapsibles.vue";
+import Back from "../../components/ProjectBack.vue";
+import Overview from "../../components/ProjectOverview.vue";
 </script>
 
 <template>
   <div class="project">
-    <section class="backOverview">
-      <RouterLink to="/" class="backLink">
-        <img
-          src="../../assets/images/arrowicon.svg"
-          alt="back_arrow"
-          width="20px"
-        />
-        <p>Back</p>
-      </RouterLink>
-    </section>
+    <Back />
 
     <section class="projectOverview">
-      <div class="textProjectContent">
-        <h2>Chaotic Algorithms</h2>
-        <p>
-          This is my second - ongoing - series on coded sound. The goal is to
-          integrate the SonicPi workflow with Ableton and Touchdesigner.
-        </p>
-      </div>
+      <Overview
+        title="Chaotic Algorithms"
+        text="This is my second - ongoing - series on coded sound. The goal is to
+          integrate the SonicPi workflow with Ableton and Touchdesigner."
+      />
+
       <div class="mainProjectContent">
         <iframe
           width="560"
@@ -40,79 +29,48 @@ const isAboutVisible = ref(false);
     </section>
 
     <section class="projectDetails">
-      <div class="collapsibleWrapper">
-        <div class="collapspreview" @click="isAboutVisible = !isAboutVisible">
-          <h4>About</h4>
-          <img
-            src="../../assets/images/plus-icon.svg"
-            alt="Icon to Open a collapse section"
-            :class="{ rotated: isAboutVisible }"
-          />
-        </div>
-        <transition name="ease-in">
-          <p v-if="isAboutVisible">
-            The series started with the track "Next Stop". <br />
-            All files available on
-            <a
-              target="_blank"
-              href="https://github.com/sync-tax/next_stop/blob/main/next_stop/next_stop.rb"
-              >GitHub</a
-            >.
-            <br />
-            <br />
-            However I stopped uploading after the second video because I felt
-            stuck in the mindset of forcing myself to post on YouTube. So, I
-            decided to step back and focus on simply creating.
-            <br />
-            <br />
-            In the meantime, I’ve incorporated MIDI and multitrack recording
-            into my workflow. I also experimented with Touchdesigner quite a
-            bit.
-            <br />
-            <br />
-            The "Chaotic Algorithms" project will be back on track soon.
-          </p>
-        </transition>
-      </div>
+      <Collapsible title="About">
+        <p>
+          The series started with the track "Next Stop". <br />
+          All files available on
+          <a
+            target="_blank"
+            href="https://github.com/sync-tax/next_stop/blob/main/next_stop/next_stop.rb"
+            >GitHub</a
+          >.
+          <br />
+          <br />
+          However I stopped uploading after the second video because I felt
+          stuck in the mindset of forcing myself to post on YouTube. So, I
+          decided to step back and focus on simply creating.
+          <br />
+          <br />
+          In the meantime, I’ve incorporated MIDI and multitrack recording into
+          my workflow. I also experimented with Touchdesigner quite a bit.
+          <br />
+          <br />
+          The "Chaotic Algorithms" project will be back on track soon.
+        </p>
+      </Collapsible>
 
-      <div class="collapsibleWrapper">
-        <div
-          class="collapspreview"
-          @click="isTechnologyVisible = !isTechnologyVisible"
+      <Collapsible title="Technology">
+        <a class="refLinks" target="_blank" href="https://sonic-pi.net/"
+          >SonicPi</a
         >
-          <h4>Technology</h4>
-          <img
-            src="../../assets/images/plus-icon.svg"
-            alt="Icon to Open a collapse section"
-            :class="{ rotated: isTechnologyVisible }"
-          />
-        </div>
-        <transition name="ease-in">
-          <p v-if="isTechnologyVisible">
-            <a class="refLinks" target="_blank" href="https://sonic-pi.net/"
-              >SonicPi</a
-            >
-            <br />
-            <a class="refLinks" target="_blank" href="https://www.ableton.com/"
-              >Ableton</a
-            >
-            <br />
-            <a class="refLinks" target="_blank" href="https://derivative.ca/"
-              >Touchdesigner</a
-            >
-          </p>
-        </transition>
-      </div>
+        <br />
+        <a class="refLinks" target="_blank" href="https://www.ableton.com/"
+          >Ableton</a
+        >
+        <br />
+        <a class="refLinks" target="_blank" href="https://derivative.ca/"
+          >Touchdesigner</a
+        >
+      </Collapsible>
     </section>
   </div>
 </template>
 
 <style scoped>
-.rotated {
-  transform: rotate(45deg);
-  transition: transform 0.5s ease;
-}
-
 .ease-in-enter-active,
 .ease-in-leave-active {
   transition: opacity 0.2s ease-in;

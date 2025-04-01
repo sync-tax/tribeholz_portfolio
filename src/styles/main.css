@@ -769,8 +769,8 @@ nav ul #notactiveMode {
   font-size: 1.2rem;
   font-size: 1.1rem;
   padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   text-align: center;
 }
 .project .projectOverview .mainProjectContent {
