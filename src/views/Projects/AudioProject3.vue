@@ -67,6 +67,16 @@ end
     </section>
 
     <section class="projectDetails">
+      <Collapsible title="About">
+        <p>
+          While SonicPi enables scripting generative soundscapes, I personally
+          prefer using the live loop feature. Controlling different parameters
+          with a MIDI controller makes playing around even more fun.
+          <br />
+          <br />
+          This boilerplate helps me jump straight into jamming.
+        </p>
+      </Collapsible>
       <Collapsible title="Features">
         <p>
           - Metronome: Syncing to it enables playing around with sleep values
@@ -86,15 +96,12 @@ end
         </p>
       </Collapsible>
 
-      <Collapsible title="About">
-        <p>
-          While SonicPi enables scripting generative soundscapes, I personally
-          prefer using the live loop feature. Controlling different parameters
-          with a MIDI controller makes playing around even more fun.
-          <br />
-          <br />
-          This boilerplate helps me jump straight into jamming.
-        </p>
+      <Collapsible title="Resources">
+        <a
+          target="_blank"
+          href="https://github.com/sync-tax/sonicpi_livejam_boilerplate/blob/main/live_jam_boilerplate.rb"
+          >GitHub - Code</a
+        >
       </Collapsible>
 
       <Collapsible title="Technology">

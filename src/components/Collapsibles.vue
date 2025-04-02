@@ -32,4 +32,16 @@ const isVisible = ref(false);
   transform: rotate(45deg);
   transition: transform 0.5s ease;
 }
+
+.ease-in-enter-active,
+.ease-in-leave-active {
+  transition: opacity 0.2s ease-in;
+  overflow: hidden;
+}
+
+.ease-in-enter-from,
+.ease-in-leave-to {
+  opacity: 0;
+  max-height: fit-content;
+}
 </style>

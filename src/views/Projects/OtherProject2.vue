@@ -10,18 +10,42 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectOverview">
       <Overview
-        title="Title"
-        text="texttexttexttexttexttexttexttexttexttexttexttext"
+        title="RetroPi Build"
+        text="My personal RetroPi build using a Raspberry Pi"
       />
 
       <div class="mainProjectContent">
-        <p>maincontent here</p>
+        <img
+          src="../../assets/images/o_retro_img2.png"
+          alt="RetroPi"
+          width="70%"
+        />
+        <p style="text-align: center" class="contentNote">Case - Pokecenter</p>
+        <img
+          src="../../assets/images/o_retro_img1.png"
+          alt="RetroPi"
+          width="70%"
+        />
+        <p style="text-align: center" class="contentNote">Shiny Onyx - :3</p>
       </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Empty">
-        <p>Empty</p>
+      <Collapsible title="About">
+        <p>
+          This was a fun little side project. I basically prepared a little
+          suitcase with a screen and the Raspberry plus a Powerbank. <br />Not
+          exeptionally beautiful, but it was fun. I play a lot Pokémon ROM hacks
+          on that thing.
+        </p>
+      </Collapsible>
+      <Collapsible title="Resources">
+        <a
+          href="https://retropie.org.uk/docs/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >RetroPi</a
+        >
       </Collapsible>
     </section>
   </div>

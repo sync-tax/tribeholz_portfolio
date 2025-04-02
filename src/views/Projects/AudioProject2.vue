@@ -17,14 +17,15 @@ import Overview from "../../components/ProjectOverview.vue";
 
       <div class="mainProjectContent">
         <iframe
-          width="560"
-          height="315"
+          width="600"
+          height="337"
           src="https://www.youtube.com/embed/videoseries?si=TgvwDJsjbmOgdroc&amp;list=PLFLuAZh6tS3LOBqjGSkGZ7ALP3DXZvhIU"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
+        <p class="contentNote">Playlist - Chaotic Algorhithms</p>
       </div>
     </section>
 
@@ -32,12 +33,6 @@ import Overview from "../../components/ProjectOverview.vue";
       <Collapsible title="About">
         <p>
           The series started with the track "Next Stop". <br />
-          All files available on
-          <a
-            target="_blank"
-            href="https://github.com/sync-tax/next_stop/blob/main/next_stop/next_stop.rb"
-            >GitHub</a
-          >.
           <br />
           <br />
           However I stopped uploading after the second video because I felt
@@ -51,6 +46,14 @@ import Overview from "../../components/ProjectOverview.vue";
           <br />
           The "Chaotic Algorithms" project will be back on track soon.
         </p>
+      </Collapsible>
+
+      <Collapsible title="Resources">
+        <a
+          target="_blank"
+          href="https://github.com/sync-tax/next_stop/blob/main/next_stop/next_stop.rb"
+          >Next Stop - Ruby File</a
+        >
       </Collapsible>
 
       <Collapsible title="Technology">

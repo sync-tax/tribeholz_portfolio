@@ -10,18 +10,63 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectOverview">
       <Overview
-        title="Title"
-        text="texttexttexttexttexttexttexttexttexttexttexttext"
+        title="TRIBΞHOLZ"
+        text="Designs I made for my algorithmic tekno project."
       />
 
       <div class="mainProjectContent">
-        <p>maincontent here</p>
+        <img
+          src="../../assets/images/d_tribeholz_img1.png"
+          alt="SoundCloud Banner"
+          width="100%"
+        />
+        <p class="contentNote">Soundcloud - Banner</p>
+        <img
+          src="../../assets/images/d_tribeholz_img2.png"
+          alt="Logo"
+          width="100%"
+        />
+        <p class="contentNote">Logo - Lettering</p>
+        <img
+          src="../../assets/images/d_tribeholz_img4.png"
+          alt="Printdesign"
+          width="100%"
+        />
+        <p class="contentNote">Printdesign - Soundwall</p>
+        <img
+          src="../../assets/images/d_tribeholz_img3.png"
+          alt="Thumbnails"
+          width="100%"
+        />
+        <p class="contentNote">YouTube - Thumbnails</p>
       </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Empty">
-        <p>Empty</p>
+      <Collapsible title="About">
+        <p>
+          This is my personal project where I mostly do random visuals with TD
+          and sound with SonicPi.
+          <br />
+          <br />
+          In the future I will focus more on audio-visual installments like
+          music videos and realtime interaction between those two.
+        </p>
+      </Collapsible>
+      <Collapsible title="Resources">
+        <a
+          href="https://www.youtube.com/@tribeholz23"
+          target="_blank"
+          rel="noopener noreferrer"
+          >YouTube</a
+        >
+        <br />
+        <a
+          href="https://soundcloud.com/tribeholz808"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Soundcloud</a
+        >
       </Collapsible>
     </section>
   </div>

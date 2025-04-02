@@ -354,6 +354,7 @@ nav ul #notactiveMode {
   display: flex;
   justify-content: space-around;
   position: sticky;
+  top: 48px;
   bottom: 0px;
   z-index: 9;
   background-color: #0f0f0f;
@@ -421,8 +422,8 @@ nav ul #notactiveMode {
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   margin-top: 80px;
-  width: 90%;
-  height: 300px;
+  width: 80%;
+  height: 280px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -775,7 +776,27 @@ nav ul #notactiveMode {
 }
 .project .projectOverview .mainProjectContent {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 60%;
+  align-self: center;
+}
+.project .projectOverview .mainProjectContent img {
+  align-self: center;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.project .projectOverview .mainProjectContent pre {
+  margin-top: 30px;
+}
+.project .projectOverview .mainProjectContent iframe {
+  align-self: center;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.project .projectOverview .mainProjectContent .contentNote {
+  padding-top: 5px;
+  opacity: 0.6;
 }
 
 .flyingCat {

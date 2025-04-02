@@ -10,18 +10,37 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectOverview">
       <Overview
-        title="Title"
-        text="texttexttexttexttexttexttexttexttexttexttexttext"
+        title="Dead Internet"
+        text="Tiny report on the Dead Internet Theory"
       />
 
       <div class="mainProjectContent">
-        <p>maincontent here</p>
+        <img
+          src="../../assets/images/o_dead_img1.png"
+          alt="Data Visualisation"
+          width="100%"
+        />
+        <p style="text-align: center" class="contentNote">
+          Data Visualisation - Dead Internet - Illustrator
+        </p>
       </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Empty">
-        <p>Empty</p>
+      <Collapsible title="About">
+        <p>
+          This was an assignment for the Media Studies class at FH Hagenberg.
+          The question was wheter the internet is mostly populated by bots or
+          not.
+        </p>
+      </Collapsible>
+      <Collapsible title="Resources">
+        <a
+          href="https://drive.google.com/file/d/1zB3icas943Xb4lMJPKRSDnDA2B7Hmuwp/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Report</a
+        >
       </Collapsible>
     </section>
   </div>

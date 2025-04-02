@@ -17,8 +17,8 @@ import Overview from "../../components/ProjectOverview.vue";
 
       <div class="mainProjectContent">
         <iframe
-          width="560"
-          height="315"
+          width="600"
+          height="337"
           src="https://www.youtube.com/embed/videoseries?si=cQ-cdKx3yKNn4xmz&amp;list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA"
           title="YouTube video player"
           frameborder="0"
@@ -26,6 +26,7 @@ import Overview from "../../components/ProjectOverview.vue";
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
+        <p class="contentNote">Playlist - Coding Techno with SonicPi</p>
       </div>
     </section>
 
@@ -39,6 +40,14 @@ import Overview from "../../components/ProjectOverview.vue";
           Today, SonicPi is one of my favorite hobbies — something I truly
           wouldn't want to miss out on."
         </p>
+      </Collapsible>
+
+      <Collapsible title="Resources">
+        <a
+          target="_blank"
+          href="https://github.com/sync-tax/TechnoSession-1/blob/main/TechnoSession%231.rb"
+          >Ruby file for the first jam</a
+        >
       </Collapsible>
 
       <Collapsible title="Technology">

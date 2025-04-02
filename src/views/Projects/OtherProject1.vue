@@ -9,19 +9,30 @@ import Overview from "../../components/ProjectOverview.vue";
     <Back />
 
     <section class="projectOverview">
-      <Overview
-        title="Title"
-        text="texttexttexttexttexttexttexttexttexttexttexttext"
-      />
+      <Overview title="808club.at" text="Website I made for our club" />
 
       <div class="mainProjectContent">
-        <p>maincontent here</p>
+        <img
+          src="../../assets/images/o_808_img1.png"
+          alt="Website"
+          width="100%"
+        />
+        <p class="contentNote">Website - 808Club - Wordpress</p>
       </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Empty">
-        <p>Empty</p>
+      <Collapsible title="About">
+        <p>
+          I made this website using Wordpress and Elementor - so basically a
+          drag and drop builder.
+        </p>
+      </Collapsible>
+      <Collapsible title="Resources">
+        <br />
+        <a href="https://808club.at/" target="_blank" rel="noopener noreferrer"
+          >Website</a
+        >
       </Collapsible>
     </section>
   </div>

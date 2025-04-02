@@ -38,14 +38,14 @@ const projects = ref([
   },
   {
     categories: ["VISUAL"],
-    title: "TD Tutorials",
+    title: "PokéMorph",
     currentProjectView: "/VisualProject2",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#Education", "#YouTube", "#Touchdesigner"],
   },
   {
     categories: ["VISUAL"],
-    title: "PokéMorph",
+    title: "Bananana",
     currentProjectView: "/VisualProject3",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#Education", "#YouTube", "#Touchdesigner"],
@@ -53,21 +53,21 @@ const projects = ref([
   //DESIGN
   {
     categories: ["DESIGN"],
-    title: "Branding",
+    title: "TRIBEHOLZ",
     currentProjectView: "/DesignProject1",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#AdobeCC", "#Affinity", "#Procreate"],
   },
   {
     categories: ["DESIGN"],
-    title: "Screenprints",
+    title: "DURCH",
     currentProjectView: "/DesignProject2",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#Touchdesigner", "#AdobeCC", "#Affinity"],
   },
   {
     categories: ["DESIGN"],
-    title: "Flyer & Poster",
+    title: "808CLUB",
     currentProjectView: "/DesignProject3",
     imagePath: "/src/assets/images/placeholderimg.jpg",
     tag: ["#AdobeCC", "#Affinity", "#Procreate"],
