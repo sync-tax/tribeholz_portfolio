@@ -94,8 +94,11 @@ nav {
     }
 
     img {
-      opacity: 30%;
-      filter: var(--svg-filter);
+      opacity: 50%;
+
+      :hover {
+        opacity: 100%;
+      }
     }
 
     .dark {

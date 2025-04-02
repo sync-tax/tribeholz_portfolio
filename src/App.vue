@@ -7,11 +7,11 @@ import FooterSection from "./components/Footer.vue";
   <body>
     <MainNavigation />
     <main>
-      <router-view v-slot="{ Component }">
-        <transition name="route">
+      <transition name="route">
+        <router-view v-slot="{ Component }">
           <component :is="Component" />
-        </transition>
-      </router-view>
+        </router-view>
+      </transition>
     </main>
     <FooterSection />
   </body>
@@ -21,12 +21,11 @@ import FooterSection from "./components/Footer.vue";
 .route-enter-active,
 .route-leave-active {
   scroll-behavior: smooth;
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transform */
+  transition: opacity 0.5s ease, transform 0.3s ease; /* Add transform */
 }
 
 .route-enter-from,
 .route-leave-to {
   opacity: 0;
-  transform: translateY(20px); /* Add initial offset */
 }
 </style>

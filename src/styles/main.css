@@ -15,7 +15,7 @@
   --text-color: black;
   --text-thick: 500;
   --border-color: #0f0f0f;
-  --project-border: black;
+  --project-border: white;
   --svg-filter: invert(0%);
   --logo-filter: invert(100%);
   --dark-opa: 30%;
@@ -91,12 +91,7 @@ body {
 }
 @media (max-width: 450px) {
   .projectNav li {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 450px) {
-  .projectNav li {
-    font-size: 0.85rem;
+    font-size: 1.1rem;
   }
 }
 .projectNav li:hover {
@@ -122,7 +117,7 @@ body {
   display: flex;
   border-radius: 20px;
   padding: 20px;
-  border: 1px solid var(--project-border);
+  border: 2px solid var(--project-border);
   margin-top: 80px;
   width: 80%;
   height: 280px;
@@ -145,17 +140,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-}
-@media (max-width: 778px) {
-  .projectListContainer .projectContainer .projectLeftSection {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 420px) {
-  .projectListContainer .projectContainer .projectLeftSection {
-    width: 90%;
-  }
+  height: 100%;
 }
 .projectListContainer .projectContainer .projectLeftSection h4 {
   font-family: "Anek Devanagari", sans-serif;
@@ -178,7 +163,7 @@ body {
   font-weight: 800;
   font-size: 3rem;
   font-variation-settings: "wdth" 125;
-  font-size: 4rem;
+  font-size: 4.6rem;
   line-height: 98%;
   text-align: center;
   color: white;
@@ -186,28 +171,19 @@ body {
 }
 @media (max-width: 778px) {
   .projectListContainer .projectContainer .projectLeftSection h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-top: 0px;
+    font-size: 2.5rem;
   }
 }
 .projectListContainer .projectContainer .projectLeftSection .projectTags {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 778px) {
-  .projectListContainer .projectContainer .projectLeftSection .projectTags {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 20px;
-  }
-}
 .projectListContainer .projectContainer .projectLeftSection .projectTags p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: var(--text-thick);
   font-size: 1.2rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   opacity: 75%;
   padding: 5px 10px;
   border-radius: 15px;
@@ -215,6 +191,11 @@ body {
   top: -10px;
   color: white;
   font-weight: 500;
+}
+@media (max-width: 778px) {
+  .projectListContainer .projectContainer .projectLeftSection .projectTags p {
+    font-size: 1rem;
+  }
 }
 .projectListContainer .projectContainer .projectLeftSection .projectRoute {
   text-decoration: none;
@@ -686,8 +667,10 @@ nav ul .modeSwitch:hover {
   }
 }
 nav ul img {
-  opacity: 30%;
-  filter: var(--svg-filter);
+  opacity: 50%;
+}
+nav ul img :hover {
+  opacity: 100%;
 }
 nav ul .dark {
   opacity: var(--dark-opa);
@@ -900,6 +883,9 @@ nav ul .light {
     padding-top: 20px;
   }
 }
+.footer .footerWrapper .footerExtra img:hover {
+  opacity: 100%;
+}
 .footer .footerWrapper .footerExtra .dark {
   opacity: var(--dark-opa);
   filter: var(--svg-filter);
@@ -1055,7 +1041,7 @@ nav ul .light {
   pointer-events: none;
 }
 #nyan:hover {
-  opacity: 90%;
+  opacity: 100%;
 }
 
 @keyframes fly {

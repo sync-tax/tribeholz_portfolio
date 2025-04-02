@@ -100,6 +100,10 @@
         }
       }
 
+      img:hover {
+        opacity: 100%;
+      }
+
       .dark {
         opacity: var(--dark-opa);
         filter: var(--svg-filter);
