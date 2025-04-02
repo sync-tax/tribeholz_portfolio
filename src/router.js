@@ -100,19 +100,35 @@ const routes = [
   },
 ];
 
+const projectRoutes = [
+  "/AudioProject1",
+  "/AudioProject2",
+  "/AudioProject3",
+  "/VisualProject1",
+  "/VisualProject2",
+  "/VisualProject3",
+  "/DesignProject1",
+  "/DesignProject2",
+  "/DesignProject3",
+  "/OtherProject1",
+  "/OtherProject2",
+  "/OtherProject3",
+];
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
-});
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
 
-router.afterEach((to, from) => {
-  if (to.path !== from.path) {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }
+    if (to.path === "/" && projectRoutes.includes(from.path)) {
+      return { top: 510 };
+    }
+
+    return { top: 0 };
+  },
 });
 
 export default router;

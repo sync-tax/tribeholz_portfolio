@@ -26,13 +26,4 @@ defineProps({
   </RouterLink>
 </template>
 
-<style scoped>
-.projectContainer {
-  /* Ensure the container has a set height and width */
-  width: 100%;
-  height: 400px; /* Adjust as needed */
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-</style>
+<style scoped></style>

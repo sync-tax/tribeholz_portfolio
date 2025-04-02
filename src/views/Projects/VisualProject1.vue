@@ -30,9 +30,6 @@ onMounted(() => {
           width="100%"
         />
         <p class="contentNote">Concert recording on YouTube soon!</p>
-        <a target="_blank" href="https://www.instagram.com/p/DG5g0ggN2Oq/">
-          Instagram Reel
-        </a>
         <br />
         <br />
 
