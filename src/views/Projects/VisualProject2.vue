@@ -23,9 +23,6 @@ onMounted(() => {
         text="Alternative evolution animation for Pokémon sprites."
       />
       <div class="mainProjectContent">
-        <img src="../../assets/images/test.gif" alt="Pokemorph" width="60%" />
-
-        <p class="contentNote" style="text-align: center">GIF: Evolite</p>
         <iframe
           width="600"
           height="337"
@@ -39,8 +36,11 @@ onMounted(() => {
         <p class="contentNote">
           Tutorial on the morph animation in Touchdesigner.
         </p>
+        <img src="../../assets/images/test.gif" alt="Pokemorph" width="60%" />
+
+        <p class="contentNote">GIF: Evolite</p>
         <img
-          src="../../assets/images/v_pokemorph_img1.png"
+          src="../../assets/images/v_pokemorph_omg1.png"
           alt="Pokemorph"
           width="100%"
         />

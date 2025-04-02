@@ -29,7 +29,6 @@ import Overview from "../../components/ProjectOverview.vue";
         </p>
       </Collapsible>
       <Collapsible title="Resources">
-        <br />
         <a href="https://808club.at/" target="_blank" rel="noopener noreferrer"
           >Website</a
         >

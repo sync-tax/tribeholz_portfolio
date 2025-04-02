@@ -30,7 +30,7 @@ export function createScene() {
 
 export function createGeometry() {
   const star = new THREE.Mesh(
-    new THREE.SphereGeometry(0.025),
+    new THREE.SphereGeometry(0.035),
     new THREE.MeshStandardMaterial({
       color: 0xffffff,
     })

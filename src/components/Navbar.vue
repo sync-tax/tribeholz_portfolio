@@ -3,6 +3,20 @@ import { ref, onMounted } from "vue";
 
 const nyanCat = ref(null);
 
+const htmlElement = document.documentElement;
+
+const applyLightmode = () => {
+  htmlElement.classList.add("lightmode");
+  htmlElement.classList.remove("darkmode");
+  localStorage.setItem("theme", "light");
+};
+
+const applyDarkmode = () => {
+  htmlElement.classList.add("darkmode");
+  htmlElement.classList.remove("lightmode");
+  localStorage.setItem("theme", "dark");
+};
+
 onMounted(() => {
   const nyanButton = document.getElementById("nyan");
   if (nyanButton) {
@@ -19,6 +33,15 @@ onMounted(() => {
         ); // Use { once: true } to remove the listener after one execution
       }
     });
+  }
+});
+
+onMounted(() => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
+    document.documentElement.classList.add("lightmode");
+  } else {
+    document.documentElement.classList.add("darkmode");
   }
 });
 </script>
@@ -59,15 +82,15 @@ onMounted(() => {
         src="../assets/images/darkmode_icon.svg"
         alt="A moon icon - used to switch to darkmode."
         style="fill: white"
-        class="modeSwitch"
-        id="activeMode"
+        class="modeSwitch dark"
+        @click="applyDarkmode"
       />
       <img
         title="Wait. This is illegal."
         src="../assets/images/lightmode_icon.svg"
         alt="A sun icon - used to switch to lightmode."
-        class="modeSwitch"
-        id="notactiveMode"
+        class="modeSwitch light"
+        @click="applyLightmode"
       />
     </ul>
   </nav>

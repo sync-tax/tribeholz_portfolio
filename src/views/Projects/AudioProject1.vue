@@ -46,7 +46,7 @@ import Overview from "../../components/ProjectOverview.vue";
         <a
           target="_blank"
           href="https://github.com/sync-tax/TechnoSession-1/blob/main/TechnoSession%231.rb"
-          >Ruby file for the first jam</a
+          >Ruby-File | First</a
         >
       </Collapsible>
 

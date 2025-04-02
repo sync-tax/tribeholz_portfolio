@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "arro_font";
+  src: url("../assets/fonts/RobotChildren.woff2") format("woff2"),
+    url("../assets/fonts/RobotChildren.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin titles-font {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  font-variation-settings: "wdth" 125;
+}
+
+@mixin subtitles-font {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+}
+
+@mixin text-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--text-thick);
+  font-size: 1.2rem;
+}

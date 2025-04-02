@@ -1,0 +1,112 @@
+.project {
+  a {
+    color: #3366cc;
+  }
+  .backOverview {
+    padding: 5px;
+    position: fixed;
+    .backLink {
+      display: flex;
+      text-decoration: none;
+      color: var(--text-color);
+      opacity: 40%;
+
+      width: fit-content;
+    }
+    .backLink:hover {
+      opacity: 1;
+    }
+
+    img {
+      filter: var(--svg-filter);
+    }
+
+    p {
+      color: var(--text-color);
+    }
+  }
+  .projectOverview {
+    display: flex;
+    flex-direction: column;
+
+    .textProjectContent {
+      padding: 15px;
+      h2 {
+        @include titles-font();
+        font-size: 4rem;
+        line-height: 98%;
+
+        margin-top: 35px;
+        text-align: center;
+
+        @media (max-width: 778px) {
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
+      p {
+        @include text-font();
+        font-size: 1.1rem;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        text-align: center;
+      }
+    }
+    .mainProjectContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      align-self: center;
+
+      img {
+        align-self: center;
+        border-radius: 10px;
+        margin-top: 30px;
+        width: 60%;
+
+        @media (max-width: 600px) {
+          width: 90%;
+        }
+      }
+
+      pre {
+        margin-top: 30px;
+        align-self: center;
+        width: 60%;
+
+        @media (max-width: 600px) {
+          font-size: 0.8rem;
+          width: 90%;
+        }
+      }
+
+      iframe {
+        align-self: center;
+        border-radius: 10px;
+        margin-top: 30px;
+
+        @media (max-width: 600px) {
+          font-size: 0.7rem;
+          width: 90%;
+          height: 200px;
+        }
+      }
+
+      .contentNote {
+        padding-top: 5px;
+        opacity: 0.6;
+        width: 60%;
+        align-self: center;
+
+        @media (max-width: 600px) {
+          width: 90%;
+          text-align: left;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

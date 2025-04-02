@@ -1,0 +1,36 @@
+.linkContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+  margin: 50px auto;
+  padding-top: 20px;
+
+  a {
+    @include subtitles-font();
+    font-size: 1.4rem;
+    width: 60%;
+
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+
+    padding-top: 6px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+
+    @media (max-width: 506px) {
+      width: 90%;
+    }
+  }
+
+  a:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+  }
+}

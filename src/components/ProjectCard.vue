@@ -8,24 +8,31 @@ defineProps({
 </script>
 
 <template>
-  <div
-    class="projectContainer"
-    :style="{ backgroundImage: `url(${imagePath})` }"
-  >
-    <div class="projectLeftSection">
-      <div class="projectLeftSectionSeparator">
+  <RouterLink :to="currentProjectView" class="project-list">
+    <div
+      class="projectContainer"
+      :style="{ backgroundImage: `url(${imagePath})` }"
+    >
+      <div class="projectLeftSection">
         <h2>
           {{ projectTitle }}
         </h2>
-        <div class="projectInfoContainer">
-          <div class="projectTags">
-            <p v-for="tag in projectTags" :key="tag">{{ tag }}</p>
-          </div>
+
+        <div class="projectTags">
+          <p v-for="tag in projectTags" :key="tag">{{ tag }}</p>
         </div>
       </div>
-      <RouterLink :to="currentProjectView" class="projectRoute">
-        <p class="projectLink">View Project</p>
-      </RouterLink>
     </div>
-  </div>
+  </RouterLink>
 </template>
+
+<style scoped>
+.projectContainer {
+  /* Ensure the container has a set height and width */
+  width: 100%;
+  height: 400px; /* Adjust as needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+</style>

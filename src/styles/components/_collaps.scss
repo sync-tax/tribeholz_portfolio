@@ -1,0 +1,53 @@
+.aboutDetails,
+.projectDetails {
+  width: 70%;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+
+  .collapsibleWrapper {
+    margin-top: 60px;
+
+    p {
+      @include text-font();
+      font-size: 1.1rem;
+      padding-bottom: 20px;
+    }
+
+    h4 {
+      @include subtitles-font();
+      font-size: 1.2rem;
+    }
+
+    .collapspreview {
+      display: flex;
+      justify-content: space-between;
+
+      border-bottom: 1px solid var(--text-color);
+
+      margin-bottom: 15px;
+      cursor: pointer;
+
+      img {
+        opacity: 100%;
+        filter: var(--svg-filter);
+        width: 25px;
+        opacity: 70%;
+        padding-bottom: 10px;
+
+        transition: transform 0.3s ease;
+
+        &:hover {
+          opacity: 100%;
+        }
+      }
+
+      h4 {
+        @include subtitles-font();
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

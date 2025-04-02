@@ -1,10 +1,5 @@
 <script setup>
-import { ref } from "vue";
-
-const isBackgroundVisible = ref(false);
-const isThingsVisible = ref(false);
-const isTechVisible = ref(false);
-const portfolioIsVisible = ref(false);
+import Collapsible from "../components/Collapsibles.vue";
 </script>
 
 <template>
@@ -20,89 +15,60 @@ const portfolioIsVisible = ref(false);
         <h5>hi, my name is...</h5>
         <h2>ROBERT ARDELEANU</h2>
         <p>
-          I am a creative coding enthusiast and currently study Mediatechnology
-          & Design (BA) at the unviersity of applied sciences @ Campus
-          Hagenberg. <br />
+          I am a creative coding enthusiast and currently study MtD (BA) at the
+          unviersity of applied sciences @ Campus Hagenberg. <br />
           <span>Linz, Upper Austria</span>
         </p>
-        <a
-          href="https://drive.google.com/file/d/18GAOEvxXWaD3Pvr4apUIzXjAwTwsZfBV/view?usp=sharing"
-          target="_blank"
-          >Portfolio (PDF)</a
-        >
       </div>
     </section>
 
     <section class="aboutDetails">
-      <div class="collapsibleWrapper">
-        <div
-          class="collapspreview"
-          @click="isBackgroundVisible = !isBackgroundVisible"
-        >
-          <h4>Background</h4>
-          <img
-            src="../assets/images/plus-icon.svg"
-            alt="Icon to Open a collapse section"
-            :class="{ rotated: isBackgroundVisible }"
-          />
-        </div>
-        <transition name="ease-in">
-          <p v-if="isBackgroundVisible">
-            I was born in Romania, in a small city - also known as Hackerville.
-            So you could say I was destined to become a tech nerd*lol* ... well,
-            nope.
-            <br />
-            <br />
-            Actually it took me quite a while to figure out my path but I'm glad
-            I took my time to explore different hobbies. Looking back, I can see
-            how those passions led me to the perfect place - where creativity
-            and technology intersect.
-          </p>
-        </transition>
-      </div>
-      <div class="collapsibleWrapper">
-        <div class="collapspreview" @click="isThingsVisible = !isThingsVisible">
-          <h4>Things I love</h4>
-          <img
-            src="../assets/images/plus-icon.svg"
-            alt="Icon to Open a collapse section"
-            :class="{ rotated: isThingsVisible }"
-          />
-        </div>
-        <transition name="ease-in">
-          <p v-if="isThingsVisible">
-            I find joy and inspiration all around me — in nature, mathematics,
-            relationships, and especially in my cats (who are essentially my
-            children lol).
-            <br />
-            <br />
+      <Collapsible title="Things I love">
+        <h4>Creative Coding</h4>
+        <p>generative visuals with TD & algorithmic sound with SP</p>
 
-            - Making visual art with TouchDesigner and other Tech. <br />
-            - Composing algorithmic sound with SonicPi. <br />
-            - Creating YouTube videos about nerdy stuff. <br />
-            - Drawing, screenprinting, and designing. <br />
-            - Dancing to bouncy tekno music. <br />
-            - Playing good games.
-          </p>
-        </transition>
-      </div>
-      <div class="collapsibleWrapper">
-        <div class="collapspreview" @click="isTechVisible = !isTechVisible">
-          <h4>Technologies</h4>
-          <img
-            src="../assets/images/plus-icon.svg"
-            alt="Icon to Open a collapse section"
-            :class="{ rotated: isTechVisible }"
-          />
-        </div>
-        <transition name="ease-in">
-          <p v-if="isTechVisible">
-            - Audio: SonicPi, Ableton, Audacity <br />
-            - Visual: TouchDesigner, Blender, Affinity Suite, Figma<br />
-            - Coding: JS, Python, Ruby, Java<br />
-          </p>
-        </transition>
-      </div>
+        <h4>Prints</h4>
+        <p>screenprinted shirts, stickers and all that good stuff</p>
+
+        <h4>Pokémon</h4>
+        <p>pure nostalgia - the ROM-hacks are the best tho</p>
+
+        <h4>Cats</h4>
+        <p>I have two cats - basically my children</p>
+
+        <h4>Techno</h4>
+        <p>best spirit - even better sound</p>
+      </Collapsible>
+      <Collapsible title="Technologies">
+        <h4>Programming</h4>
+        <p>Javascript(Vue), Java, Python, Ruby</p>
+
+        <h4>Realtime-Graphics</h4>
+        <p>Touchdesigner</p>
+
+        <h4>2D-Graphics</h4>
+        <p>Photoshop, Illustrator, Procreate</p>
+
+        <h4>3D-Graphics</h4>
+        <p>Blender</p>
+
+        <h4>Video</h4>
+        <p>DaVinci Resolve, OBS, Premiere</p>
+
+        <h4>Audio</h4>
+        <p>SonicPi, Ableton</p>
+
+        <h4>UX/UI-Design</h4>
+        <p>Xd, Figma</p>
+      </Collapsible>
+
+      <Collapsible title="Portfolio">
+        <a
+          href="https://drive.google.com/file/d/18GAOEvxXWaD3Pvr4apUIzXjAwTwsZfBV/view?usp=sharing"
+          target="_blank"
+          >Portfolio (PDF) - Download</a
+        >
+      </Collapsible>
     </section>
   </div>
 </template>

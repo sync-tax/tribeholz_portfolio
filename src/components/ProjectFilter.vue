@@ -128,16 +128,29 @@ function updateActiveFilter(filter) {
     </div>
 
     <div class="projectListContainer">
-      <ProjectCard
-        v-for="project in filteredProjects"
-        :key="project.title"
-        :subTitle="project.subTitle"
-        :projectTitle="project.title"
-        :currentProjectView="project.currentProjectView"
-        :imagePath="project.imagePath"
-        :projectTags="project.tag"
-        :projectInfo="project.info"
-      />
+      <TransitionGroup name="project" tag="div" class="project-list">
+        <ProjectCard
+          v-for="project in filteredProjects"
+          :key="project.title"
+          :subTitle="project.subTitle"
+          :projectTitle="project.title"
+          :currentProjectView="project.currentProjectView"
+          :imagePath="project.imagePath"
+          :projectTags="project.tag"
+          :projectInfo="project.info"
+        />
+      </TransitionGroup>
     </div>
   </div>
 </template>
+
+<style scoped>
+.project-enter-active,
+.project-leave-active {
+  transition: all 0.2s ease;
+}
+.project-enter-from,
+.project-leave-to {
+  opacity: 0;
+}
+</style>
