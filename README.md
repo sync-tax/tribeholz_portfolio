@@ -14,4 +14,15 @@
 - Dynamic Project Filter
 - THREE.js Banner
 - Themes (Dark, Light)
-- Eastereggs (nyan, illegal_lightmode)
+- Eastereggs (nyan, this is illegal)
+
+---
+
+#### To Do
+
+- Default theme depending on daytime
+
+  - night -> dark
+  - day -> light
+
+- Apply better text to - some - projects

@@ -9,7 +9,10 @@ import Overview from "../../components/ProjectOverview.vue";
     <Back />
 
     <section class="projectOverview">
-      <Overview title="808club.at" text="Website I made for our club" />
+      <Overview
+        title="808club.at"
+        text="Currently at: https://808club.x-net.dev/"
+      />
 
       <div class="mainProjectContent">
         <img
@@ -29,7 +32,10 @@ import Overview from "../../components/ProjectOverview.vue";
         </p>
       </Collapsible>
       <Collapsible title="Resources">
-        <a href="https://808club.at/" target="_blank" rel="noopener noreferrer"
+        <a
+          href="https://808club.x-net.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
           >Website</a
         >
       </Collapsible>

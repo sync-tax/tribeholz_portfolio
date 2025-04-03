@@ -208,7 +208,10 @@ body {
   }
 }
 
-.aboutGeneral {
+.aboutSite {
+  width: 100%;
+}
+.aboutSite .aboutGeneral {
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -216,15 +219,27 @@ body {
   padding-top: 20px;
 }
 @media (max-width: 800px) {
-  .aboutGeneral {
+  .aboutSite .aboutGeneral {
     flex-direction: column;
   }
 }
-.aboutGeneral img {
-  width: 100%;
-  margin: 0 auto;
+.aboutSite .aboutGeneral img {
+  max-width: 40%;
+  height: auto;
 }
-.aboutGeneral .aboutTextWrapper {
+@media (max-width: 800px) {
+  .aboutSite .aboutGeneral img {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .aboutSite .aboutGeneral img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+.aboutSite .aboutGeneral .aboutTextWrapper {
   margin: auto 0;
   display: flex;
   justify-content: space-around;
@@ -232,12 +247,12 @@ body {
   width: 200%;
 }
 @media (max-width: 800px) {
-  .aboutGeneral .aboutTextWrapper {
+  .aboutSite .aboutGeneral .aboutTextWrapper {
     width: 100%;
     text-align: center;
   }
 }
-.aboutGeneral .aboutTextWrapper h2 {
+.aboutSite .aboutGeneral .aboutTextWrapper h2 {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 800;
   font-size: 3rem;
@@ -246,7 +261,7 @@ body {
   margin-top: 15px;
   font-size: 1.9rem;
 }
-.aboutGeneral .aboutTextWrapper h5 {
+.aboutSite .aboutGeneral .aboutTextWrapper h5 {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
@@ -255,17 +270,17 @@ body {
   opacity: 50%;
   line-height: 0.5rem;
 }
-.aboutGeneral .aboutTextWrapper p {
+.aboutSite .aboutGeneral .aboutTextWrapper p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: var(--text-thick);
   font-size: 1.2rem;
   font-size: 1.1rem;
 }
-.aboutGeneral .aboutTextWrapper span {
+.aboutSite .aboutGeneral .aboutTextWrapper span {
   opacity: 40%;
 }
-.aboutGeneral .aboutTextWrapper a {
+.aboutSite .aboutGeneral .aboutTextWrapper a {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
@@ -283,11 +298,11 @@ body {
   opacity: 60%;
 }
 @media (max-width: 800px) {
-  .aboutGeneral .aboutTextWrapper a {
+  .aboutSite .aboutGeneral .aboutTextWrapper a {
     margin: 20px auto;
   }
 }
-.aboutGeneral .aboutTextWrapper a:hover {
+.aboutSite .aboutGeneral .aboutTextWrapper a:hover {
   opacity: 100%;
 }
 
