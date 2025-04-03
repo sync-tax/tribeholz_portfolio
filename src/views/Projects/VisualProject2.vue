@@ -26,7 +26,7 @@ onMounted(() => {
         <iframe
           width="600"
           height="337"
-          src="https://www.youtube.com/embed/l1wTkWRXGMg?si=iOTDhpFIQTf8xd8F"
+          src="https://www.youtube.com/embed/l1wTkWRXGMg?start=36"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -36,9 +36,11 @@ onMounted(() => {
         <p class="contentNote">
           Tutorial on the morph animation in Touchdesigner.
         </p>
-        <img src="../../assets/images/test.gif" alt="Pokemorph" width="60%" />
+        <video autoplay loop muted playsinline>
+          <source src="../../assets/images/pokemorph.webM" type="video/mp4" />
+        </video>
 
-        <p class="contentNote">GIF: Evolite</p>
+        <p class="contentNote" style="text-align: center">Eevee - Evolution</p>
         <img
           src="../../assets/images/v_pokemorph_omg1.png"
           alt="Pokemorph"

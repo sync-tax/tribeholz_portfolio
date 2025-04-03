@@ -10,6 +10,7 @@ import Collapsible from "../components/Collapsibles.vue";
         width="420px"
         alt="A picture of me (Robert Ardeleanu)"
         class="aboutPic"
+        loading="eager"
       />
       <div class="aboutTextWrapper">
         <h5>hi, my name is...</h5>

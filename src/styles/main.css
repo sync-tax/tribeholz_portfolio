@@ -780,6 +780,11 @@ nav ul .light {
     height: 200px;
   }
 }
+.project .projectOverview .mainProjectContent video {
+  width: 40%;
+  align-self: center;
+  margin-top: 30px;
+}
 .project .projectOverview .mainProjectContent .contentNote {
   padding-top: 5px;
   opacity: 0.6;
