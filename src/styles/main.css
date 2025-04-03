@@ -221,22 +221,19 @@ body {
   }
 }
 .aboutGeneral img {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
-}
-@media (max-width: 800px) {
-  .aboutGeneral img {
-    text-align: center;
-  }
 }
 .aboutGeneral .aboutTextWrapper {
   margin: auto 0;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  width: 200%;
 }
 @media (max-width: 800px) {
   .aboutGeneral .aboutTextWrapper {
+    width: 100%;
     text-align: center;
   }
 }

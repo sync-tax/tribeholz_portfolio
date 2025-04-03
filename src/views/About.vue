@@ -7,7 +7,6 @@ import Collapsible from "../components/Collapsibles.vue";
     <section class="aboutGeneral">
       <img
         src="../assets/images/me_about.png"
-        width="420px"
         alt="A picture of me (Robert Ardeleanu)"
         class="aboutPic"
         loading="eager"
