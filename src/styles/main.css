@@ -1,13 +1,13 @@
 :root {
-  --background-color: #0f0f0f;
-  --text-color: white;
-  --text-thick: 300;
-  --border-color: #383838;
-  --project-border: rgba(255, 255, 255, 0.35);
-  --svg-filter: invert(100%);
-  --logo-filter: invert(0%);
-  --dark-opa: 100%;
-  --light-opa: 30%;
+  --background-color: white;
+  --text-color: black;
+  --text-thick: 500;
+  --border-color: #0f0f0f;
+  --project-border: white;
+  --svg-filter: invert(0%);
+  --logo-filter: invert(100%);
+  --dark-opa: 30%;
+  --light-opa: 100%;
 }
 
 .lightmode {

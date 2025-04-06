@@ -23,6 +23,29 @@ import Collapsible from "../components/Collapsibles.vue";
     </section>
 
     <section class="aboutDetails">
+      <Collapsible title="Portfolio">
+        <h4>Web Portfolio</h4>
+        <p>
+          This Portfolio was built using HTML, SCSS and JS | Vue. I used Vite
+          for developement and build process. <br />
+          <a
+            target="_blank"
+            href="https://github.com/sync-tax/tribeholz_portfolio"
+            >➜ Codebase on GitHub</a
+          >
+        </p>
+
+        <br />
+        <h4>Print Portfolio</h4>
+        <p>
+          <a
+            href="https://drive.google.com/file/d/18GAOEvxXWaD3Pvr4apUIzXjAwTwsZfBV/view?usp=sharing"
+            target="_blank"
+            >Portfolio (PDF) - Download</a
+          >
+        </p>
+      </Collapsible>
+
       <Collapsible title="Things I love">
         <h4>Creative Coding</h4>
         <p>generative visuals with TD & algorithmic sound with SP</p>
@@ -39,6 +62,7 @@ import Collapsible from "../components/Collapsibles.vue";
         <h4>Techno</h4>
         <p>best spirit - even better sound</p>
       </Collapsible>
+
       <Collapsible title="Technologies">
         <h4>Programming</h4>
         <p>Javascript(Vue), Java, Python, Ruby</p>
@@ -60,14 +84,6 @@ import Collapsible from "../components/Collapsibles.vue";
 
         <h4>UX/UI-Design</h4>
         <p>Xd, Figma</p>
-      </Collapsible>
-
-      <Collapsible title="Portfolio">
-        <a
-          href="https://drive.google.com/file/d/18GAOEvxXWaD3Pvr4apUIzXjAwTwsZfBV/view?usp=sharing"
-          target="_blank"
-          >Portfolio (PDF) - Download</a
-        >
       </Collapsible>
     </section>
   </div>
