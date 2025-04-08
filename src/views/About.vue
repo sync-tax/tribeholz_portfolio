@@ -1,16 +1,13 @@
 <script setup>
 import Collapsible from "../components/Collapsibles.vue";
+import Image from "../components/Image.vue";
 </script>
 
 <template>
   <div class="aboutSite">
     <section class="aboutGeneral">
-      <img
-        src="../assets/images/me_about.png"
-        alt="A picture of me (Robert Ardeleanu)"
-        class="aboutPic"
-        loading="eager"
-      />
+      <Image src="src/assets/images/me_about.png" alt="Me" />
+
       <div class="aboutTextWrapper">
         <h5>hi, my name is...</h5>
         <h2>ROBERT ARDELEANU</h2>

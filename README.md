@@ -20,11 +20,11 @@
 
 #### To Do
 
-- Default theme depending on daytime
+- [ ] Default theme depending on daytime
 
-  - night -> dark
-  - day -> light
+  - [ ] night -> dark
+  - [ ] day -> light
 
-- Make projectcards better (Short description etc...)
+- [ ] Make projectcards better (Short description etc...)
 
-- Compress Images & Improve Chunking
+- [ ] Compress Images & Improve Chunking

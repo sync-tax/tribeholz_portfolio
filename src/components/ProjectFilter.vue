@@ -2,7 +2,7 @@
 import { ref, computed } from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
 
-const activeFilter = ref(localStorage.getItem("activeFilter") || "AUDIO");
+const activeFilter = ref(localStorage.getItem("activeFilter") || "OTHER");
 
 const projects = ref([
   //AUDIO
@@ -143,14 +143,3 @@ function updateActiveFilter(filter) {
     </div>
   </div>
 </template>
-
-<style scoped>
-.project-enter-active,
-.project-leave-active {
-  transition: all 0.2s ease;
-}
-.project-enter-from,
-.project-leave-to {
-  opacity: 0;
-}
-</style>

@@ -111,6 +111,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 .projectListContainer .projectContainer {
   filter: var(--logo-filter);

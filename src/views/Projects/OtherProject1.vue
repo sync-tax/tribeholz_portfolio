@@ -2,6 +2,7 @@
 import Collapsible from "../../components/Collapsibles.vue";
 import Back from "../../components/ProjectBack.vue";
 import Overview from "../../components/ProjectOverview.vue";
+import Image from "../../components/Image.vue";
 </script>
 
 <template>
@@ -15,11 +16,7 @@ import Overview from "../../components/ProjectOverview.vue";
       />
 
       <div class="mainProjectContent">
-        <img
-          src="../../assets/images/o_events_img5.png"
-          alt="Spotlight"
-          width="100%"
-        />
+        <Image src="src/assets/images/o_events_img5.png" alt="Spotlight" />
         <p class="contentNote">Testing - SL</p>
       </div>
 
@@ -30,18 +27,10 @@ import Overview from "../../components/ProjectOverview.vue";
       />
 
       <div class="mainProjectContent">
-        <img
-          src="../../assets/images/o_events_img1.png"
-          alt="Website"
-          width="100%"
-        />
+        <Image src="src/assets/images/o_events_img1.png" alt="HoA" />
         <p class="contentNote">Concert - HoA</p>
 
-        <img
-          src="../../assets/images/o_events_img3.png"
-          alt="HoA"
-          width="100%"
-        />
+        <Image src="src/assets/images/o_events_img3.png" alt="HoA" />
         <p class="contentNote">Exhibition - HoA</p>
       </div>
 
@@ -52,11 +41,7 @@ import Overview from "../../components/ProjectOverview.vue";
       />
 
       <div class="mainProjectContent">
-        <img
-          src="../../assets/images/o_events_img4.png"
-          alt="GoS"
-          width="100%"
-        />
+        <Image src="src/assets/images/o_events_img4.png" alt="GoS" />
         <p class="contentNote">Skate Challenge - GoS</p>
       </div>
     </section>

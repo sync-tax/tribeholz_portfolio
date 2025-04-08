@@ -2,6 +2,7 @@
 import Collapsible from "../../components/Collapsibles.vue";
 import Back from "../../components/ProjectBack.vue";
 import Overview from "../../components/ProjectOverview.vue";
+import Image from "../../components/Image.vue";
 </script>
 
 <template>
@@ -15,17 +16,10 @@ import Overview from "../../components/ProjectOverview.vue";
       />
 
       <div class="mainProjectContent">
-        <img
-          src="../../assets/images/o_retro_img2.png"
-          alt="RetroPi"
-          width="70%"
-        />
+        <Image src="src/assets/images/o_retro_img2.png" alt="RetroPi" />
         <p style="text-align: center" class="contentNote">Case - Pokecenter</p>
-        <img
-          src="../../assets/images/o_retro_img1.png"
-          alt="RetroPi"
-          width="70%"
-        />
+
+        <Image src="src/assets/images/o_retro_img1.png" alt="SHINYY" />
         <p style="text-align: center" class="contentNote">Shiny Onyx - :3</p>
       </div>
     </section>

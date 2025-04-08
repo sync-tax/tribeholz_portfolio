@@ -2,6 +2,7 @@
 import Collapsible from "../../components/Collapsibles.vue";
 import Back from "../../components/ProjectBack.vue";
 import Overview from "../../components/ProjectOverview.vue";
+import Image from "../../components/Image.vue";
 </script>
 
 <template>
@@ -19,16 +20,8 @@ import Overview from "../../components/ProjectOverview.vue";
           Illustrator and designed stickers and such.
         </p>
         <div class="imageContainer">
-          <img
-            src="../../assets/images/d_808_img2.png"
-            alt="Flyer"
-            width="40%"
-          />
-          <img
-            src="../../assets/images/d_808_img3.png"
-            alt="Flyer"
-            width="50%"
-          />
+          <Image src="src/assets/images/d_808_img2.png" alt="Flyer" />
+          <Image src="src/assets/images/d_808_img3.png" alt="Flyer" />
         </div>
 
         <p style="text-align: center" class="contentNote">
@@ -40,16 +33,8 @@ import Overview from "../../components/ProjectOverview.vue";
         </p>
 
         <div class="imageContainer">
-          <img
-            src="../../assets/images/d_808_img5.png"
-            alt="Flyer"
-            width="40%"
-          />
-          <img
-            src="../../assets/images/d_808_img4.png"
-            alt="Flyer"
-            width="50%"
-          />
+          <Image src="src/assets/images/d_808_img5.png" alt="Flyer" />
+          <Image src="src/assets/images/d_808_img4.png" alt="Flyer" />
         </div>
         <p style="text-align: center" class="contentNote">
           Flyer - House of Arts #2- Photoshop | Event sadly canceled :(

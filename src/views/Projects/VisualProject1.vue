@@ -5,6 +5,7 @@ import Prism from "prismjs";
 import Collapsible from "../../components/Collapsibles.vue";
 import Back from "../../components/ProjectBack.vue";
 import Overview from "../../components/ProjectOverview.vue";
+import Image from "../../components/Image.vue";
 
 onMounted(() => {
   nextTick(() => {
@@ -24,15 +25,12 @@ onMounted(() => {
       />
 
       <div class="mainProjectContent">
-        <img
-          src="../../assets/images/v_spotlight_img2.png"
-          alt="Spotlight image"
-          width="100%"
-        />
+        <Image src="src/assets/images/v_spotlight_img2.png" alt="VJ_System" />
         <p class="contentNote">
           Here’s the basic setup – each visual is housed in its own Base
           component.
         </p>
+
         <pre><code class="language-python">
 # map midi channels to their respective Base
 channel_to_base = {

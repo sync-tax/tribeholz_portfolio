@@ -2,6 +2,7 @@
 import Collapsible from "../../components/Collapsibles.vue";
 import Back from "../../components/ProjectBack.vue";
 import Overview from "../../components/ProjectOverview.vue";
+import Image from "../../components/Image.vue";
 </script>
 
 <template>
@@ -15,10 +16,9 @@ import Overview from "../../components/ProjectOverview.vue";
       />
 
       <div class="mainProjectContent">
-        <img
-          src="../../assets/images/o_dead_img1.png"
+        <Image
+          src="src/assets/images/o_dead_img1.png"
           alt="Data Visualisation"
-          width="100%"
         />
         <p style="text-align: center" class="contentNote">
           Data Visualisation - Dead Internet - Illustrator

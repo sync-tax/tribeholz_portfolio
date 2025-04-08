@@ -2,6 +2,7 @@
 import Collapsible from "../../components/Collapsibles.vue";
 import Back from "../../components/ProjectBack.vue";
 import Overview from "../../components/ProjectOverview.vue";
+import Image from "../../components/Image.vue";
 </script>
 
 <template>
@@ -27,7 +28,7 @@ import Overview from "../../components/ProjectOverview.vue";
         ></iframe>
         <p class="contentNote">Easy Feedback technique tutorial</p>
 
-        <img src="../../assets/images/chicken.png" alt="Chicken" width="100%" />
+        <Image src="src/assets/images/chicken.png" alt="Chicken" />
         <p class="contentNote">Don't look at this chicken</p>
       </div>
     </section>

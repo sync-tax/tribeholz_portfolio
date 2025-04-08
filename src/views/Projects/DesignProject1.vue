@@ -2,6 +2,7 @@
 import Collapsible from "../../components/Collapsibles.vue";
 import Back from "../../components/ProjectBack.vue";
 import Overview from "../../components/ProjectOverview.vue";
+import Image from "../../components/Image.vue";
 </script>
 
 <template>
@@ -15,22 +16,15 @@ import Overview from "../../components/ProjectOverview.vue";
       />
 
       <div class="mainProjectContent">
-        <img
-          src="../../assets/images/d_websites_img1.png"
-          alt="Website"
-          width="100%"
-        />
+        <Image src="src/assets/images/d_websites_img1.png" alt="Website" />
+
         <p class="contentNote">
           <a target="_blank" href="https://808club.x-net.dev/"
             >→ www.808club.at</a
           >
         </p>
 
-        <img
-          src="../../assets/images/d_websites_img2.png"
-          alt="Website"
-          width="100%"
-        />
+        <Image src="src/assets/images/d_websites_img2.png" alt="Website" />
         <p class="contentNote">
           <a
             target="_blank"

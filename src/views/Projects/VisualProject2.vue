@@ -5,6 +5,7 @@ import Prism from "prismjs";
 import Collapsible from "../../components/Collapsibles.vue";
 import Back from "../../components/ProjectBack.vue";
 import Overview from "../../components/ProjectOverview.vue";
+import Image from "../../components/Image.vue";
 
 onMounted(() => {
   nextTick(() => {

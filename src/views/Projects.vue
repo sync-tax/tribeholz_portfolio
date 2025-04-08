@@ -9,5 +9,3 @@ import ProjectFilter from "../components/ProjectFilter.vue";
     <ProjectFilter />
   </div>
 </template>
-
-<style scoped></style>
