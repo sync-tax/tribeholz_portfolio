@@ -10,63 +10,81 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectOverview">
       <Overview
-        title="TRIBΞHOLZ"
-        text="Designs I made for my algorithmic tekno project."
+        title="Websites"
+        text="Websites I built and designed in my free time."
       />
 
       <div class="mainProjectContent">
         <img
-          src="../../assets/images/d_tribeholz_img1.png"
-          alt="SoundCloud Banner"
+          src="../../assets/images/d_websites_img1.png"
+          alt="Website"
           width="100%"
         />
-        <p class="contentNote">Soundcloud - Banner</p>
+        <p class="contentNote">
+          <a target="_blank" href="https://808club.x-net.dev/"
+            >→ www.808club.at</a
+          >
+        </p>
+
         <img
-          src="../../assets/images/d_tribeholz_img2.png"
-          alt="Logo"
+          src="../../assets/images/d_websites_img2.png"
+          alt="Website"
           width="100%"
         />
-        <p class="contentNote">Logo - Lettering</p>
-        <img
-          src="../../assets/images/d_tribeholz_img4.png"
-          alt="Printdesign"
-          width="100%"
-        />
-        <p class="contentNote">Printdesign - Soundwall</p>
-        <img
-          src="../../assets/images/d_tribeholz_img3.png"
-          alt="Thumbnails"
-          width="100%"
-        />
-        <p class="contentNote">YouTube - Thumbnails</p>
+        <p class="contentNote">
+          <a
+            target="_blank"
+            href="https://github.com/sync-tax/tribeholz_portfolio"
+            >→ Codebase on GitHub</a
+          >
+        </p>
       </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="About">
+      <Collapsible title="808club.at">
+        <h4>Overview</h4>
         <p>
-          This is my personal project where I mostly do random visuals with TD
-          and sound with SonicPi.
-          <br />
-          <br />
-          In the future I will focus more on audio-visual installments like
-          music videos and realtime interaction between those two.
+          I made this website for our club to post upcoming events on and a
+          bunch of other stuff.<br />
+        </p>
+        <h4>Tools</h4>
+        <p>
+          - Wordpress <br />
+          - Elementor <br />
+          - Other Plugins
         </p>
       </Collapsible>
+
+      <Collapsible title="arro.at">
+        <h4>Overview</h4>
+        <p>
+          Short form for "Ardeleanu Robert". My portfolio website which will
+          grow in size and quality over time.
+        </p>
+
+        <h4>Tools</h4>
+        <p>
+          - Vue <br />
+          - SASS <br />
+          - THREE <br />
+          - Vite
+        </p>
+      </Collapsible>
+
       <Collapsible title="Resources">
-        <a
-          href="https://www.youtube.com/@tribeholz23"
-          target="_blank"
-          rel="noopener noreferrer"
-          >YouTube</a
-        >
-        <br />
-        <a
-          href="https://soundcloud.com/tribeholz808"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Soundcloud</a
-        >
+        <p>
+          <a
+            href="https://808club.x-net.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >→ Website 808Club</a
+          >
+          <br />
+          <a href="https://arro.at/" target="_blank" rel="noopener noreferrer"
+            >→ Website ARRO</a
+          >
+        </p>
       </Collapsible>
     </section>
   </div>

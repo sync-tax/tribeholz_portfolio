@@ -124,7 +124,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 70%;
+  opacity: 75%;
 }
 .projectListContainer .projectContainer:hover {
   transform: scale(1.02);
@@ -746,7 +746,7 @@ nav ul .light {
   font-weight: var(--text-thick);
   font-size: 1.2rem;
   font-size: 1.1rem;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   padding-left: 50px;
   padding-right: 50px;
   text-align: center;
@@ -757,6 +757,15 @@ nav ul .light {
   justify-content: center;
   width: 100%;
   align-self: center;
+}
+.project .projectOverview .mainProjectContent .imageContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  align-self: center;
+}
+.project .projectOverview .mainProjectContent .imageContainer img {
+  width: 40%;
 }
 .project .projectOverview .mainProjectContent img {
   align-self: center;
@@ -1036,6 +1045,59 @@ nav ul .light {
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
   font-size: 1.4rem;
+}
+.aboutDetails .collapsibleWrapper .collapsibleContent img,
+.projectDetails .collapsibleWrapper .collapsibleContent img {
+  align-self: center;
+  border-radius: 10px;
+  width: 100%;
+}
+.aboutDetails .collapsibleWrapper .collapsibleContent pre,
+.projectDetails .collapsibleWrapper .collapsibleContent pre {
+  margin-top: 30px;
+  align-self: center;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .aboutDetails .collapsibleWrapper .collapsibleContent pre,
+  .projectDetails .collapsibleWrapper .collapsibleContent pre {
+    font-size: 0.8rem;
+  }
+}
+.aboutDetails .collapsibleWrapper .collapsibleContent iframe,
+.projectDetails .collapsibleWrapper .collapsibleContent iframe {
+  align-self: center;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+@media (max-width: 600px) {
+  .aboutDetails .collapsibleWrapper .collapsibleContent iframe,
+  .projectDetails .collapsibleWrapper .collapsibleContent iframe {
+    font-size: 0.7rem;
+    width: 90%;
+    height: 200px;
+  }
+}
+.aboutDetails .collapsibleWrapper .collapsibleContent video,
+.projectDetails .collapsibleWrapper .collapsibleContent video {
+  width: 80%;
+  align-self: center;
+  margin-top: 30px;
+}
+.aboutDetails .collapsibleWrapper .collapsibleContent .contentNote,
+.projectDetails .collapsibleWrapper .collapsibleContent .contentNote {
+  padding-top: 5px;
+  opacity: 0.6;
+  width: 60%;
+  align-self: center;
+}
+@media (max-width: 600px) {
+  .aboutDetails .collapsibleWrapper .collapsibleContent .contentNote,
+  .projectDetails .collapsibleWrapper .collapsibleContent .contentNote {
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+  }
 }
 
 .flyingCat {

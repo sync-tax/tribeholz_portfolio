@@ -56,11 +56,13 @@ onMounted(() => {
       />
     </div>
 
-    <img
-      src="../assets/images/logo2.svg"
-      alt="A monochrome logo resembling the initials AR."
-      id="logoImage"
-    />
+    <RouterLink to="/" class="navLink">
+      <img
+        src="../assets/images/logo2.svg"
+        alt="A monochrome logo resembling the initials AR."
+        id="logoImage"
+      />
+    </RouterLink>
 
     <ul>
       <img

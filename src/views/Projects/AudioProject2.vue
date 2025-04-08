@@ -31,43 +31,38 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectDetails">
       <Collapsible title="About">
+        <h4>Overview</h4>
         <p>
-          The series started with the track "Next Stop". <br />
+          The "Chaotic Algorithms" is an ongoing project. However I stopped
+          uploading after the second video because I felt stuck in the mindset
+          of forcing myself to post on YouTube. So, I decided to step back and
+          focus on simply creating.
           <br />
-          <br />
-          However I stopped uploading after the second video because I felt
-          stuck in the mindset of forcing myself to post on YouTube. So, I
-          decided to step back and focus on simply creating.
-          <br />
-          <br />
-          In the meantime, I’ve incorporated MIDI and multitrack recording into
-          my workflow. I also experimented with Touchdesigner quite a bit.
-          <br />
-          <br />
-          The "Chaotic Algorithms" project will be back on track soon.
+          → After almost 1 year of refining I'm ready to get back to it.
+        </p>
+
+        <h4>Tools</h4>
+        <p>
+          - SonicPi <br />
+          - Ruby <br />
+          - Touchdesigner
         </p>
       </Collapsible>
 
       <Collapsible title="Resources">
-        <a
-          target="_blank"
-          href="https://github.com/sync-tax/next_stop/blob/main/next_stop/next_stop.rb"
-          >Next Stop - Ruby File</a
-        >
-      </Collapsible>
-
-      <Collapsible title="Technology">
-        <a class="refLinks" target="_blank" href="https://sonic-pi.net/"
-          >SonicPi</a
-        >
-        <br />
-        <a class="refLinks" target="_blank" href="https://www.ableton.com/"
-          >Ableton</a
-        >
-        <br />
-        <a class="refLinks" target="_blank" href="https://derivative.ca/"
-          >Touchdesigner</a
-        >
+        <p>
+          <a
+            target="_blank"
+            href="https://github.com/sync-tax/next_stop/blob/main/next_stop/next_stop.rb"
+            >→ Next Stop - Ruby File</a
+          >
+          <br />
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=RvjkTeZztT4&list=PLFLuAZh6tS3LOBqjGSkGZ7ALP3DXZvhIU"
+            >→ Playlist | YouTube</a
+          >
+        </p>
       </Collapsible>
     </section>
   </div>

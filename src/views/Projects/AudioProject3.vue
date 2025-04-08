@@ -68,50 +68,47 @@ end
 
     <section class="projectDetails">
       <Collapsible title="About">
+        <h4>Overview</h4>
         <p>
           While SonicPi enables scripting generative soundscapes, I personally
           prefer using the live loop feature. Controlling different parameters
           with a MIDI controller makes playing around even more fun.
-          <br />
-          <br />
-          This boilerplate helps me jump straight into jamming.
+        </p>
+        <h4>Tools</h4>
+        <p>
+          - SonicPi <br />
+          - Ruby
         </p>
       </Collapsible>
+
       <Collapsible title="Features">
+        <h4>Metronome</h4>
         <p>
-          - Metronome: Syncing to it enables playing around with sleep values
-          without getting out of sync.
-          <br />
-          <br />
-          - Pattern Function: Easily define rhythmic patterns of instruments
-          with simple Strings.
-          <br />
-          <br />
-          - MIDI Scale Function: Remap the default MIDI control range to your
-          desired range.
-          <br />
-          <br />
-          - MIDI Mapper: Place the controls you want to map within the
-          Switch-Case and call scale_midi(val, min, max) on them.
+          Syncing to it enables playing around with sleep values without getting
+          out of sync. - MIDI Scale Function: Remap the default MIDI control
+          range to your desired range.
+        </p>
+        <h4>Pattern Function</h4>
+        <p>
+          Easily define rhythmic patterns of instruments with simple Strings.
+        </p>
+        <h4>MIDI Scale Function</h4>
+        <p>Remap the default MIDI control range to your desired range.</p>
+        <h4>MIDI Mapper</h4>
+        <p>
+          Place the controls you want to map within the Switch-Case and call
+          scale_midi(val, min, max) on them.
         </p>
       </Collapsible>
 
       <Collapsible title="Resources">
-        <a
-          target="_blank"
-          href="https://github.com/sync-tax/sonicpi_livejam_boilerplate/blob/main/live_jam_boilerplate.rb"
-          >GitHub - Code</a
-        >
-      </Collapsible>
-
-      <Collapsible title="Technology">
-        <a class="refLinks" target="_blank" href="https://sonic-pi.net/"
-          >SonicPi</a
-        >
-        <br />
-        <a class="refLinks" target="_blank" href="https://www.ruby-lang.org/en/"
-          >Ruby</a
-        >
+        <p>
+          <a
+            target="_blank"
+            href="https://github.com/sync-tax/sonicpi_livejam_boilerplate/blob/main/live_jam_boilerplate.rb"
+            >→ GitHub - Code</a
+          >
+        </p>
       </Collapsible>
     </section>
   </div>

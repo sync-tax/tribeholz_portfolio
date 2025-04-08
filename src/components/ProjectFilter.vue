@@ -31,10 +31,10 @@ const projects = ref([
 
   {
     categories: ["VISUAL"],
-    title: "Spotlight",
+    title: "VJ-Setup v1.0",
     currentProjectView: "/VisualProject1",
     imagePath: "/bg_images/v_1.png",
-    tag: ["#DeepSpace", "#VJ", "#TD", "#MIDI"],
+    tag: ["#TD", "#VJ", "#MIDI"],
   },
   {
     categories: ["VISUAL"],
@@ -53,33 +53,33 @@ const projects = ref([
   //DESIGN
   {
     categories: ["DESIGN"],
-    title: "TRIBEHOLZ",
+    title: "Websites",
     currentProjectView: "/DesignProject1",
     imagePath: "/bg_images/d_1.png",
-    tag: ["#Banner", "#Print", "#YouTube"],
+    tag: ["#Webdesign", "#Frontend", "#CMS"],
   },
   {
     categories: ["DESIGN"],
-    title: "DURCH",
+    title: "Screenprints",
     currentProjectView: "/DesignProject2",
     imagePath: "/bg_images/d_2.png",
     tag: ["#Screenprint", "#Art"],
   },
   {
     categories: ["DESIGN"],
-    title: "808CLUB",
+    title: "Branding",
     currentProjectView: "/DesignProject3",
     imagePath: "/bg_images/d_3.png",
-    tag: ["#Branding", "#Flyer"],
+    tag: ["#Different", "#Stuff"],
   },
 
   //OTHER
   {
     categories: ["OTHER"],
-    title: "808club.at",
+    title: "Events",
     currentProjectView: "/OtherProject1",
     imagePath: "/bg_images/o_1.png",
-    tag: ["#Website", "#Wordpress", "#Elementor"],
+    tag: ["#HoA", "#GoS", "#SL"],
   },
   {
     categories: ["OTHER"],

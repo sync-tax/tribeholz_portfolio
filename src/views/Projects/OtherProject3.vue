@@ -28,19 +28,24 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectDetails">
       <Collapsible title="About">
+        <h4>Overview</h4>
         <p>
           This was an assignment for the Media Studies class at FH Hagenberg.
           The question was wheter the internet is mostly populated by bots or
           not.
         </p>
+        <h4>Tools</h4>
+        <p>- Illustrator</p>
       </Collapsible>
       <Collapsible title="Resources">
-        <a
-          href="https://drive.google.com/file/d/1zB3icas943Xb4lMJPKRSDnDA2B7Hmuwp/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Report</a
-        >
+        <p>
+          <a
+            href="https://drive.google.com/file/d/1zB3icas943Xb4lMJPKRSDnDA2B7Hmuwp/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            >→ Report</a
+          >
+        </p>
       </Collapsible>
     </section>
   </div>

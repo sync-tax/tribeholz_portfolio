@@ -10,8 +10,8 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectOverview">
       <Overview
-        title="DURCH"
-        text="Printdesigns I made for our screenprinting collective."
+        title="Screenprints"
+        text="Printdesigns I made for our screenprinting collective. → DURCH"
       />
 
       <div class="mainProjectContent">
@@ -41,24 +41,53 @@ import Overview from "../../components/ProjectOverview.vue";
         <p class="contentNote">
           Printdesign - Beeware - Ink Marker & Illustrator
         </p>
+        <img
+          src="../../assets/images/d_durch_img5.png"
+          alt="Printdesign"
+          width="100%"
+        />
+        <p class="contentNote">Printdesign - VOID - Touchdesigner</p>
+        <img
+          src="../../assets/images/d_durch_img6.png"
+          alt="Printdesign"
+          width="100%"
+        />
+        <p class="contentNote">
+          Printdesign - Shroompa Mario - Inkpens & Procreate
+        </p>
+        <img
+          src="../../assets/images/d_durch_img7.png"
+          alt="Printdesign"
+          width="100%"
+        />
+        <p class="contentNote">Printdesign - Wond - Procreate</p>
       </div>
     </section>
 
     <section class="projectDetails">
       <Collapsible title="About">
+        <h4>Overview</h4>
         <p>
-          Together with a couple of friends we started a screenprint collective.
-          We design and print all this stuff on our own.
+          A couple of friends and I started a small artist collective where we
+          create print designs and screen print them in my home workshop.
+        </p>
+
+        <h4>Tools</h4>
+        <p>
+          - Screenprinting stuff <br />
+          - Pens & Paper <br />
+          - Designsoftware
         </p>
       </Collapsible>
       <Collapsible title="Resources">
-        <a
-          href="https://www.instagram.com/durch.durch.durch/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Instagram</a
-        >
-        <br />
+        <p>
+          <a
+            href="https://www.instagram.com/durch.durch.durch/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >→ Instagram @durch.durch.durch</a
+          >
+        </p>
       </Collapsible>
     </section>
   </div>

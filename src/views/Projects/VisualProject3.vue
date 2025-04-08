@@ -34,19 +34,20 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectDetails">
       <Collapsible title="About">
-        <p>I like spirals</p>
+        <h4>Overview</h4>
+        <p>I like spirals...</p>
+
+        <h4>Tools</h4>
+        <p>- Touchdesigner</p>
       </Collapsible>
       <Collapsible title="Resources">
-        <a
-          href="https://drive.google.com/drive/folders/1Mo06E5bS4IUPuELJgVocbKGODV_-2vMJ?usp=drive_link"
-          target="_blank"
-          >.TOX-File</a
-        >
-      </Collapsible>
-      <Collapsible title="Technology">
-        <a class="refLinks" target="_blank" href="https://derivative.ca/"
-          >Touchdesigner</a
-        >
+        <p>
+          <a
+            href="https://drive.google.com/drive/folders/1Mo06E5bS4IUPuELJgVocbKGODV_-2vMJ?usp=drive_link"
+            target="_blank"
+            >→ .TOX-File</a
+          >
+        </p>
       </Collapsible>
     </section>
   </div>

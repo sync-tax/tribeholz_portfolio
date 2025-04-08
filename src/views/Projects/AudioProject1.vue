@@ -32,32 +32,33 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectDetails">
       <Collapsible title="About">
+        <h4>Overview</h4>
         <p>
           I never intended to explore electronic music production, but that
           changed when I discovered SonicPi. Since then, I've developed a deep
-          passion for creative coding. <br />
-          <br />
-          Today, SonicPi is one of my favorite hobbies — something I truly
-          wouldn't want to miss out on."
+          passion for creative coding.
+        </p>
+        <h4>Tools</h4>
+        <p>
+          - SonicPi <br />
+          - Ruby
         </p>
       </Collapsible>
 
       <Collapsible title="Resources">
-        <a
-          target="_blank"
-          href="https://github.com/sync-tax/TechnoSession-1/blob/main/TechnoSession%231.rb"
-          >Ruby-File | First</a
-        >
-      </Collapsible>
-
-      <Collapsible title="Technology">
-        <a class="refLinks" target="_blank" href="https://sonic-pi.net/"
-          >SonicPi</a
-        >
-        <br />
-        <a class="refLinks" target="_blank" href="https://www.ruby-lang.org/en/"
-          >Ruby</a
-        >
+        <p>
+          <a
+            target="_blank"
+            href="https://github.com/sync-tax/TechnoSession-1/blob/main/TechnoSession%231.rb"
+            >→ Ruby-File | First</a
+          >
+          <br />
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=s22yDfzhWoU&list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA"
+            >→ Playlist | YouTube</a
+          >
+        </p>
       </Collapsible>
     </section>
   </div>

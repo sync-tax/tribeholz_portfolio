@@ -32,20 +32,21 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectDetails">
       <Collapsible title="About">
+        <h4>Overview</h4>
         <p>
           This was a fun little side project. I basically prepared a little
           suitcase with a screen and the Raspberry plus a Powerbank. <br />Not
           exeptionally beautiful, but it was fun. I play a lot Pokémon ROM hacks
           on that thing.
         </p>
-      </Collapsible>
-      <Collapsible title="Resources">
-        <a
-          href="https://retropie.org.uk/docs/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >RetroPi</a
-        >
+
+        <h4>Tools</h4>
+        <p>
+          - Raspberry Pi <br />
+          - RetroPi OS <br />
+          - Filezilla <br />
+          - Popsicle sticks & paint
+        </p>
       </Collapsible>
     </section>
   </div>

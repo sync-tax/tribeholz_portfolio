@@ -19,38 +19,29 @@ onMounted(() => {
 
     <section class="projectOverview">
       <Overview
-        title="Spotlight"
-        text="A concert I helped organizing with the 808Club @AEC. I was lucky enough to do the visuals in the Deep Space."
+        title="VJ-Setup v1.0"
+        text="A Touchdesigner setup that uses a MIDI controller, to navigate and control a range of dynamic visuals during a concert we hosted at AEC Deep Space. "
       />
 
       <div class="mainProjectContent">
-        <img
-          src="../../assets/images/v_spotlight_img1.png"
-          alt="Spotlight image"
-          width="100%"
-        />
-        <p class="contentNote">Concert recording on YouTube soon!</p>
-        <br />
-        <br />
-
         <img
           src="../../assets/images/v_spotlight_img2.png"
           alt="Spotlight image"
           width="100%"
         />
         <p class="contentNote">
-          This Touchdesigner setup allowed me to control the different visuals
-          via MIDI. Separate visuals are contained within the Base COMPS.
+          Here’s the basic setup – each visual is housed in its own Base
+          component.
         </p>
         <pre><code class="language-python">
 # map midi channels to their respective Base
 channel_to_base = {
-    'ch1ctrl20': op('club'),
-    'ch1ctrl24': op('eye'),
-    'ch1ctrl28': op('count'),
-    'ch1ctrl32': op('blue'),
-    'ch1ctrl54': op('justin'),
-    'ch1ctrl62': op('treibholz')
+    'ch1ctrl20': op('v1'),
+    'ch1ctrl24': op('v2'),
+    'ch1ctrl28': op('v3'),
+    'ch1ctrl32': op('v4'),
+    'ch1ctrl54': op('v5'),
+    'ch1ctrl62': op('v6')
 }
 
 def onValueChange(channel, sampleIndex, val, prev):
@@ -62,36 +53,55 @@ def onValueChange(channel, sampleIndex, val, prev):
     return
 </code></pre>
         <p class="contentNote">
-          To avoid performance issues I added a little python script which
-          executes on MIDI changes. Whenever a visuals opacity is down to 0 (not
-          visible) it disables cooking.
+          To keep things running smoothly, I added a small Python script that
+          triggers with MIDI changes. When a visual's opacity drops to 0 (making
+          it invisible), it turns off cooking to save on performance.
         </p>
       </div>
     </section>
 
     <section class="projectDetails">
       <Collapsible title="About">
+        <h4>Overview</h4>
         <p>
-          I had the opportunity to help my friends at the 808Club organizing a
-          concert in the Ars Electronica Deepspace. Lucky me, had the chance to
-          make the visuals in that awesome venue.
+          This project aimed to create an interactive realtime visual experience
+          for the 808Spotlight concert.
+        </p>
+
+        <h4>Role</h4>
+        <p>
+          I designed and built the visual system and integrated it with a MIDI
+          controller to trigger and manipulate procedural visuals in real-time.
+          I also performed the visualisation during the concert.
+        </p>
+
+        <h4>Tools</h4>
+        <p>
+          - Touchdesigner <br />
+          - Python <br />
+          - MIDI Controller
         </p>
       </Collapsible>
       <Collapsible title="Resources">
-        <a
-          href="https://drive.google.com/drive/u/1/folders/1q3PbSq1VdNGDDjJ9tW2eAR2bjTQ2lTS3"
-          >.TOE-File + Assets</a
-        >
-      </Collapsible>
-
-      <Collapsible title="Technology">
-        <a class="refLinks" target="_blank" href="https://derivative.ca/"
-          >Touchdesigner</a
-        >
+        <h4>Downloads</h4>
+        <p>
+          <a
+            target="_blank"
+            href="https://drive.google.com/drive/u/1/folders/1q3PbSq1VdNGDDjJ9tW2eAR2bjTQ2lTS3"
+            >→ .TOE-File + Assets</a
+          >
+        </p>
         <br />
-        <a class="refLinks" target="_blank" href="https://www.python.org/"
-          >Python</a
-        >
+        <h4>Event</h4>
+        <p>
+          <a target="_blank" href="https://808club.x-net.dev/808-spotlight/"
+            >→ Website Entry</a
+          >
+          <br />
+          <a target="_blank" href="https://www.instagram.com/p/DG5g0ggN2Oq/"
+            >→ Promo Reel</a
+          >
+        </p>
       </Collapsible>
     </section>
   </div>

@@ -25,4 +25,4 @@
   - night -> dark
   - day -> light
 
-- Apply better text to - some - projects
+- Make projectcards better (Short description etc...)

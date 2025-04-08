@@ -10,34 +10,103 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectOverview">
       <Overview
-        title="808club.at"
-        text="Currently at: https://808club.x-net.dev/"
+        title="Spotlight"
+        text="Tiny-desk like concert at the AEC Deep Space."
       />
 
       <div class="mainProjectContent">
         <img
-          src="../../assets/images/o_808_img1.png"
+          src="../../assets/images/o_events_img5.png"
+          alt="Spotlight"
+          width="100%"
+        />
+        <p class="contentNote">Testing - SL</p>
+      </div>
+
+      <Overview
+        style="margin-top: 60px"
+        title="House of Arts"
+        text="Art gallery event for all kinds of local artists."
+      />
+
+      <div class="mainProjectContent">
+        <img
+          src="../../assets/images/o_events_img1.png"
           alt="Website"
           width="100%"
         />
-        <p class="contentNote">Website - 808Club - Wordpress</p>
+        <p class="contentNote">Concert - HoA</p>
+
+        <img
+          src="../../assets/images/o_events_img3.png"
+          alt="HoA"
+          width="100%"
+        />
+        <p class="contentNote">Exhibition - HoA</p>
+      </div>
+
+      <Overview
+        style="margin-top: 60px"
+        title="Game of Skate"
+        text="Skate contest for the skating community."
+      />
+
+      <div class="mainProjectContent">
+        <img
+          src="../../assets/images/o_events_img4.png"
+          alt="GoS"
+          width="100%"
+        />
+        <p class="contentNote">Skate Challenge - GoS</p>
       </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="About">
+      <Collapsible title="Spotlight">
         <p>
-          I made this website using Wordpress and Elementor - so basically a
-          drag and drop builder.
+          For this event, I took care of the visual setup and live visuals
+          during the concert. I also helped out by cutting reels and other
+          media. <br />
+          <br />
+
+          The YouTube video of the concert will be online soon!
         </p>
       </Collapsible>
+      <Collapsible title="House of Arts">
+        <p>
+          I was in charge of various design tasks like creating flyers and also
+          organizing equipment. <br />
+          <br />
+          Alongside a friend, I also handled all the tech-related gear—both in
+          the concert room and in the darkroom, which was equipped with three
+          projectors.
+        </p>
+      </Collapsible>
+
+      <Collapsible title="Game of Skate">
+        <p>
+          Even though I’m not a skater, I designed most of the flyers for the
+          event. I also helped out at the bar and cruised around taking photos
+          throughout the day.
+        </p>
+      </Collapsible>
+
       <Collapsible title="Resources">
-        <a
-          href="https://808club.x-net.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Website</a
-        >
+        <p>
+          <a
+            href="https://www.instagram.com/p/DG5g0ggN2Oq/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >→ Reel Spotlight</a
+          >
+          <br />
+          <a
+            href="https://808club.x-net.dev/bildergalerie/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >→ Bildergalerie 808Club</a
+          >
+        </p>
       </Collapsible>
     </section>
   </div>
