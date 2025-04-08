@@ -26,3 +26,5 @@
   - day -> light
 
 - Make projectcards better (Short description etc...)
+
+- Compress Images & Improve Chunking
