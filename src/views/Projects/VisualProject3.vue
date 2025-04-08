@@ -28,7 +28,7 @@ import Image from "../../components/Image.vue";
         ></iframe>
         <p class="contentNote">Easy Feedback technique tutorial</p>
 
-        <Image src="src/assets/images/chicken.png" alt="Chicken" />
+        <Image src="/project_images/chicken.png" alt="Chicken" />
         <p class="contentNote">Don't look at this chicken</p>
       </div>
     </section>

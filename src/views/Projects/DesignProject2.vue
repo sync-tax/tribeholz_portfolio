@@ -16,29 +16,29 @@ import Image from "../../components/Image.vue";
       />
 
       <div class="mainProjectContent">
-        <Image src="src/assets/images/d_durch_img3.png" alt="Printdesign" />
+        <Image src="/project_images/d_durch_img3.png" alt="Printdesign" />
         <p class="contentNote">Printdesign - Big Brother - Procreate & TD</p>
 
-        <Image src="src/assets/images/d_durch_img2.png" alt="Printdesign" />
+        <Image src="/project_images/d_durch_img2.png" alt="Printdesign" />
         <p class="contentNote">Printdesign - Random Doodle - Procreate</p>
 
-        <Image src="src/assets/images/d_durch_img4.png" alt="Printdesign" />
+        <Image src="/project_images/d_durch_img4.png" alt="Printdesign" />
         <p class="contentNote">Printdesign - Bananana - TD</p>
 
-        <Image src="src/assets/images/d_durch_img1.png" alt="Printdesign" />
+        <Image src="/project_images/d_durch_img1.png" alt="Printdesign" />
         <p class="contentNote">
           Printdesign - Beeware - Ink Marker & Illustrator
         </p>
 
-        <Image src="src/assets/images/d_durch_img5.png" alt="Printdesign" />
+        <Image src="/project_images/d_durch_img5.png" alt="Printdesign" />
         <p class="contentNote">Printdesign - VOID - Touchdesigner</p>
 
-        <Image src="src/assets/images/d_durch_img6.png" alt="Printdesign" />
+        <Image src="/project_images/d_durch_img6.png" alt="Printdesign" />
         <p class="contentNote">
           Printdesign - Shroompa Mario - Inkpens & Procreate
         </p>
 
-        <Image src="src/assets/images/d_durch_img7.png" alt="Printdesign" />
+        <Image src="/project_images/d_durch_img7.png" alt="Printdesign" />
         <p class="contentNote">Printdesign - Wond - Procreate</p>
       </div>
     </section>

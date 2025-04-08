@@ -6,7 +6,7 @@ import Image from "../components/Image.vue";
 <template>
   <div class="aboutSite">
     <section class="aboutGeneral">
-      <Image src="src/assets/images/me_about.png" alt="Me" />
+      <Image src="/project_images/me_about.png" alt="Me" />
 
       <div class="aboutTextWrapper">
         <h5>hi, my name is...</h5>

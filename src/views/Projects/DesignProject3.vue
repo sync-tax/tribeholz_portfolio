@@ -13,15 +13,15 @@ import Image from "../../components/Image.vue";
       <Overview title="808CLUB" text="Designs I made for the 808Club." />
 
       <div class="mainProjectContent">
-        <img src="../../assets/images/d_808_img1.png" alt="Stuff" width="80%" />
+        <img src="/project_images/d_808_img1.png" alt="Stuff" width="80%" />
         <p style="text-align: center" class="contentNote">
           Beachflags & Sticker | The Logo was created in collaboration with a
           friend who provided the "808" lettering. I refined it using
           Illustrator and designed stickers and such.
         </p>
         <div class="imageContainer">
-          <Image src="src/assets/images/d_808_img2.png" alt="Flyer" />
-          <Image src="src/assets/images/d_808_img3.png" alt="Flyer" />
+          <Image src="/project_images/d_808_img2.png" alt="Flyer" />
+          <Image src="/project_images/d_808_img3.png" alt="Flyer" />
         </div>
 
         <p style="text-align: center" class="contentNote">
@@ -33,8 +33,8 @@ import Image from "../../components/Image.vue";
         </p>
 
         <div class="imageContainer">
-          <Image src="src/assets/images/d_808_img5.png" alt="Flyer" />
-          <Image src="src/assets/images/d_808_img4.png" alt="Flyer" />
+          <Image src="/project_images/d_808_img5.png" alt="Flyer" />
+          <Image src="/project_images/d_808_img4.png" alt="Flyer" />
         </div>
         <p style="text-align: center" class="contentNote">
           Flyer - House of Arts #2- Photoshop | Event sadly canceled :(
@@ -52,31 +52,19 @@ import Image from "../../components/Image.vue";
       />
 
       <div class="mainProjectContent">
-        <img
-          src="../../assets/images/d_tribeholz_img1.png"
-          alt="Flyer"
-          width="40%"
-        />
+        <Image src="/project_images/d_tribeholz_img1.png" alt="Banner" />
         <p style="text-align: center" class="contentNote">
           Banner - Soundcloud- Procreate & Illustrator
         </p>
 
-        <img
-          src="../../assets/images/d_tribeholz_img2.png"
-          alt="Flyer"
-          width="40%"
-        />
+        <Image src="/project_images/d_tribeholz_img2.png" alt="Lettering" />
         <p style="text-align: center" class="contentNote">
           Lettring Logo - YouTube - Ballpoint & Illustrator
         </p>
-        <img
-          src="../../assets/images/d_tribeholz_img3.png"
-          alt="Flyer"
-          width="40%"
-        />
+
+        <Image src="/project_images/d_tribeholz_img3.png" alt="Thumbnails" />
         <p style="text-align: center" class="contentNote">
           Thumbnails - YouTube - Affinity <br />
-          <a href=""></a>
         </p>
       </div>
     </section>

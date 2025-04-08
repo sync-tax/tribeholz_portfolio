@@ -25,7 +25,7 @@ onMounted(() => {
       />
 
       <div class="mainProjectContent">
-        <Image src="src/assets/images/v_spotlight_img2.png" alt="VJ_System" />
+        <Image src="/project_images/v_spotlight_img2.png" alt="VJ_System" />
         <p class="contentNote">
           Here’s the basic setup – each visual is housed in its own Base
           component.

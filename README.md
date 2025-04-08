@@ -28,3 +28,5 @@
 - [ ] Make projectcards better (Short description etc...)
 
 - [ ] Compress Images & Improve Chunking
+
+- [ ] Implement Image Placeholder

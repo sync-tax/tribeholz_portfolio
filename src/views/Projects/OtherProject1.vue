@@ -16,7 +16,7 @@ import Image from "../../components/Image.vue";
       />
 
       <div class="mainProjectContent">
-        <Image src="src/assets/images/o_events_img5.png" alt="Spotlight" />
+        <Image src="/project_images/o_events_img5.png" alt="Spotlight" />
         <p class="contentNote">Testing - SL</p>
       </div>
 
@@ -27,10 +27,10 @@ import Image from "../../components/Image.vue";
       />
 
       <div class="mainProjectContent">
-        <Image src="src/assets/images/o_events_img1.png" alt="HoA" />
+        <Image src="/project_images/o_events_img1.png" alt="HoA" />
         <p class="contentNote">Concert - HoA</p>
 
-        <Image src="src/assets/images/o_events_img3.png" alt="HoA" />
+        <Image src="/project_images/o_events_img3.png" alt="HoA" />
         <p class="contentNote">Exhibition - HoA</p>
       </div>
 
@@ -41,7 +41,7 @@ import Image from "../../components/Image.vue";
       />
 
       <div class="mainProjectContent">
-        <Image src="src/assets/images/o_events_img4.png" alt="GoS" />
+        <Image src="/project_images/o_events_img4.png" alt="GoS" />
         <p class="contentNote">Skate Challenge - GoS</p>
       </div>
     </section>

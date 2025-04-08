@@ -16,10 +16,7 @@ import Image from "../../components/Image.vue";
       />
 
       <div class="mainProjectContent">
-        <Image
-          src="src/assets/images/o_dead_img1.png"
-          alt="Data Visualisation"
-        />
+        <Image src="/project_images/o_dead_img1.png" alt="Data Visualisation" />
         <p style="text-align: center" class="contentNote">
           Data Visualisation - Dead Internet - Illustrator
         </p>

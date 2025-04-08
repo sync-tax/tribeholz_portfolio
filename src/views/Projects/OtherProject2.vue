@@ -16,10 +16,10 @@ import Image from "../../components/Image.vue";
       />
 
       <div class="mainProjectContent">
-        <Image src="src/assets/images/o_retro_img2.png" alt="RetroPi" />
+        <Image src="/project_images/o_retro_img2.png" alt="RetroPi" />
         <p style="text-align: center" class="contentNote">Case - Pokecenter</p>
 
-        <Image src="src/assets/images/o_retro_img1.png" alt="SHINYY" />
+        <Image src="/project_images/o_retro_img1.png" alt="SHINYY" />
         <p style="text-align: center" class="contentNote">Shiny Onyx - :3</p>
       </div>
     </section>

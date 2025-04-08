@@ -16,7 +16,7 @@ import Image from "../../components/Image.vue";
       />
 
       <div class="mainProjectContent">
-        <Image src="src/assets/images/d_websites_img1.png" alt="Website" />
+        <Image src="/project_images/d_websites_img1.png" alt="Website" />
 
         <p class="contentNote">
           <a target="_blank" href="https://808club.x-net.dev/"
@@ -24,7 +24,7 @@ import Image from "../../components/Image.vue";
           >
         </p>
 
-        <Image src="src/assets/images/d_websites_img2.png" alt="Website" />
+        <Image src="/project_images/d_websites_img2.png" alt="Website" />
         <p class="contentNote">
           <a
             target="_blank"
