@@ -116,11 +116,10 @@ body {
   filter: var(--logo-filter);
   display: flex;
   border-radius: 20px;
-  padding: 20px;
   border: 2px solid var(--project-border);
   margin-top: 80px;
   width: 80%;
-  height: 280px;
+  height: 250px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,45 +132,31 @@ body {
 @media (max-width: 778px) {
   .projectListContainer .projectContainer {
     flex-direction: column;
+    height: 100%;
+    margin-top: 80px;
   }
 }
 .projectListContainer .projectContainer .projectLeftSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-}
-.projectListContainer .projectContainer .projectLeftSection h4 {
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-variation-settings: "wdth" 100;
-  font-size: 1.1rem;
-  opacity: 50%;
-  line-height: 0.5rem;
-  padding-left: 5px;
-}
-@media (max-width: 778px) {
-  .projectListContainer .projectContainer .projectLeftSection h4 {
-    text-align: center;
-    padding-left: 0;
-  }
 }
 .projectListContainer .projectContainer .projectLeftSection h2 {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 800;
   font-size: 3rem;
   font-variation-settings: "wdth" 125;
-  font-size: 4.6rem;
-  line-height: 98%;
+  font-size: 4rem;
   text-align: center;
   color: white;
   margin-top: 35px;
 }
 @media (max-width: 778px) {
   .projectListContainer .projectContainer .projectLeftSection h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 .projectListContainer .projectContainer .projectLeftSection .projectTags {
@@ -188,13 +173,14 @@ body {
   padding: 5px 10px;
   border-radius: 15px;
   position: relative;
-  top: -10px;
+  top: -30px;
   color: white;
   font-weight: 500;
 }
 @media (max-width: 778px) {
   .projectListContainer .projectContainer .projectLeftSection .projectTags p {
     font-size: 1rem;
+    top: -20px;
   }
 }
 .projectListContainer .projectContainer .projectLeftSection .projectRoute {
@@ -737,7 +723,7 @@ nav ul .light {
 @media (max-width: 778px) {
   .project .projectOverview .textProjectContent h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 .project .projectOverview .textProjectContent p {
@@ -750,6 +736,11 @@ nav ul .light {
   padding-left: 50px;
   padding-right: 50px;
   text-align: center;
+}
+@media (max-width: 778px) {
+  .project .projectOverview .textProjectContent p {
+    font-size: 1rem;
+  }
 }
 .project .projectOverview .mainProjectContent {
   display: flex;
@@ -805,6 +796,11 @@ nav ul .light {
   width: 40%;
   align-self: center;
   margin-top: 30px;
+}
+@media (max-width: 778px) {
+  .project .projectOverview .mainProjectContent video {
+    width: 60%;
+  }
 }
 .project .projectOverview .mainProjectContent .contentNote {
   padding-top: 5px;

@@ -23,7 +23,7 @@ onMounted(() => {
         text="Alternative evolution animation for Pokémon sprites."
       />
       <div class="mainProjectContent">
-        <video autoplay loop muted playsinline style="border-radius: 15px;">
+        <video autoplay loop muted playsinline style="border-radius: 15px">
           <source src="../../assets/images/pokemorph.webM" type="video/mp4" />
         </video>
 
@@ -40,43 +40,40 @@ onMounted(() => {
           allowfullscreen
         ></iframe>
         <p class="contentNote">Tutorial on YouTube</p>
-
-
       </div>
     </section>
 
     <section class="projectDetails">
       <Collapsible title="About">
+        <h4>Overview</h4>
+        As a huge Pokémon fan I thought that morphing through the entire Gen1
+        Pokédex would be a fun freetime activity. <br />
         <p>
-          <h4>Overview</h4>
-          As a huge Pokémon fan I thought that morphing through the entire Gen1
-          Pokédex would be a fun freetime activity. <br>
-        It was not only a great experience but also my first attempt with GLSL
+          It was not only a great experience but also my first attempt with GLSL
           shaders. It took me a while to get the hang of it - not gonna lie.
         </p>
 
         <h4>Tools</h4>
         <p>
           - Touchdesigner <br />
-          - Python <br>
+          - Python <br />
           - GLSL
         </p>
       </Collapsible>
       <Collapsible title="Resources">
         <p>
           <a
-          target="_blank"
-          href="https://drive.google.com/drive/folders/1AwBtOMceYr7AxiBmPK-23IB7UJHPs7WG?usp=sharing"
-          >→ .TOX File + Assets</a
-        > 
-        <br>
-        <a
-          target="_blank"
-          href="https://github.com/sync-tax/poke_morph_TD/blob/main/poke_morph.glsl"
-          >→ GLSL Code | Github</a
-        >       
+            target="_blank"
+            href="https://drive.google.com/drive/folders/1AwBtOMceYr7AxiBmPK-23IB7UJHPs7WG?usp=sharing"
+            >→ .TOX File + Assets</a
+          >
+          <br />
+          <a
+            target="_blank"
+            href="https://github.com/sync-tax/poke_morph_TD/blob/main/poke_morph.glsl"
+            >→ GLSL Code | Github</a
+          >
         </p>
-
       </Collapsible>
     </section>
   </div>

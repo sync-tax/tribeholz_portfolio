@@ -8,11 +8,11 @@ defineProps({
 </script>
 
 <template>
-  <RouterLink :to="currentProjectView" class="project-list">
-    <div
-      class="projectContainer"
-      :style="{ backgroundImage: `url(${imagePath})` }"
-    >
+  <div
+    class="projectContainer"
+    :style="{ backgroundImage: `url(${imagePath})` }"
+  >
+    <RouterLink :to="currentProjectView" class="project-list">
       <div class="projectLeftSection">
         <h2>
           {{ projectTitle }}
@@ -22,8 +22,8 @@ defineProps({
           <p v-for="tag in projectTags" :key="tag">{{ tag }}</p>
         </div>
       </div>
-    </div>
-  </RouterLink>
+    </RouterLink>
+  </div>
 </template>
 
 <style scoped></style>
