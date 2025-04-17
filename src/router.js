@@ -3,21 +3,21 @@ import Projects from "./views/Projects.vue";
 import About from "./views/About.vue";
 import LinkTree from "./views/LinkTree.vue";
 
-import AudioProject1 from "./views/Projects/AudioProject1.vue";
-import AudioProject2 from "./views/Projects/AudioProject2.vue";
-import AudioProject3 from "./views/Projects/AudioProject3.vue";
+//DEVELOPMENT PROJECTS
+import arro from "./views/Projects/arro.vue";
+import SonicPi_Tools from "./views/Projects/midi_boilerplate.vue";
+import VJ_Setup from "./views/Projects/TD_VJ_Setup.vue";
 
-import VisualProject1 from "./views/Projects/VisualProject1.vue";
-import VisualProject2 from "./views/Projects/VisualProject2.vue";
-import VisualProject3 from "./views/Projects/VisualProject3.vue";
+//DESIGN PROJECTS
+import eioeiclub from "./views/Projects/808club.vue";
+import screenprints from "./views/Projects/screenprints.vue";
+import event_posters from "./views/Projects/event_posters.vue";
+import pdf_portfolio from "./views/Projects/pdf_portfolio.vue";
 
-import DesignProject1 from "./views/Projects/DesignProject1.vue";
-import DesignProject2 from "./views/Projects/DesignProject2.vue";
-import DesignProject3 from "./views/Projects/DesignProject3.vue";
-
-import OtherProject1 from "./views/Projects/OtherProject1.vue";
-import OtherProject2 from "./views/Projects/OtherProject2.vue";
-import OtherProject3 from "./views/Projects/OtherProject3.vue";
+//AV PROJECTS
+import TD_tutorials from "./views/Projects/TD_tutorials.vue";
+import coding_techno from "./views/Projects/coding_techno.vue";
+import eioeispotlight from "./views/Projects/808spotlight.vue";
 
 const routes = [
   //Main Routes
@@ -38,65 +38,59 @@ const routes = [
   },
 
   //Project Routes
+  //DEVELOPMENT
   {
-    path: "/AudioProject1",
-    name: "AudioProject1",
-    component: AudioProject1,
+    path: "/arro.at",
+    name: "arro",
+    component: arro,
   },
   {
-    path: "/AudioProject2",
-    name: "AudioProject2",
-    component: AudioProject2,
+    path: "/MIDI_Boilerplate",
+    name: "SonicPi_Tools",
+    component: SonicPi_Tools,
   },
   {
-    path: "/AudioProject3",
-    name: "AudioProject3",
-    component: AudioProject3,
+    path: "/TD_VJ_Setup",
+    name: "VJ_Setup",
+    component: VJ_Setup,
+  },
+  //DESIGN
+  {
+    path: "/808club.at",
+    name: "eioeiclub",
+    component: eioeiclub,
   },
   {
-    path: "/VisualProject1",
-    name: "VisualProject1",
-    component: VisualProject1,
+    path: "/screenprints",
+    name: "screenprints",
+    component: screenprints,
   },
   {
-    path: "/VisualProject2",
-    name: "VisualProject2",
-    component: VisualProject2,
+    path: "/event_posters",
+    name: "event_posters",
+    component: event_posters,
   },
   {
-    path: "/VisualProject3",
-    name: "VisualProject3",
-    component: VisualProject3,
+    path: "/pdf_portfolio",
+    name: "pdf_portfolio",
+    component: pdf_portfolio,
+  },
+
+  //AUDIO VISUAL
+  {
+    path: "/TD_tutorials",
+    name: "TD_tutorials",
+    component: TD_tutorials,
   },
   {
-    path: "/DesignProject1",
-    name: "DesignProject1",
-    component: DesignProject1,
+    path: "/coding_techno",
+    name: "coding_techno",
+    component: coding_techno,
   },
   {
-    path: "/DesignProject2",
-    name: "DesignProject2",
-    component: DesignProject2,
-  },
-  {
-    path: "/DesignProject3",
-    name: "DesignProject3",
-    component: DesignProject3,
-  },
-  {
-    path: "/OtherProject1",
-    name: "OtherProject1",
-    component: OtherProject1,
-  },
-  {
-    path: "/OtherProject2",
-    name: "OtherProject2",
-    component: OtherProject2,
-  },
-  {
-    path: "/OtherProject3",
-    name: "OtherProject3",
-    component: OtherProject3,
+    path: "/808Spotlight",
+    name: "eioeispotlight",
+    component: eioeispotlight,
   },
 ];
 
@@ -106,7 +100,6 @@ const projectRoutes = [
   "/AudioProject3",
   "/VisualProject1",
   "/VisualProject2",
-  "/VisualProject3",
   "/DesignProject1",
   "/DesignProject2",
   "/DesignProject3",

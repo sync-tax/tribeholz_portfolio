@@ -49,11 +49,11 @@ onMounted(() => {
       </div>
       <div class="footerContact">
         <h4>Contact</h4>
-        <a
+        <!-- <a
           href="https://www.linkedin.com/in/robert-arbeitsloser-7271a71b2/"
           target="_blank"
           >LinkedIn</a
-        >
+        > -->
         <a href="mailto:robert.ardeleanu.0607@gmail.com" target="_blank"
           >E-Mail</a
         >

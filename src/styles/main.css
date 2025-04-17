@@ -804,7 +804,7 @@ nav ul .light {
   }
 }
 .project .projectOverview .mainProjectContent .contentNote {
-  padding-top: 5px;
+  padding-top: 15px;
   opacity: 0.6;
   width: 60%;
   align-self: center;

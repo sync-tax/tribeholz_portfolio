@@ -2,98 +2,83 @@
 import { ref, computed } from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
 
-const activeFilter = ref(localStorage.getItem("activeFilter") || "OTHER");
+const activeFilter = ref(localStorage.getItem("activeFilter") || "DEVELOPMENT");
 
 const projects = ref([
-  //AUDIO
+  //DEVELOPMENT
   {
-    categories: ["AUDIO"],
-    title: "Coding Techno",
-    currentProjectView: "/AudioProject1",
-    imagePath: "/bg_images/a_1.png",
-    tag: ["#LiveSession", "#SonicPi"],
+    categories: ["DEVELOPMENT"],
+    title: "arro.at",
+    currentProjectView: "/arro.at",
+    imagePath: "/bg_images/dev_1.jpg",
+    tag: ["#Webdev", "#Vue.js"],
   },
   {
-    categories: ["AUDIO"],
-    title: "Chaotic Algorithms",
-    currentProjectView: "/AudioProject2",
-    imagePath: "/bg_images/a_2.png",
-    tag: ["#MusicVideo", "#SP", "#TD"],
-  },
-  {
-    categories: ["AUDIO"],
+    categories: ["DEVELOPMENT"],
     title: "MIDI Boilerplate",
-    currentProjectView: "/AudioProject3",
-    imagePath: "/bg_images/a_3.png",
-    tag: ["#Code", "#Ruby"],
+    currentProjectView: "/MIDI_Boilerplate",
+    imagePath: "/bg_images/dev_2.jpg",
+    tag: ["#SonicPi", "#Tool"],
   },
-  //VISUAL
-
   {
-    categories: ["VISUAL"],
+    categories: ["DEVELOPMENT"],
     title: "VJ-Setup v1.0",
-    currentProjectView: "/VisualProject1",
-    imagePath: "/bg_images/v_1.png",
-    tag: ["#TD", "#VJ", "#MIDI"],
+    currentProjectView: "/TD_VJ_Setup",
+    imagePath: "/bg_images/dev_3.jpg",
+    tag: ["#Touchdesigner", "#Tool"],
+  },
+
+  //DESIGN WORK
+  {
+    categories: ["DESIGN WORK"],
+    title: "808club.at",
+    currentProjectView: "/808club.at",
+    imagePath: "/bg_images/des_1.jpg",
+    tag: ["#Webdesign", "#Wordpress"],
   },
   {
-    categories: ["VISUAL"],
-    title: "PokéMorph",
-    currentProjectView: "/VisualProject2",
-    imagePath: "/bg_images/v_2.png",
-    tag: ["#Tutorial", "#GLSL", "#TD"],
-  },
-  {
-    categories: ["VISUAL"],
-    title: "Bananana",
-    currentProjectView: "/VisualProject3",
-    imagePath: "/bg_images/v_3.png",
-    tag: ["#Tutorial", "#TD"],
-  },
-  //DESIGN
-  {
-    categories: ["DESIGN"],
-    title: "Websites",
-    currentProjectView: "/DesignProject1",
-    imagePath: "/bg_images/d_1.png",
-    tag: ["#Webdesign", "#Frontend", "#CMS"],
-  },
-  {
-    categories: ["DESIGN"],
+    categories: ["DESIGN WORK"],
     title: "Screenprints",
-    currentProjectView: "/DesignProject2",
-    imagePath: "/bg_images/d_2.png",
+    currentProjectView: "/screenprints",
+    imagePath: "/bg_images/des_2.jpg",
     tag: ["#Screenprint", "#Art"],
   },
   {
-    categories: ["DESIGN"],
-    title: "Branding",
-    currentProjectView: "/DesignProject3",
-    imagePath: "/bg_images/d_3.png",
+    categories: ["DESIGN WORK"],
+    title: "Event Posters",
+    currentProjectView: "/event_posters",
+    imagePath: "/bg_images/des_3.jpg",
+    tag: ["#Poster", "#Flyer"],
+  },
+  {
+    categories: ["DESIGN WORK"],
+    title: "Portfolio PDF",
+    currentProjectView: "/pdf_portfolio",
+    imagePath: "/bg_images/des_4.jpg",
     tag: ["#Different", "#Stuff"],
   },
 
-  //OTHER
+  //AUDIO VISUAL
   {
-    categories: ["OTHER"],
-    title: "Events",
-    currentProjectView: "/OtherProject1",
-    imagePath: "/bg_images/o_1.png",
-    tag: ["#HoA", "#GoS", "#SL"],
+    categories: ["AUDIO VISUAL"],
+    title: "TD Tutorials",
+    currentProjectView: "/TD_tutorials",
+    imagePath: "/bg_images/av_1.jpg",
+    tag: ["#Touchdesigner", "#Tutorials"],
   },
   {
-    categories: ["OTHER"],
-    title: "RetroPi Build",
-    currentProjectView: "/OtherProject2",
-    imagePath: "/bg_images/o_2.png",
-    tag: ["#RasPi", "#Emulation", "#Linux"],
+    categories: ["AUDIO VISUAL"],
+    title: "Coding Techno",
+    currentProjectView: "/coding_techno",
+    imagePath: "/bg_images/av_2.jpg",
+    tag: ["#LiveSessions", "#SonicPi", "Techno"],
   },
   {
-    categories: ["OTHER"],
-    title: "Dead Internet",
-    currentProjectView: "/OtherProject3",
-    imagePath: "/bg_images/o_3.png",
-    tag: ["#DataVisualisation", "#MediaStudies"],
+    categories: ["AUDIO VISUAL"],
+    title: "808Spotlight",
+    currentProjectView: "/808Spotlight",
+    imagePath: "/bg_images/av_3.jpg",
+    tag: ["#SonicPi", "#EP", "#Tekno"],
   },
 ]);
 
@@ -118,7 +103,7 @@ function updateActiveFilter(filter) {
   <div class="projectsWrapper">
     <div class="projectNav">
       <li
-        v-for="filter in ['AUDIO', 'VISUAL', 'DESIGN', 'OTHER']"
+        v-for="filter in ['DEVELOPMENT', 'DESIGN WORK', 'AUDIO VISUAL']"
         :key="filter"
         :id="activeFilter === filter ? 'activeFilter' : ''"
         @click="updateActiveFilter(filter)"
